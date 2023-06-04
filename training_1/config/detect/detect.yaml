@@ -1,0 +1,6 @@
+%YAML:1.0
+---
+settings:
+  points_amount: 1000
+  rec_width: 200
+  rec_height: 100

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/yiming/training/training_1/build",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/training_1\\\" -I/home/yiming/training/training_1/modules -isystem /usr/local/include/opencv4    -o CMakeFiles/MA.dir/main.cpp.o -c /home/yiming/training/training_1/main.cpp",
+  "file": "/home/yiming/training/training_1/main.cpp"
+},
+{
+  "directory": "/home/yiming/training/training_1/build/modules",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/training_1/modules -isystem /usr/local/include/opencv4  -fPIC   -std=gnu++17 -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/yiming/training/training_1/modules/cv/cv.cpp",
+  "file": "/home/yiming/training/training_1/modules/cv/cv.cpp"
+},
+{
+  "directory": "/home/yiming/training/training_1/build/modules",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/training_1/modules -isystem /usr/local/include/opencv4  -fPIC   -std=gnu++17 -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/yiming/training/training_1/modules/fmt_lib/fmt_lib.cpp",
+  "file": "/home/yiming/training/training_1/modules/fmt_lib/fmt_lib.cpp"
+}
+]
