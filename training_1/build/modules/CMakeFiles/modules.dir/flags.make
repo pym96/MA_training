@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -fPIC   -std=gnu++17
 
-CXX_DEFINES = -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\"/home/yiming/training/training_1\" -Dmodules_EXPORTS
+CXX_DEFINES = -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\"/home/yiming/training/train/training_1\" -Dmodules_EXPORTS
 
-CXX_INCLUDES = -I/home/yiming/training/training_1/modules -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/yiming/training/train/training_1/modules -isystem /opt/intel/openvino_2021.4.752/opencv/include 
 

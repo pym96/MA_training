@@ -1,4 +1,4 @@
-# Install script for directory: /home/yiming/training/training_1/modules
+# Install script for directory: /home/yiming/training/train/training_1/modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

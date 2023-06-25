@@ -6,6 +6,7 @@ find_package(fmt REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 message("OpenCV version is ${OpenCV_VERSION}")
+# message(STATUS "Current binary work dir is " ${MA_BINARY_DIR})
 
 aux_source_directory(cv cv_src)
 aux_source_directory(fmt_lib fmt_src)
