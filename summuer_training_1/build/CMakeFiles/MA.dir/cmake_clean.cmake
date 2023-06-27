@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MA.dir/pnp.cpp.o"
+  "CMakeFiles/MA.dir/pnp_for_training.cpp.o"
   "bin/MA"
   "bin/MA.pdb"
 )

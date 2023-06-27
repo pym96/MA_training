@@ -57,27 +57,27 @@ include CMakeFiles/MA.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MA.dir/flags.make
 
-CMakeFiles/MA.dir/pnp.cpp.o: CMakeFiles/MA.dir/flags.make
-CMakeFiles/MA.dir/pnp.cpp.o: ../pnp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yiming/training/train/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MA.dir/pnp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MA.dir/pnp.cpp.o -c /home/yiming/training/train/summuer_training_1/pnp.cpp
+CMakeFiles/MA.dir/pnp_for_training.cpp.o: CMakeFiles/MA.dir/flags.make
+CMakeFiles/MA.dir/pnp_for_training.cpp.o: ../pnp_for_training.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yiming/training/train/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MA.dir/pnp_for_training.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MA.dir/pnp_for_training.cpp.o -c /home/yiming/training/train/summuer_training_1/pnp_for_training.cpp
 
-CMakeFiles/MA.dir/pnp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MA.dir/pnp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yiming/training/train/summuer_training_1/pnp.cpp > CMakeFiles/MA.dir/pnp.cpp.i
+CMakeFiles/MA.dir/pnp_for_training.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MA.dir/pnp_for_training.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yiming/training/train/summuer_training_1/pnp_for_training.cpp > CMakeFiles/MA.dir/pnp_for_training.cpp.i
 
-CMakeFiles/MA.dir/pnp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MA.dir/pnp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yiming/training/train/summuer_training_1/pnp.cpp -o CMakeFiles/MA.dir/pnp.cpp.s
+CMakeFiles/MA.dir/pnp_for_training.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MA.dir/pnp_for_training.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yiming/training/train/summuer_training_1/pnp_for_training.cpp -o CMakeFiles/MA.dir/pnp_for_training.cpp.s
 
 # Object files for target MA
 MA_OBJECTS = \
-"CMakeFiles/MA.dir/pnp.cpp.o"
+"CMakeFiles/MA.dir/pnp_for_training.cpp.o"
 
 # External object files for target MA
 MA_EXTERNAL_OBJECTS =
 
-bin/MA: CMakeFiles/MA.dir/pnp.cpp.o
+bin/MA: CMakeFiles/MA.dir/pnp_for_training.cpp.o
 bin/MA: CMakeFiles/MA.dir/build.make
 bin/MA: modules/libmodules.so
 bin/MA: /opt/intel/openvino_2021/opencv/lib/libopencv_gapi.so.4.5.3

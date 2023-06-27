@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules"
+  "/usr/include/eigen3"
   "/opt/intel/openvino_2021.4.752/opencv/include"
   )
 

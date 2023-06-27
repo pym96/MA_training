@@ -136,32 +136,32 @@ modules/fast:
 	$(MAKE) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
 .PHONY : modules/fast
 
-pnp.o: pnp.cpp.o
+pnp_for_training.o: pnp_for_training.cpp.o
 
-.PHONY : pnp.o
+.PHONY : pnp_for_training.o
 
 # target to build an object file
-pnp.cpp.o:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp.cpp.o
-.PHONY : pnp.cpp.o
+pnp_for_training.cpp.o:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.o
+.PHONY : pnp_for_training.cpp.o
 
-pnp.i: pnp.cpp.i
+pnp_for_training.i: pnp_for_training.cpp.i
 
-.PHONY : pnp.i
+.PHONY : pnp_for_training.i
 
 # target to preprocess a source file
-pnp.cpp.i:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp.cpp.i
-.PHONY : pnp.cpp.i
+pnp_for_training.cpp.i:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.i
+.PHONY : pnp_for_training.cpp.i
 
-pnp.s: pnp.cpp.s
+pnp_for_training.s: pnp_for_training.cpp.s
 
-.PHONY : pnp.s
+.PHONY : pnp_for_training.s
 
 # target to generate assembly for a file
-pnp.cpp.s:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp.cpp.s
-.PHONY : pnp.cpp.s
+pnp_for_training.cpp.s:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.s
+.PHONY : pnp_for_training.cpp.s
 
 # Help Target
 help:
@@ -173,9 +173,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... MA"
 	@echo "... modules"
-	@echo "... pnp.o"
-	@echo "... pnp.i"
-	@echo "... pnp.s"
+	@echo "... pnp_for_training.o"
+	@echo "... pnp_for_training.i"
+	@echo "... pnp_for_training.s"
 .PHONY : help
 
 

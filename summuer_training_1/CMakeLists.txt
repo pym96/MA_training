@@ -2,13 +2,21 @@ cmake_minimum_required(VERSION 3.15)
 
 project(MA)
 
-# PROJECT_DIR这个量，就可以在代码中使用
+## PROJECT_DIR这个量，就可以在代码中使用
 add_compile_definitions(PROJECT_DIR="${PROJECT_SOURCE_DIR}")
 
-set(SRC_LIST pnp.cpp)
+## Set the basic info for project
+set(SRC_LIST pnp_for_training.cpp)
 set(CMAKE_CXX_STANDARD 17)
+
+## Export compile commands for clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+## By adding -Wall and -Werror, the complier does not ignore warnings
+## enforcing cleaner code
+
+# add_definitions(-Wall -Werror)
+# add_compile_options(-Wall -Werror=return-type -Wno-unused-variable)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
