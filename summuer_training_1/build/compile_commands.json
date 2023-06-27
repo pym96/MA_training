@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/yiming/training/train/summuer_training_1/build",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -I/home/yiming/training/train/summuer_training_1/modules -isystem /opt/intel/openvino_2021.4.752/opencv/include    -std=gnu++17 -o CMakeFiles/MA.dir/pnp.cpp.o -c /home/yiming/training/train/summuer_training_1/pnp.cpp",
+  "file": "/home/yiming/training/train/summuer_training_1/pnp.cpp"
+},
+{
+  "directory": "/home/yiming/training/train/summuer_training_1/build/modules",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/train/summuer_training_1/modules -isystem /opt/intel/openvino_2021.4.752/opencv/include  -fPIC   -std=gnu++17 -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/yiming/training/train/summuer_training_1/modules/cv/cv.cpp",
+  "file": "/home/yiming/training/train/summuer_training_1/modules/cv/cv.cpp"
+},
+{
+  "directory": "/home/yiming/training/train/summuer_training_1/build/modules",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/train/summuer_training_1/modules -isystem /opt/intel/openvino_2021.4.752/opencv/include  -fPIC   -std=gnu++17 -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/yiming/training/train/summuer_training_1/modules/fmt_lib/fmt_lib.cpp",
+  "file": "/home/yiming/training/train/summuer_training_1/modules/fmt_lib/fmt_lib.cpp"
+}
+]
