@@ -17,7 +17,6 @@
 #include <assert.h>
 
 
-
 using namespace Eigen;
 using namespace cv;
 

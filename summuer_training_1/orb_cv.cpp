@@ -1,4 +1,5 @@
-// Copyright 2023 Pan Jiaxiang
+// Copyright 2023 Pan Jiaxiang.
+// Licensed under the MIT License.
 
 #include <iostream>
 #include <opencv2/core/core.hpp>
@@ -98,8 +99,6 @@ int main(int argc, char** argv){
     imshow("Good matches",img_goodmatch);
 
     waitKey(0);
-
-
 
     return 0;
 }

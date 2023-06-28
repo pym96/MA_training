@@ -15,8 +15,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ## By adding -Wall and -Werror, the complier does not ignore warnings
 ## enforcing cleaner code
 
-# add_definitions(-Wall -Werror)
-# add_compile_options(-Wall -Werror=return-type -Wno-unused-variable)
+add_definitions(-Wall -Werror)
+add_compile_options(-Wall -Werror=return-type -Wno-unused-variable)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
