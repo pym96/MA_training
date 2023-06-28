@@ -136,32 +136,32 @@ modules/fast:
 	$(MAKE) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
 .PHONY : modules/fast
 
-pnp_for_training.o: pnp_for_training.cpp.o
+orb_cv.o: orb_cv.cpp.o
 
-.PHONY : pnp_for_training.o
+.PHONY : orb_cv.o
 
 # target to build an object file
-pnp_for_training.cpp.o:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.o
-.PHONY : pnp_for_training.cpp.o
+orb_cv.cpp.o:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/orb_cv.cpp.o
+.PHONY : orb_cv.cpp.o
 
-pnp_for_training.i: pnp_for_training.cpp.i
+orb_cv.i: orb_cv.cpp.i
 
-.PHONY : pnp_for_training.i
+.PHONY : orb_cv.i
 
 # target to preprocess a source file
-pnp_for_training.cpp.i:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.i
-.PHONY : pnp_for_training.cpp.i
+orb_cv.cpp.i:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/orb_cv.cpp.i
+.PHONY : orb_cv.cpp.i
 
-pnp_for_training.s: pnp_for_training.cpp.s
+orb_cv.s: orb_cv.cpp.s
 
-.PHONY : pnp_for_training.s
+.PHONY : orb_cv.s
 
 # target to generate assembly for a file
-pnp_for_training.cpp.s:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/pnp_for_training.cpp.s
-.PHONY : pnp_for_training.cpp.s
+orb_cv.cpp.s:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/orb_cv.cpp.s
+.PHONY : orb_cv.cpp.s
 
 # Help Target
 help:
@@ -173,9 +173,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... MA"
 	@echo "... modules"
-	@echo "... pnp_for_training.o"
-	@echo "... pnp_for_training.i"
-	@echo "... pnp_for_training.s"
+	@echo "... orb_cv.o"
+	@echo "... orb_cv.i"
+	@echo "... orb_cv.s"
 .PHONY : help
 
 

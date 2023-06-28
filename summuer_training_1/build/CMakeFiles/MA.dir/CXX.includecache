@@ -6,8 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/home/yiming/training/train/summuer_training_1/pnp_for_training.cpp
-opencv2/core.hpp
+/home/yiming/training/train/summuer_training_1/orb_cv.cpp
+iostream
 -
 opencv2/core/core.hpp
 -
@@ -15,26 +15,12 @@ opencv2/features2d/features2d.hpp
 -
 opencv2/highgui/highgui.hpp
 -
-opencv2/calib3d/calib3d.hpp
--
-eigen3/Eigen/Core
+chrono
 -
 vector
 -
-iostream
+fmt/color.h
 -
-
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d.hpp
-opencv2/core.hpp
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/core.hpp
-opencv2/features2d.hpp
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/features2d.hpp
-opencv2/core/affine.hpp
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/core/affine.hpp
-
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d/calib3d.hpp
-opencv2/calib3d.hpp
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d/opencv2/calib3d.hpp
 
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -63,10 +49,6 @@ opencv2/core/optim.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/core/optim.hpp
 opencv2/core/ovx.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/core/ovx.hpp
-
-/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/affine.hpp
-opencv2/core.hpp
--
 
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/base.hpp
 opencv2/opencv_modules.hpp

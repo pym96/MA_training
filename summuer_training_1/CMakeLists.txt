@@ -6,7 +6,7 @@ project(MA)
 add_compile_definitions(PROJECT_DIR="${PROJECT_SOURCE_DIR}")
 
 ## Set the basic info for project
-set(SRC_LIST pnp_for_training.cpp)
+set(SRC_LIST orb_cv.cpp)
 set(CMAKE_CXX_STANDARD 17)
 
 ## Export compile commands for clangd

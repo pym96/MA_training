@@ -7,8 +7,15 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
 #include <eigen3/Eigen/Core>
+#include <sophus/se3.hpp>
+
 #include <vector>
 #include <iostream>
+#include <limits>
+#include <chrono>
+#include <iomanip>
+#include <assert.h>
+
 
 
 using namespace Eigen;
@@ -40,7 +47,7 @@ int main(int argc, char ** argv){
 
     Mat img_1 = imread(argv[1],IMREAD_COLOR);
     Mat img_2 = imread(argv[2],IMREAD_COLOR);
-    assert(img_1.data && img_2.data && "Can not load images!");
+    // assert(img_1.data && img_2.data,"Can not load images!");
 
     /**
         Utilizing EPnp to get pose
@@ -140,10 +147,10 @@ void bundleAdjustmentGaussNewton(
     Vector6d dx;
     dx = H.ldlt().solve(b);
 
-    if (isnan(dx[0])) {
-      std::cout << "result is nan!\n";
-      break;
-    }
+    // if (isnan(dx[0])) {
+    //   std::cout << "result is nan!\n";
+    //   break;
+    // }
 
     if (iter > 0 && cost >= lastCost) {
       // cost increase, update is not good

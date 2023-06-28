@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yiming/training/train/summuer_training_1/pnp_for_training.cpp" "/home/yiming/training/train/summuer_training_1/build/CMakeFiles/MA.dir/pnp_for_training.cpp.o"
+  "/home/yiming/training/train/summuer_training_1/orb_cv.cpp" "/home/yiming/training/train/summuer_training_1/build/CMakeFiles/MA.dir/orb_cv.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
