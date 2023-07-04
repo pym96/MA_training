@@ -1,0 +1,3 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/crc.cpp.o[0m
+[ 80%] Built target my_serial_node_node

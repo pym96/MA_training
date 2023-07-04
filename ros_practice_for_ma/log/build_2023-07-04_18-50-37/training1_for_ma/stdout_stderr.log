@@ -1,0 +1,20 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ktraining1_for_ma/transform.hpp: No such file or directory
+    1 | #include [01;31m[K"training1_for_ma/transform.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

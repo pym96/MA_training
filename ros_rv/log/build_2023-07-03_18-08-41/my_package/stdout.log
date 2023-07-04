@@ -1,0 +1,18 @@
+[100%] Built target my_node
+-- Install configuration: ""
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/lib/my_package/my_node
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.sh
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.bash
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.sh
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.zsh
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.dsv
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.dsv
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/packages/my_package
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+-- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.xml

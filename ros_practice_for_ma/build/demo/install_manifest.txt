@@ -1,0 +1,15 @@
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/ament_prefix_path.sh
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/ament_prefix_path.dsv
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/path.sh
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/path.dsv
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.bash
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.sh
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.zsh
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.dsv
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/package.dsv
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/packages/demo
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/cmake/demoConfig.cmake
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/cmake/demoConfig-version.cmake
+/home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/package.xml

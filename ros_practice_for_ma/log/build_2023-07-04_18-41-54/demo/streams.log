@@ -1,0 +1,44 @@
+[0.043s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/demo -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/install/demo
+[0.171s] -- The C compiler identification is GNU 9.4.0
+[0.256s] -- The CXX compiler identification is GNU 9.4.0
+[0.276s] -- Detecting C compiler ABI info
+[0.377s] -- Detecting C compiler ABI info - done
+[0.394s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.395s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.398s] -- Detecting CXX compiler ABI info
+[0.535s] -- Detecting CXX compiler ABI info - done
+[0.556s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.557s] -- Detecting CXX compile features
+[0.558s] -- Detecting CXX compile features - done
+[0.560s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.596s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.596s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.678s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.762s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.763s] -- Added test 'lint_cmake' to check CMake code style
+[0.764s] -- Added test 'xmllint' to check XML markup files
+[0.765s] -- Configuring done (0.7s)
+[0.767s] -- Generating done (0.0s)
+[0.768s] -- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/build/demo
+[0.780s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/demo -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/install/demo
+[0.785s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/demo -- -j16 -l16
+[0.853s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/demo -- -j16 -l16
+[0.971s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/build/demo
+[1.002s] -- Install configuration: ""
+[1.002s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+[1.002s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+[1.003s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/ament_prefix_path.sh
+[1.003s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/ament_prefix_path.dsv
+[1.003s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/path.sh
+[1.003s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/environment/path.dsv
+[1.004s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.bash
+[1.004s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.sh
+[1.004s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.zsh
+[1.004s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/local_setup.dsv
+[1.005s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/package.dsv
+[1.005s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/ament_index/resource_index/packages/demo
+[1.005s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/cmake/demoConfig.cmake
+[1.006s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/cmake/demoConfig-version.cmake
+[1.006s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/demo/share/demo/package.xml
+[1.017s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/build/demo

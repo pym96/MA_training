@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_demo.uncrustify"
+  tests="1"
+  failures="0"
+  errors="0"
+  time="0.008"
+>
+  <testcase
+    name="src/demo.cpp"
+    classname="my_demo.uncrustify"/>
+  <system-out>Checked files:
+* src/demo.cpp</system-out>
+</testsuite>

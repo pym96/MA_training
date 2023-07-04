@@ -1,0 +1,34 @@
+[0.037s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[0.091s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.121s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.212s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[0.233s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.237s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.410s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.497s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[0.567s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.568s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.586s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.363s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.383s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.383s] -- Configured cppcheck include dirs: /home/yiming/training/train/ros_rv/src/my_serial_node/include
+[1.384s] -- Configured cppcheck exclude dirs and/or files: 
+[1.384s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.385s] -- Configured cpplint exclude dirs and/or files: 
+[1.385s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.385s] -- Added test 'lint_cmake' to check CMake code style
+[1.385s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.386s] -- Added test 'xmllint' to check XML markup files
+[1.387s] -- Configuring done (1.3s)
+[1.409s] -- Generating done (0.0s)
+[1.411s] -- Build files have been written to: /home/yiming/training/train/ros_rv/build/my_serial_node
+[1.448s] [ 20%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o[0m
+[1.462s] [ 60%] Built target my_serial_node_node
+[1.747s] [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[1.748s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[1.748s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.748s] compilation terminated.
+[1.751s] make[2]: *** [CMakeFiles/my_serial_node.dir/build.make:76: CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o] Error 1
+[1.751s] make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+[1.751s] make: *** [Makefile:146: all] Error 2
+[1.761s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16

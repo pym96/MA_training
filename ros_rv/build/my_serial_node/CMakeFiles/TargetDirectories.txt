@@ -1,0 +1,11 @@
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/uninstall.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/my_serial_node_uninstall.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/my_serial_node.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/my_serial_node_node.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/test.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/rebuild_cache.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/list_install_components.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/install.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/install/local.dir
+/home/yiming/training/train/ros_rv/build/my_serial_node/CMakeFiles/install/strip.dir

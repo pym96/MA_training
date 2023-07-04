@@ -1,0 +1,25 @@
+[0.040s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.157s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[4.729s] [100%] [32m[1mLinking CXX executable talker[0m
+[4.849s] [100%] Built target talker
+[4.864s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[4.951s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma
+[4.983s] -- Install configuration: ""
+[4.983s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker
+[4.984s] -- Set runtime path of "/home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker" to ""
+[4.984s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/package_run_dependencies/training1_for_ma
+[4.984s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/parent_prefix_path/training1_for_ma
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.sh
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.dsv
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.sh
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.dsv
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.bash
+[4.985s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.sh
+[4.986s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.zsh
+[4.986s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.dsv
+[4.986s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.dsv
+[4.986s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/packages/training1_for_ma
+[4.986s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig.cmake
+[4.987s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig-version.cmake
+[4.987s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.xml
+[4.998s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma

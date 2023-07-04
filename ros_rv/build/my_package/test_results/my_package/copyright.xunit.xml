@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_package.copyright"
+  tests="1"
+  errors="0"
+  failures="1"
+  time="0.001"
+>
+  <testcase
+    name="src/my_node.cpp"
+    classname="my_package.copyright"
+  >
+      <failure message="could not find copyright notice"/>
+  </testcase>
+  <system-out>Checked files:
+* src/my_node.cpp</system-out>
+</testsuite>

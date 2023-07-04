@@ -1,0 +1,5 @@
+source;share/rm_serial_driver/local_setup.bash
+source;share/rm_serial_driver/local_setup.dsv
+source;share/rm_serial_driver/local_setup.ps1
+source;share/rm_serial_driver/local_setup.sh
+source;share/rm_serial_driver/local_setup.zsh

@@ -7,6 +7,7 @@ add_compile_definitions(PROJECT_DIR="${PROJECT_SOURCE_DIR}")
 
 ## Set the basic info for project
 set(SRC_LIST orb_cv.cpp)
+set(2D_2D pose_estimation_2d_to_2d.cpp)
 set(CMAKE_CXX_STANDARD 17)
 
 ## Export compile commands for clangd
@@ -14,7 +15,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 ## By adding -Wall and -Werror, the complier does not ignore warnings
 ## enforcing cleaner code
-
 add_definitions(-Wall -Werror)
 add_compile_options(-Wall -Werror=return-type -Wno-unused-variable)
 

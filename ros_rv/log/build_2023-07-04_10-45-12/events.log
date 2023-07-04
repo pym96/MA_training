@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (-) JobUnselected: {'identifier': 'my_demo'}
+[0.000433] (-) JobUnselected: {'identifier': 'rm_serial_driver'}
+[0.000479] (-) EventReactorShutdown: {}

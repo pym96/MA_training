@@ -1,0 +1,64 @@
+[0.038s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.138s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[3.604s] In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[3.604s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:[m[K In member function ‘[01m[Kvoid EigenDemoPublisher::publishCallback()[m[K’:
+[3.604s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kconst char [12][m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.604s]    48 |             publisher_->publish([01;31m[K"-----------"[m[K);
+[3.604s]       |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[3.605s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/subscription_base.hpp:37[m[K,
+[3.605s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:26[m[K,
+[3.605s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[3.605s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.605s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.606s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.606s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.606s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.606s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.606s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.606s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+[3.607s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[3.607s] [01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’ <near match>
+[3.607s]    50 |   [01;36m[KSerializedMessage[m[K(
+[3.607s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.607s] [01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[3.607s] In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[3.608s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+[3.608s]    48 |             publisher_->publish([01;31m[K"-----------"[m[K);
+[3.608s]       |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[3.608s]       |                                 [01;31m[K|[m[K
+[3.608s]       |                                 [01;31m[Kconst char*[m[K
+[3.608s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+[3.609s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/subscription_base.hpp:37[m[K,
+[3.609s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:26[m[K,
+[3.609s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[3.609s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.609s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.610s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.610s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.610s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.610s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.610s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.610s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+[3.611s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[3.611s] [01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:51:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’
+[3.611s]    51 |     [01;36m[Ksize_t initial_capacity[m[K,
+[3.611s]       |     [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[3.611s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[3.611s]                  from [01m[K/opt/ros/galactic/include/rclcpp/subscription.hpp:50[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:25[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.612s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.613s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.613s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.613s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+[3.613s]                  from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[3.613s] [01m[K/opt/ros/galactic/include/rclcpp/publisher.hpp:234:37:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = std_msgs::msg::String_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[3.613s]   234 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[3.614s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[4.643s] make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+[4.644s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+[4.644s] make: *** [Makefile:146: all] Error 2
+[4.653s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

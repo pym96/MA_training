@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':
+ - /opt/ros/galactic/bin/ament_cppcheck --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml --include_dirs /home/yiming/training/train/ros_rv/src/my_package/include
+
+/opt/ros/galactic/bin/ament_cppcheck:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import load_entry_point
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml'

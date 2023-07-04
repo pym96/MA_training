@@ -1,0 +1,22 @@
+[0.036s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.104s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.134s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.211s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.244s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.247s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.406s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.455s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.456s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.473s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.677s] -- Configuring done (0.6s)
+[0.687s] -- Generating done (0.0s)
+[0.690s] -- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma
+[0.734s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[0.750s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ktraining1_for_ma/transform.hpp: No such file or directory
+[0.751s]     1 | #include [01;31m[K"training1_for_ma/transform.hpp"[m[K
+[0.751s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.751s] compilation terminated.
+[0.752s] make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+[0.753s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+[0.753s] make: *** [Makefile:146: all] Error 2
+[0.763s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

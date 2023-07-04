@@ -1,0 +1,62 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:[m[K In member function ‘[01m[Kvoid EigenDemoPublisher::publishCallback()[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kconst char [12][m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’ [[01;31m[K-fpermissive[m[K]
+   48 |             publisher_->publish([01;31m[K"-----------"[m[K);
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/subscription_base.hpp:37[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’ <near match>
+   50 |   [01;36m[KSerializedMessage[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+   48 |             publisher_->publish([01;31m[K"-----------"[m[K);
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kconst char*[m[K
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:48:33:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/subscription_base.hpp:37[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/serialized_message.hpp:51:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’
+   51 |     [01;36m[Ksize_t initial_capacity[m[K,
+      |     [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:12[m[K,
+                 from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/publisher.hpp:234:37:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = std_msgs::msg::String_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+  234 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

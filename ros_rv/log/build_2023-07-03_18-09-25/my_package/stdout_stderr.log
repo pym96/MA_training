@@ -1,0 +1,36 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yiming/training/train/ros_rv/src/my_package/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yiming/training/train/ros_rv/build/my_package
+[100%] Built target my_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/lib/my_package/my_node
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.sh
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.sh
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.dsv
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.bash
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.sh
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.zsh
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.dsv
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.dsv
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/packages/my_package
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+-- Symlinking: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.xml

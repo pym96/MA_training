@@ -1,0 +1,50 @@
+[0.047s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_demo
+[0.093s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.126s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.212s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.255s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.258s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.420s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.481s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.482s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.500s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.655s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.744s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.744s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.744s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yiming/training/train/ros_rv/src/my_demo/include>
+[0.744s] -- Configured cppcheck exclude dirs and/or files: 
+[0.744s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.744s] -- Configured cpplint exclude dirs and/or files: 
+[0.745s] -- Added test 'lint_cmake' to check CMake code style
+[0.745s] -- Added test 'uncrustify' to check C / C++ code style
+[0.745s] -- Configured uncrustify additional arguments: 
+[0.746s] -- Added test 'xmllint' to check XML markup files
+[0.749s] -- Configuring done (0.7s)
+[0.756s] -- Generating done (0.0s)
+[0.757s] -- Build files have been written to: /home/yiming/training/train/ros_rv/build/my_demo
+[0.776s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_demo
+[0.782s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[0.872s] [ 50%] [32m[1mLinking CXX executable demo[0m
+[1.016s] [100%] Built target demo
+[1.033s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[1.119s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo
+[1.158s] -- Install configuration: ""
+[1.160s] -- Execute custom install script
+[1.161s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/lib/my_demo/demo
+[1.167s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/package_run_dependencies/my_demo
+[1.174s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/parent_prefix_path/my_demo
+[1.181s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/ament_prefix_path.sh
+[1.187s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/ament_prefix_path.dsv
+[1.193s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/path.sh
+[1.199s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/path.dsv
+[1.205s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.bash
+[1.211s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.sh
+[1.218s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.zsh
+[1.224s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.dsv
+[1.231s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.dsv
+[1.237s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/packages/my_demo
+[1.243s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/cmake/my_demoConfig.cmake
+[1.247s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/cmake/my_demoConfig-version.cmake
+[1.253s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.xml
+[1.270s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo

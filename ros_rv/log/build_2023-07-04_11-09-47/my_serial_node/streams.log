@@ -1,0 +1,18 @@
+[0.031s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[0.112s] [ 20%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o[0m
+[0.112s] [ 40%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/crc.cpp.o[0m
+[0.121s] [ 80%] Built target my_serial_node_node
+[0.127s] [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/crc.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Krm_serial_driver/crc.hpp: No such file or directory
+[0.128s]     4 | #include [01;31m[K"rm_serial_driver/crc.hpp"[m[K
+[0.128s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.128s] compilation terminated.
+[0.128s] make[2]: *** [CMakeFiles/my_serial_node.dir/build.make:90: CMakeFiles/my_serial_node.dir/src/crc.cpp.o] Error 1
+[0.129s] make[2]: *** Waiting for unfinished jobs....
+[0.440s] [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.440s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[0.440s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.440s] compilation terminated.
+[0.444s] make[2]: *** [CMakeFiles/my_serial_node.dir/build.make:76: CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o] Error 1
+[0.445s] make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+[0.445s] make: *** [Makefile:146: all] Error 2
+[0.453s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16

@@ -1,0 +1,10 @@
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/uninstall.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/my_demo_uninstall.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/demo.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/test.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/rebuild_cache.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/list_install_components.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/install.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/install/local.dir
+/home/yiming/training/train/ros_rv/build/my_demo/CMakeFiles/install/strip.dir

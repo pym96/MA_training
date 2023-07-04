@@ -1,0 +1,23 @@
+[0.045s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.105s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.137s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.223s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.253s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.256s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.390s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.436s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.438s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.458s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.649s] -- Configuring done (0.6s)
+[0.659s] -- Generating done (0.0s)
+[0.660s] -- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma
+[0.691s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[0.705s] In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[0.706s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+[0.706s]     4 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+[0.706s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.706s] compilation terminated.
+[0.706s] make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+[0.707s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+[0.707s] make: *** [Makefile:146: all] Error 2
+[0.717s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

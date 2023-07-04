@@ -1,0 +1,8 @@
+[01m[K/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/rm_serial_driver.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kserial_driver/serial_driver.hpp: No such file or directory
+    9 | #include [01;31m[K<serial_driver/serial_driver.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76: CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial_driver.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:146: all] Error 2

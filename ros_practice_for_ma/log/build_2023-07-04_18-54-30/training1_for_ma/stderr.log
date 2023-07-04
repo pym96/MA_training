@@ -1,0 +1,8 @@
+In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    4 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

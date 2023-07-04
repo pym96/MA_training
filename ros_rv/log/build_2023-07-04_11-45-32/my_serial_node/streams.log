@@ -1,0 +1,12 @@
+[0.038s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[0.131s] [ 40%] Built target my_serial_node_node
+[0.142s] [ 60%] [32mBuilding CXX object CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o[0m
+[0.556s] In file included from [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:22[m[K:
+[0.556s] [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:25:10:[m[K [01;31m[Kfatal error: [m[Kauto_aim_interfaces/msg/target.h: No such file or directory
+[0.556s]    25 | #include [01;31m[K"auto_aim_interfaces/msg/target.h"[m[K
+[0.556s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.556s] compilation terminated.
+[0.560s] make[2]: *** [CMakeFiles/my_serial_node.dir/build.make:76: CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o] Error 1
+[0.560s] make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+[0.560s] make: *** [Makefile:146: all] Error 2
+[0.572s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16

@@ -1,0 +1,128 @@
+UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini
+Parse Config file:/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini
+   Site: yiming-RedmiBook-Pro-14S
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20230703-0800 - Experimental
+UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini
+Parse Config file:/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini
+Test project /home/yiming/training/train/ros_rv/build/my_demo
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: copyright
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_copyright/copyright.txt" "--command" "/opt/ros/galactic/bin/ament_copyright" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml"
+1: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+1: Test timeout computed to be: 120
+1: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+1:  - /opt/ros/galactic/bin/ament_copyright --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml
+1: /opt/ros/galactic/bin/ament_copyright:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+1:   from pkg_resources import load_entry_point
+1: src/demo.cpp: could not find copyright notice
+1: 1 errors, checked 1 files
+1: -- run_test.py: return code 1
+1: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml'
+1/6 Test #1: copyright ........................***Failed    0.44 sec
+test 2
+    Start 2: cppcheck
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/galactic/bin/ament_cppcheck" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml" "--include_dirs" "/home/yiming/training/train/ros_rv/src/my_demo/include"
+2: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+2: Test timeout computed to be: 300
+2: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+2:  - /opt/ros/galactic/bin/ament_cppcheck --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml --include_dirs /home/yiming/training/train/ros_rv/src/my_demo/include
+2: /opt/ros/galactic/bin/ament_cppcheck:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+2:   from pkg_resources import load_entry_point
+2: No problems found
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml'
+2/6 Test #2: cppcheck .........................   Passed    0.35 sec
+test 3
+    Start 3: cpplint
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_cpplint/cpplint.txt" "--command" "/opt/ros/galactic/bin/ament_cpplint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml"
+3: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+3: Test timeout computed to be: 120
+3: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+3:  - /opt/ros/galactic/bin/ament_cpplint --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml
+3: /opt/ros/galactic/bin/ament_cpplint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+3:   from pkg_resources import load_entry_point
+3: /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+3: Category 'legal/copyright' errors found: 1
+3: Total errors found: 1
+3: Using '--root=/home/yiming/training/train/ros_rv/src/my_demo/src' argument
+3: 
+3: Done processing /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp
+3: 
+3: -- run_test.py: return code 1
+3: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml'
+3/6 Test #3: cpplint ..........................***Failed    0.28 sec
+test 4
+    Start 4: lint_cmake
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/galactic/bin/ament_lint_cmake" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml"
+4: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+4:  - /opt/ros/galactic/bin/ament_lint_cmake --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml
+4: /opt/ros/galactic/bin/ament_lint_cmake:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+4:   from pkg_resources import load_entry_point
+4: 
+4: No problems found
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml'
+4/6 Test #4: lint_cmake .......................   Passed    0.27 sec
+test 5
+    Start 5: uncrustify
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/galactic/bin/ament_uncrustify" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml"
+5: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+5:  - /opt/ros/galactic/bin/ament_uncrustify --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml
+5: /opt/ros/galactic/bin/ament_uncrustify:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+5:   from pkg_resources import load_entry_point
+5: No code style divergence in file 'src/demo.cpp'
+5: 
+5: No problems found
+5: -- run_test.py: return code 0
+5: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml'
+5/6 Test #5: uncrustify .......................   Passed    0.29 sec
+test 6
+    Start 6: xmllint
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_xmllint/xmllint.txt" "--command" "/opt/ros/galactic/bin/ament_xmllint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml"
+6: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+6:  - /opt/ros/galactic/bin/ament_xmllint --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml
+6: /opt/ros/galactic/bin/ament_xmllint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+6:   from pkg_resources import load_entry_point
+6: File 'package.xml' is valid
+6: 
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml'
+6/6 Test #6: xmllint ..........................   Passed    1.25 sec
+
+67% tests passed[0;0m, [0;31m2 tests failed[0;0m out of 6
+
+Label Time Summary:
+copyright     =   0.44 sec*proc (1 test)
+cppcheck      =   0.35 sec*proc (1 test)
+cpplint       =   0.28 sec*proc (1 test)
+lint_cmake    =   0.27 sec*proc (1 test)
+linter        =   2.88 sec*proc (6 tests)
+uncrustify    =   0.29 sec*proc (1 test)
+xmllint       =   1.25 sec*proc (1 test)
+
+Total Test time (real) =   2.88 sec
+
+The following tests FAILED:
+	[0;31m  1 - copyright (Failed)[0;0m
+	[0;31m  3 - cpplint (Failed)[0;0m

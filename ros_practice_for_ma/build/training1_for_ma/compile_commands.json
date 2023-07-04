@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include -isystem /opt/ros/galactic/include -isystem /opt/intel/openvino_2021.4.752/opencv/include -std=gnu++17 -o CMakeFiles/training1_for_ma.dir/src/transform.cpp.o -c /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp",
+  "file": "/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp",
+  "output": "CMakeFiles/training1_for_ma.dir/src/transform.cpp.o"
+}
+]

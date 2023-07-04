@@ -1,0 +1,26 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:[m[K In member function ‘[01m[Kvoid EigenDemoPublisher::publishCallback()[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:46:18:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kresult[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   46 |             auto [01;35m[Kresult[m[K = shear_mat * points;
+      |                  [01;35m[K^~~~~~[m[K
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker
+-- Set runtime path of "/home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker" to ""
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/package_run_dependencies/training1_for_ma
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/parent_prefix_path/training1_for_ma
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.bash
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.zsh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/packages/training1_for_ma
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig.cmake
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig-version.cmake
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.xml

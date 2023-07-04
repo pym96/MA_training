@@ -1,0 +1,306 @@
+[0.000000] (-) TimerEvent: {}
+[0.000930] (my_demo) JobQueued: {'identifier': 'my_demo', 'dependencies': OrderedDict([('my_demo', '/home/yiming/training/train/ros_rv/install/my_demo')])}
+[0.001190] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict([('my_package', '/home/yiming/training/train/ros_rv/install/my_package')])}
+[0.001310] (my_demo) JobStarted: {'identifier': 'my_demo'}
+[0.015732] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.093476] (my_package) Command: {'cmd': ['/home/yiming/.local/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yiming/training/train/ros_rv/build/my_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:'), ('INTEL_CVSDK_DIR', '/opt/intel/openvino_2021'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'yiming'), ('LC_TIME', 'en_US.UTF-8'), ('LIBVA_DRIVERS_PATH', '/opt/intel/mediasdk/lib64'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('GIO_MODULE_DIR', '/home/yiming/snap/code/common/.cache/gio-modules'), ('SSH_AGENT_PID', '2339'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/132/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/opencv/lib:/opt/intel/openvino_2021/deployment_tools/ngraph/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/lib::/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/omp/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/lib/intel64:/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/opencv/lib:/opt/intel/openvino_2021/deployment_tools/ngraph/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/lib::/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/omp/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/lib/intel64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HDDL_INSTALL_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl'), ('TBB_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake'), ('HOME', '/home/yiming'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/yiming/training/train/ros_rv/src'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GI_TYPELIB_PATH', '/opt/intel/openvino_2021/data_processing/gstreamer/lib/girepository-1.0'), ('GTK_PATH', '/snap/code/132/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GTK_IM_MODULE_FILE', '/home/yiming/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_2021'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/132/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/132/usr/share/code/code'), ('MANAGERPID', '2116'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dac6154cdffe2b3be3b38a5649cefd0'), ('COLORTERM', 'truecolor'), ('MODELS_PATH', '/home/yiming/intel/dl_streamer/models'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('GST_PLUGIN_SCANNER', '/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0/gst-plugin-scanner'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yiming'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('JOURNAL_STREAM', '8:49967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/gstreamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/dl_streamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/gstreamer/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yiming'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('GST_SAMPLES_DIR', '/opt/intel/openvino_2021/data_processing/dl_streamer/samples'), ('WINDOWPATH', '2'), ('PATH', '/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/gstreamer/bin:/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/gstreamer/bin:/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0:/opt/ros/galactic/bin:/home/yiming/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yiming-RedmiBook-Pro-14S:@/tmp/.ICE-unix/2415,unix/yiming-RedmiBook-Pro-14S:/tmp/.ICE-unix/2415'), ('GTK_EXE_PREFIX', '/snap/code/132/usr'), ('INVOCATION_ID', 'ab293bca6f2945f7a1f2fab06a9e0bdd'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ab4cd3d3_d3ba_4111_ae47_ada2a4769917'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/132/usr/lib/locale'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('LIBVA_DRIVER_NAME', 'iHD'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-da788fd806.sock'), ('GNOME_TERMINAL_SERVICE', ':1.335'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/yiming/snap/code/132/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install/my_package:/home/yiming/training/train/ros_rv/install/my_demo:/home/yiming/training/train/ros_rv/install/demo:/opt/ros/galactic'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GST_PLUGIN_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib/gstreamer-1.0'), ('ngraph_DIR', '/opt/intel/openvino_2021/deployment_tools/ngraph/cmake'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('InferenceEngine_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/share'), ('OpenCV_DIR', '/opt/intel/openvino_2021/opencv/cmake'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yiming/training/train/ros_rv/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dac6154cdffe2b3be3b38a5649cefd0'), ('XDG_DATA_DIRS', '/home/yiming/snap/code/132/.local/share:/home/yiming/snap/code/132:/snap/code/132/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_2021/python/python3.8:/opt/intel/openvino_2021/python/python3:/opt/intel/openvino_2021/deployment_tools/tools/post_training_optimization_toolkit:/opt/intel/openvino_2021/deployment_tools/open_model_zoo/tools/accuracy_checker:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/dl_streamer/python:/opt/intel/openvino_2021/data_processing/gstreamer/lib/python3.8/site-packages:/opt/intel/openvino_2021/python/python3.8:/opt/intel/openvino_2021/python/python3:/opt/intel/openvino_2021/deployment_tools/tools/post_training_optimization_toolkit:/opt/intel/openvino_2021/deployment_tools/open_model_zoo/tools/accuracy_checker:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/dl_streamer/python:/opt/intel/openvino_2021/data_processing/gstreamer/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install/my_package:/home/yiming/training/train/ros_rv/install/my_demo:/home/yiming/training/train/ros_rv/install/demo')]), 'shell': False}
+[0.102984] (-) TimerEvent: {}
+[0.110827] (my_demo) Command: {'cmd': ['/home/yiming/.local/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yiming/training/train/ros_rv/build/my_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:'), ('INTEL_CVSDK_DIR', '/opt/intel/openvino_2021'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'yiming'), ('LC_TIME', 'en_US.UTF-8'), ('LIBVA_DRIVERS_PATH', '/opt/intel/mediasdk/lib64'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('GIO_MODULE_DIR', '/home/yiming/snap/code/common/.cache/gio-modules'), ('SSH_AGENT_PID', '2339'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/132/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/opencv/lib:/opt/intel/openvino_2021/deployment_tools/ngraph/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/lib::/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/omp/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/lib/intel64:/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib:/opt/intel/openvino_2021/opencv/lib:/opt/intel/openvino_2021/deployment_tools/ngraph/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/lib::/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/omp/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino_2021/deployment_tools/inference_engine/lib/intel64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HDDL_INSTALL_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/external/hddl'), ('TBB_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake'), ('HOME', '/home/yiming'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/yiming/training/train/ros_rv/src'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GI_TYPELIB_PATH', '/opt/intel/openvino_2021/data_processing/gstreamer/lib/girepository-1.0'), ('GTK_PATH', '/snap/code/132/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GTK_IM_MODULE_FILE', '/home/yiming/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_2021'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/132/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/132/usr/share/code/code'), ('MANAGERPID', '2116'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dac6154cdffe2b3be3b38a5649cefd0'), ('COLORTERM', 'truecolor'), ('MODELS_PATH', '/home/yiming/intel/dl_streamer/models'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('GST_PLUGIN_SCANNER', '/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0/gst-plugin-scanner'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'yiming'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('JOURNAL_STREAM', '8:49967'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/gstreamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/dl_streamer/lib/pkgconfig:/opt/intel/openvino_2021/data_processing/gstreamer/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yiming'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('GST_SAMPLES_DIR', '/opt/intel/openvino_2021/data_processing/dl_streamer/samples'), ('WINDOWPATH', '2'), ('PATH', '/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/gstreamer/bin:/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/gstreamer/bin:/opt/intel/openvino_2021/data_processing/gstreamer/bin/gstreamer-1.0:/opt/ros/galactic/bin:/home/yiming/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yiming-RedmiBook-Pro-14S:@/tmp/.ICE-unix/2415,unix/yiming-RedmiBook-Pro-14S:/tmp/.ICE-unix/2415'), ('GTK_EXE_PREFIX', '/snap/code/132/usr'), ('INVOCATION_ID', 'ab293bca6f2945f7a1f2fab06a9e0bdd'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ab4cd3d3_d3ba_4111_ae47_ada2a4769917'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/132/usr/lib/locale'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('LIBVA_DRIVER_NAME', 'iHD'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-da788fd806.sock'), ('GNOME_TERMINAL_SERVICE', ':1.335'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/yiming/snap/code/132/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install/my_package:/home/yiming/training/train/ros_rv/install/my_demo:/home/yiming/training/train/ros_rv/install/demo:/opt/ros/galactic'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GST_PLUGIN_PATH', '/opt/intel/openvino_2021/data_processing/dl_streamer/lib:/opt/intel/openvino_2021/data_processing/gstreamer/lib/gstreamer-1.0'), ('ngraph_DIR', '/opt/intel/openvino_2021/deployment_tools/ngraph/cmake'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('InferenceEngine_DIR', '/opt/intel/openvino_2021/deployment_tools/inference_engine/share'), ('OpenCV_DIR', '/opt/intel/openvino_2021/opencv/cmake'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yiming/training/train/ros_rv/build/my_demo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dac6154cdffe2b3be3b38a5649cefd0'), ('XDG_DATA_DIRS', '/home/yiming/snap/code/132/.local/share:/home/yiming/snap/code/132:/snap/code/132/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/intel/openvino_2021/python/python3.8:/opt/intel/openvino_2021/python/python3:/opt/intel/openvino_2021/deployment_tools/tools/post_training_optimization_toolkit:/opt/intel/openvino_2021/deployment_tools/open_model_zoo/tools/accuracy_checker:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/dl_streamer/python:/opt/intel/openvino_2021/data_processing/gstreamer/lib/python3.8/site-packages:/opt/intel/openvino_2021/python/python3.8:/opt/intel/openvino_2021/python/python3:/opt/intel/openvino_2021/deployment_tools/tools/post_training_optimization_toolkit:/opt/intel/openvino_2021/deployment_tools/open_model_zoo/tools/accuracy_checker:/opt/intel/openvino_2021/deployment_tools/model_optimizer:/opt/intel/openvino_2021/data_processing/dl_streamer/python:/opt/intel/openvino_2021/data_processing/gstreamer/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yiming/training/train/ros_rv/install/my_demo:/home/yiming/training/train/ros_rv/install/my_package:/home/yiming/training/train/ros_rv/install/demo')]), 'shell': False}
+[0.140404] (my_package) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_package/CTestConfiguration.ini\n'}
+[0.140836] (my_package) StdoutLine: {'line': b'Parse Config file:/home/yiming/training/train/ros_rv/build/my_package/CTestConfiguration.ini\n'}
+[0.141141] (my_package) StdoutLine: {'line': b'   Site: yiming-RedmiBook-Pro-14S\n'}
+[0.141325] (my_package) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.141500] (my_package) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.141650] (my_package) StdoutLine: {'line': b'Create new tag: 20230703-0800 - Experimental\n'}
+[0.141799] (my_package) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_package/CTestConfiguration.ini\n'}
+[0.141951] (my_package) StdoutLine: {'line': b'Parse Config file:/home/yiming/training/train/ros_rv/build/my_package/CTestConfiguration.ini\n'}
+[0.142109] (my_package) StdoutLine: {'line': b'Test project /home/yiming/training/train/ros_rv/build/my_package\n'}
+[0.142347] (my_package) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.142587] (my_package) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.142739] (my_package) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.142917] (my_package) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.143063] (my_package) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.143205] (my_package) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.143347] (my_package) StdoutLine: {'line': b'test 1\n'}
+[0.143491] (my_package) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[0.143637] (my_package) StdoutLine: {'line': b'\n'}
+[0.143777] (my_package) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/copyright.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_copyright/copyright.txt" "--command" "/opt/ros/galactic/bin/ament_copyright" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/copyright.xunit.xml"\n'}
+[0.143932] (my_package) StdoutLine: {'line': b'1: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[0.144098] (my_package) StdoutLine: {'line': b'1: Test timeout computed to be: 120\n'}
+[0.147934] (my_demo) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini\n'}
+[0.148232] (my_demo) StdoutLine: {'line': b'Parse Config file:/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini\n'}
+[0.148367] (my_demo) StdoutLine: {'line': b'   Site: yiming-RedmiBook-Pro-14S\n'}
+[0.148496] (my_demo) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.148740] (my_demo) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.148877] (my_demo) StdoutLine: {'line': b'Create new tag: 20230703-0800 - Experimental\n'}
+[0.148999] (my_demo) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini\n'}
+[0.149123] (my_demo) StdoutLine: {'line': b'Parse Config file:/home/yiming/training/train/ros_rv/build/my_demo/CTestConfiguration.ini\n'}
+[0.149247] (my_demo) StdoutLine: {'line': b'Test project /home/yiming/training/train/ros_rv/build/my_demo\n'}
+[0.149474] (my_demo) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.149736] (my_demo) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.150111] (my_demo) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.150278] (my_demo) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.150437] (my_demo) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.150609] (my_demo) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.150766] (my_demo) StdoutLine: {'line': b'test 1\n'}
+[0.150946] (my_demo) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[0.151063] (my_demo) StdoutLine: {'line': b'\n'}
+[0.151176] (my_demo) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_copyright/copyright.txt" "--command" "/opt/ros/galactic/bin/ament_copyright" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml"\n'}
+[0.151306] (my_demo) StdoutLine: {'line': b'1: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[0.151417] (my_demo) StdoutLine: {'line': b'1: Test timeout computed to be: 120\n'}
+[0.203258] (-) TimerEvent: {}
+[0.205474] (my_package) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[0.205915] (my_package) StdoutLine: {'line': b'1:  - /opt/ros/galactic/bin/ament_copyright --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/copyright.xunit.xml\n'}
+[0.211486] (my_demo) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[0.211895] (my_demo) StdoutLine: {'line': b'1:  - /opt/ros/galactic/bin/ament_copyright --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml\n'}
+[0.303424] (-) TimerEvent: {}
+[0.403955] (-) TimerEvent: {}
+[0.504378] (-) TimerEvent: {}
+[0.514666] (my_package) StdoutLine: {'line': b'1: /opt/ros/galactic/bin/ament_copyright:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[0.515044] (my_package) StdoutLine: {'line': b'1:   from pkg_resources import load_entry_point\n'}
+[0.515138] (my_package) StdoutLine: {'line': b'1: src/my_node.cpp: could not find copyright notice\n'}
+[0.515216] (my_package) StdoutLine: {'line': b'1: 1 errors, checked 1 files\n'}
+[0.519821] (my_demo) StdoutLine: {'line': b'1: /opt/ros/galactic/bin/ament_copyright:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[0.520137] (my_demo) StdoutLine: {'line': b'1:   from pkg_resources import load_entry_point\n'}
+[0.520225] (my_demo) StdoutLine: {'line': b'1: src/demo.cpp: could not find copyright notice\n'}
+[0.520290] (my_demo) StdoutLine: {'line': b'1: 1 errors, checked 1 files\n'}
+[0.561920] (my_package) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.562191] (my_package) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/copyright.xunit.xml'\n"}
+[0.565222] (my_demo) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.565663] (my_demo) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml'\n"}
+[0.585975] (my_demo) StdoutLine: {'line': b'1/6 Test #1: copyright ........................***Failed    0.44 sec\n'}
+[0.586549] (my_demo) StdoutLine: {'line': b'test 2\n'}
+[0.586670] (my_demo) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[0.586801] (my_demo) StdoutLine: {'line': b'\n'}
+[0.586912] (my_demo) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/galactic/bin/ament_cppcheck" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml" "--include_dirs" "/home/yiming/training/train/ros_rv/src/my_demo/include"\n'}
+[0.587026] (my_demo) StdoutLine: {'line': b'2: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[0.587125] (my_demo) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[0.588307] (my_package) StdoutLine: {'line': b'1/6 Test #1: copyright ........................***Failed    0.45 sec\n'}
+[0.588807] (my_package) StdoutLine: {'line': b'test 2\n'}
+[0.588952] (my_package) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[0.589081] (my_package) StdoutLine: {'line': b'\n'}
+[0.589215] (my_package) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/galactic/bin/ament_cppcheck" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml" "--include_dirs" "/home/yiming/training/train/ros_rv/src/my_package/include"\n'}
+[0.589355] (my_package) StdoutLine: {'line': b'2: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[0.589458] (my_package) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[0.604595] (-) TimerEvent: {}
+[0.657940] (my_demo) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[0.658357] (my_demo) StdoutLine: {'line': b'2:  - /opt/ros/galactic/bin/ament_cppcheck --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml --include_dirs /home/yiming/training/train/ros_rv/src/my_demo/include\n'}
+[0.664185] (my_package) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[0.664684] (my_package) StdoutLine: {'line': b'2:  - /opt/ros/galactic/bin/ament_cppcheck --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml --include_dirs /home/yiming/training/train/ros_rv/src/my_package/include\n'}
+[0.704733] (-) TimerEvent: {}
+[0.805187] (-) TimerEvent: {}
+[0.898905] (my_demo) StdoutLine: {'line': b'2: /opt/ros/galactic/bin/ament_cppcheck:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[0.899243] (my_demo) StdoutLine: {'line': b'2:   from pkg_resources import load_entry_point\n'}
+[0.899433] (my_demo) StdoutLine: {'line': b'2: No problems found\n'}
+[0.900225] (my_package) StdoutLine: {'line': b'2: /opt/ros/galactic/bin/ament_cppcheck:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[0.900469] (my_package) StdoutLine: {'line': b'2:   from pkg_resources import load_entry_point\n'}
+[0.900631] (my_package) StdoutLine: {'line': b'2: No problems found\n'}
+[0.905385] (-) TimerEvent: {}
+[0.926142] (my_demo) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.926420] (my_demo) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cppcheck.xunit.xml'\n"}
+[0.926649] (my_package) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.926895] (my_package) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cppcheck.xunit.xml'\n"}
+[0.940973] (my_demo) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.35 sec\n'}
+[0.941355] (my_demo) StdoutLine: {'line': b'test 3\n'}
+[0.941465] (my_demo) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[0.941564] (my_demo) StdoutLine: {'line': b'\n'}
+[0.941661] (my_demo) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_cpplint/cpplint.txt" "--command" "/opt/ros/galactic/bin/ament_cpplint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml"\n'}
+[0.941784] (my_demo) StdoutLine: {'line': b'3: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[0.941885] (my_demo) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[0.941981] (my_package) StdoutLine: {'line': b'2/6 Test #2: cppcheck .........................   Passed    0.35 sec\n'}
+[0.942086] (my_package) StdoutLine: {'line': b'test 3\n'}
+[0.942182] (my_package) StdoutLine: {'line': b'    Start 3: cpplint\n'}
+[0.942282] (my_package) StdoutLine: {'line': b'\n'}
+[0.942380] (my_package) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cpplint.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_cpplint/cpplint.txt" "--command" "/opt/ros/galactic/bin/ament_cpplint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cpplint.xunit.xml"\n'}
+[0.942494] (my_package) StdoutLine: {'line': b'3: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[0.942592] (my_package) StdoutLine: {'line': b'3: Test timeout computed to be: 120\n'}
+[0.985513] (my_demo) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[0.985805] (my_demo) StdoutLine: {'line': b'3:  - /opt/ros/galactic/bin/ament_cpplint --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml\n'}
+[0.994721] (my_package) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[0.994975] (my_package) StdoutLine: {'line': b'3:  - /opt/ros/galactic/bin/ament_cpplint --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cpplint.xunit.xml\n'}
+[1.005786] (-) TimerEvent: {}
+[1.106155] (-) TimerEvent: {}
+[1.183653] (my_package) StdoutLine: {'line': b'3: /opt/ros/galactic/bin/ament_cpplint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.183902] (my_package) StdoutLine: {'line': b'3:   from pkg_resources import load_entry_point\n'}
+[1.184014] (my_package) StdoutLine: {'line': b'3: /home/yiming/training/train/ros_rv/src/my_package/src/my_node.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]\n'}
+[1.184125] (my_package) StdoutLine: {'line': b"3: Category 'legal/copyright' errors found: 1\n"}
+[1.184227] (my_package) StdoutLine: {'line': b'3: Total errors found: 1\n'}
+[1.184336] (my_package) StdoutLine: {'line': b"3: Using '--root=/home/yiming/training/train/ros_rv/src/my_package/src' argument\n"}
+[1.184444] (my_package) StdoutLine: {'line': b'3: \n'}
+[1.184563] (my_package) StdoutLine: {'line': b'3: Done processing /home/yiming/training/train/ros_rv/src/my_package/src/my_node.cpp\n'}
+[1.184717] (my_package) StdoutLine: {'line': b'3: \n'}
+[1.185005] (my_demo) StdoutLine: {'line': b'3: /opt/ros/galactic/bin/ament_cpplint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.185162] (my_demo) StdoutLine: {'line': b'3:   from pkg_resources import load_entry_point\n'}
+[1.185275] (my_demo) StdoutLine: {'line': b'3: /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]\n'}
+[1.185384] (my_demo) StdoutLine: {'line': b"3: Category 'legal/copyright' errors found: 1\n"}
+[1.185484] (my_demo) StdoutLine: {'line': b'3: Total errors found: 1\n'}
+[1.185582] (my_demo) StdoutLine: {'line': b"3: Using '--root=/home/yiming/training/train/ros_rv/src/my_demo/src' argument\n"}
+[1.185683] (my_demo) StdoutLine: {'line': b'3: \n'}
+[1.185779] (my_demo) StdoutLine: {'line': b'3: Done processing /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp\n'}
+[1.185881] (my_demo) StdoutLine: {'line': b'3: \n'}
+[1.203483] (my_package) StdoutLine: {'line': b'3: -- run_test.py: return code 1\n'}
+[1.203858] (my_package) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/cpplint.xunit.xml'\n"}
+[1.203977] (my_demo) StdoutLine: {'line': b'3: -- run_test.py: return code 1\n'}
+[1.204088] (my_demo) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml'\n"}
+[1.206250] (-) TimerEvent: {}
+[1.217929] (my_package) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................***Failed    0.28 sec\n'}
+[1.218258] (my_package) StdoutLine: {'line': b'test 4\n'}
+[1.218371] (my_package) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[1.218504] (my_package) StdoutLine: {'line': b'\n'}
+[1.218672] (my_package) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/lint_cmake.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/galactic/bin/ament_lint_cmake" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/lint_cmake.xunit.xml"\n'}
+[1.219045] (my_package) StdoutLine: {'line': b'4: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[1.219217] (my_package) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[1.219328] (my_demo) StdoutLine: {'line': b'3/6 Test #3: cpplint ..........................***Failed    0.28 sec\n'}
+[1.219449] (my_demo) StdoutLine: {'line': b'test 4\n'}
+[1.219580] (my_demo) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[1.219710] (my_demo) StdoutLine: {'line': b'\n'}
+[1.219842] (my_demo) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/galactic/bin/ament_lint_cmake" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml"\n'}
+[1.219976] (my_demo) StdoutLine: {'line': b'4: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[1.220073] (my_demo) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[1.272197] (my_demo) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[1.272515] (my_demo) StdoutLine: {'line': b'4:  - /opt/ros/galactic/bin/ament_lint_cmake --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml\n'}
+[1.275401] (my_package) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[1.275683] (my_package) StdoutLine: {'line': b'4:  - /opt/ros/galactic/bin/ament_lint_cmake --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/lint_cmake.xunit.xml\n'}
+[1.306399] (-) TimerEvent: {}
+[1.406762] (-) TimerEvent: {}
+[1.455419] (my_package) StdoutLine: {'line': b'4: /opt/ros/galactic/bin/ament_lint_cmake:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.455677] (my_package) StdoutLine: {'line': b'4:   from pkg_resources import load_entry_point\n'}
+[1.455803] (my_package) StdoutLine: {'line': b'4: \n'}
+[1.455916] (my_package) StdoutLine: {'line': b'4: No problems found\n'}
+[1.456115] (my_demo) StdoutLine: {'line': b'4: /opt/ros/galactic/bin/ament_lint_cmake:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.456243] (my_demo) StdoutLine: {'line': b'4:   from pkg_resources import load_entry_point\n'}
+[1.456346] (my_demo) StdoutLine: {'line': b'4: \n'}
+[1.456447] (my_demo) StdoutLine: {'line': b'4: No problems found\n'}
+[1.471050] (my_package) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.471408] (my_package) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/lint_cmake.xunit.xml'\n"}
+[1.471657] (my_demo) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.471780] (my_demo) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/lint_cmake.xunit.xml'\n"}
+[1.483331] (my_package) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.26 sec\n'}
+[1.483606] (my_package) StdoutLine: {'line': b'test 5\n'}
+[1.483713] (my_package) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[1.483816] (my_package) StdoutLine: {'line': b'\n'}
+[1.483917] (my_package) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/uncrustify.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/galactic/bin/ament_uncrustify" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/uncrustify.xunit.xml"\n'}
+[1.484040] (my_package) StdoutLine: {'line': b'5: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[1.484146] (my_package) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.488904] (my_demo) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................   Passed    0.27 sec\n'}
+[1.489404] (my_demo) StdoutLine: {'line': b'test 5\n'}
+[1.489628] (my_demo) StdoutLine: {'line': b'    Start 5: uncrustify\n'}
+[1.489790] (my_demo) StdoutLine: {'line': b'\n'}
+[1.489935] (my_demo) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/galactic/bin/ament_uncrustify" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml"\n'}
+[1.490129] (my_demo) StdoutLine: {'line': b'5: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[1.490272] (my_demo) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.506916] (-) TimerEvent: {}
+[1.542823] (my_package) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[1.543218] (my_package) StdoutLine: {'line': b'5:  - /opt/ros/galactic/bin/ament_uncrustify --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/uncrustify.xunit.xml\n'}
+[1.550710] (my_demo) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[1.551056] (my_demo) StdoutLine: {'line': b'5:  - /opt/ros/galactic/bin/ament_uncrustify --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml\n'}
+[1.607097] (-) TimerEvent: {}
+[1.707516] (-) TimerEvent: {}
+[1.729782] (my_package) StdoutLine: {'line': b'5: /opt/ros/galactic/bin/ament_uncrustify:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.730122] (my_package) StdoutLine: {'line': b'5:   from pkg_resources import load_entry_point\n'}
+[1.730300] (my_package) StdoutLine: {'line': b"5: No code style divergence in file 'src/my_node.cpp'\n"}
+[1.730461] (my_package) StdoutLine: {'line': b'5: \n'}
+[1.730601] (my_package) StdoutLine: {'line': b'5: No problems found\n'}
+[1.742800] (my_demo) StdoutLine: {'line': b'5: /opt/ros/galactic/bin/ament_uncrustify:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[1.743162] (my_demo) StdoutLine: {'line': b'5:   from pkg_resources import load_entry_point\n'}
+[1.743346] (my_demo) StdoutLine: {'line': b"5: No code style divergence in file 'src/demo.cpp'\n"}
+[1.743508] (my_demo) StdoutLine: {'line': b'5: \n'}
+[1.743672] (my_demo) StdoutLine: {'line': b'5: No problems found\n'}
+[1.748826] (my_package) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.749169] (my_package) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/uncrustify.xunit.xml'\n"}
+[1.757035] (my_package) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.27 sec\n'}
+[1.757295] (my_package) StdoutLine: {'line': b'test 6\n'}
+[1.757406] (my_package) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[1.757509] (my_package) StdoutLine: {'line': b'\n'}
+[1.757611] (my_package) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/xmllint.xunit.xml" "--package-name" "my_package" "--output-file" "/home/yiming/training/train/ros_rv/build/my_package/ament_xmllint/xmllint.txt" "--command" "/opt/ros/galactic/bin/ament_xmllint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/xmllint.xunit.xml"\n'}
+[1.757720] (my_package) StdoutLine: {'line': b'6: Working Directory: /home/yiming/training/train/ros_rv/src/my_package\n'}
+[1.757823] (my_package) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.764014] (my_demo) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.764411] (my_demo) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/uncrustify.xunit.xml'\n"}
+[1.777981] (my_demo) StdoutLine: {'line': b'5/6 Test #5: uncrustify .......................   Passed    0.29 sec\n'}
+[1.778249] (my_demo) StdoutLine: {'line': b'test 6\n'}
+[1.778361] (my_demo) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[1.778571] (my_demo) StdoutLine: {'line': b'\n'}
+[1.778677] (my_demo) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/galactic/share/ament_cmake_test/cmake/run_test.py" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml" "--package-name" "my_demo" "--output-file" "/home/yiming/training/train/ros_rv/build/my_demo/ament_xmllint/xmllint.txt" "--command" "/opt/ros/galactic/bin/ament_xmllint" "--xunit-file" "/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml"\n'}
+[1.778818] (my_demo) StdoutLine: {'line': b'6: Working Directory: /home/yiming/training/train/ros_rv/src/my_demo\n'}
+[1.778927] (my_demo) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.807659] (-) TimerEvent: {}
+[1.809740] (my_package) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_package':\n"}
+[1.810141] (my_package) StdoutLine: {'line': b'6:  - /opt/ros/galactic/bin/ament_xmllint --xunit-file /home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/xmllint.xunit.xml\n'}
+[1.832150] (my_demo) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':\n"}
+[1.832586] (my_demo) StdoutLine: {'line': b'6:  - /opt/ros/galactic/bin/ament_xmllint --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml\n'}
+[1.907852] (-) TimerEvent: {}
+[2.008338] (-) TimerEvent: {}
+[2.109057] (-) TimerEvent: {}
+[2.209650] (-) TimerEvent: {}
+[2.310217] (-) TimerEvent: {}
+[2.410822] (-) TimerEvent: {}
+[2.511658] (-) TimerEvent: {}
+[2.612488] (-) TimerEvent: {}
+[2.713292] (-) TimerEvent: {}
+[2.813885] (-) TimerEvent: {}
+[2.914631] (-) TimerEvent: {}
+[2.979843] (my_package) StdoutLine: {'line': b'6: /opt/ros/galactic/bin/ament_xmllint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[2.980489] (my_package) StdoutLine: {'line': b'6:   from pkg_resources import load_entry_point\n'}
+[2.980709] (my_package) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[2.980917] (my_package) StdoutLine: {'line': b'6: \n'}
+[2.981124] (my_package) StdoutLine: {'line': b'6: No problems found\n'}
+[2.981337] (my_demo) StdoutLine: {'line': b'6: /opt/ros/galactic/bin/ament_xmllint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html\n'}
+[2.981558] (my_demo) StdoutLine: {'line': b'6:   from pkg_resources import load_entry_point\n'}
+[2.981759] (my_demo) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[2.981967] (my_demo) StdoutLine: {'line': b'6: \n'}
+[2.982178] (my_demo) StdoutLine: {'line': b'6: No problems found\n'}
+[3.008276] (my_demo) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.008542] (my_demo) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/xmllint.xunit.xml'\n"}
+[3.008722] (my_package) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[3.008817] (my_package) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_package/test_results/my_package/xmllint.xunit.xml'\n"}
+[3.014845] (-) TimerEvent: {}
+[3.027518] (my_package) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    1.27 sec\n'}
+[3.028274] (my_demo) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    1.25 sec\n'}
+[3.028651] (my_package) StdoutLine: {'line': b'\n'}
+[3.028779] (my_package) StdoutLine: {'line': b'67% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 6\n'}
+[3.028892] (my_package) StdoutLine: {'line': b'\n'}
+[3.029069] (my_package) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.029171] (my_package) StdoutLine: {'line': b'copyright     =   0.45 sec*proc (1 test)\n'}
+[3.029273] (my_package) StdoutLine: {'line': b'cppcheck      =   0.35 sec*proc (1 test)\n'}
+[3.029374] (my_package) StdoutLine: {'line': b'cpplint       =   0.28 sec*proc (1 test)\n'}
+[3.029475] (my_package) StdoutLine: {'line': b'lint_cmake    =   0.26 sec*proc (1 test)\n'}
+[3.029576] (my_package) StdoutLine: {'line': b'linter        =   2.88 sec*proc (6 tests)\n'}
+[3.029676] (my_package) StdoutLine: {'line': b'uncrustify    =   0.27 sec*proc (1 test)\n'}
+[3.029776] (my_package) StdoutLine: {'line': b'xmllint       =   1.27 sec*proc (1 test)\n'}
+[3.029877] (my_package) StdoutLine: {'line': b'\n'}
+[3.029978] (my_package) StdoutLine: {'line': b'Total Test time (real) =   2.89 sec\n'}
+[3.030079] (my_package) StdoutLine: {'line': b'\n'}
+[3.030179] (my_package) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[3.030282] (my_package) StdoutLine: {'line': b'\t\x1b[0;31m  1 - copyright (Failed)\x1b[0;0m\n'}
+[3.030384] (my_package) StdoutLine: {'line': b'\t\x1b[0;31m  3 - cpplint (Failed)\x1b[0;0m\n'}
+[3.030485] (my_demo) StdoutLine: {'line': b'\n'}
+[3.030586] (my_demo) StdoutLine: {'line': b'67% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 6\n'}
+[3.030687] (my_demo) StdoutLine: {'line': b'\n'}
+[3.030813] (my_demo) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.030922] (my_demo) StdoutLine: {'line': b'copyright     =   0.44 sec*proc (1 test)\n'}
+[3.031032] (my_demo) StdoutLine: {'line': b'cppcheck      =   0.35 sec*proc (1 test)\n'}
+[3.031176] (my_demo) StdoutLine: {'line': b'cpplint       =   0.28 sec*proc (1 test)\n'}
+[3.031317] (my_demo) StdoutLine: {'line': b'lint_cmake    =   0.27 sec*proc (1 test)\n'}
+[3.031461] (my_demo) StdoutLine: {'line': b'linter        =   2.88 sec*proc (6 tests)\n'}
+[3.031603] (my_demo) StdoutLine: {'line': b'uncrustify    =   0.29 sec*proc (1 test)\n'}
+[3.031745] (my_demo) StdoutLine: {'line': b'xmllint       =   1.25 sec*proc (1 test)\n'}
+[3.031886] (my_demo) StdoutLine: {'line': b'\n'}
+[3.032028] (my_demo) StdoutLine: {'line': b'Total Test time (real) =   2.88 sec\n'}
+[3.032171] (my_demo) StdoutLine: {'line': b'\n'}
+[3.032311] (my_demo) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[3.032455] (my_demo) StdoutLine: {'line': b'\t\x1b[0;31m  1 - copyright (Failed)\x1b[0;0m\n'}
+[3.032597] (my_demo) StdoutLine: {'line': b'\t\x1b[0;31m  3 - cpplint (Failed)\x1b[0;0m\n'}
+[3.055994] (my_demo) StderrLine: {'line': b'Errors while running CTest\n'}
+[3.056610] (my_demo) StderrLine: {'line': b'Output from these tests are in: /home/yiming/training/train/ros_rv/build/my_demo/Testing/Temporary/LastTest.log\n'}
+[3.056799] (my_demo) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[3.056961] (my_package) StderrLine: {'line': b'Errors while running CTest\n'}
+[3.057150] (my_package) StderrLine: {'line': b'Output from these tests are in: /home/yiming/training/train/ros_rv/build/my_package/Testing/Temporary/LastTest.log\n'}
+[3.057311] (my_package) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[3.067107] (my_demo) CommandEnded: {'returncode': 8}
+[3.068394] (my_demo) TestFailure: {'identifier': 'my_demo'}
+[3.068490] (my_demo) JobEnded: {'identifier': 'my_demo', 'rc': 0}
+[3.070607] (my_package) CommandEnded: {'returncode': 8}
+[3.071851] (my_package) TestFailure: {'identifier': 'my_package'}
+[3.071923] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[3.073606] (-) EventReactorShutdown: {}

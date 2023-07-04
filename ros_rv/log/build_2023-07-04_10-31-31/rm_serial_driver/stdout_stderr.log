@@ -1,0 +1,85 @@
+-- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/yiming/training/train/ros_rv/src/rm_serial_driver-main/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yiming/training/train/ros_rv/build/rm_serial_driver
+[ 20%] [32mBuilding CXX object CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/rm_serial_driver.dir/src/crc.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/rm_serial_driver_node.dir/rclcpp_components/node_main_rm_serial_driver_node.cpp.o[0m
+In file included from [01m[K/usr/include/c++/9/chrono:41[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2/time.h:32[m[K,
+                 from [01m[K/usr/include/pthread.h:23[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:35[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:148[m[K,
+                 from [01m[K/usr/include/c++/9/ext/atomicity.h:35[m[K,
+                 from [01m[K/usr/include/c++/9/memory:73[m[K,
+                 from [01m[K/home/yiming/training/train/ros_rv/build/rm_serial_driver/rclcpp_components/node_main_rm_serial_driver_node.cpp:15[m[K:
+[01m[K/usr/include/c++/9/ctime:60:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::clock_t[m[K’ has not been declared
+   60 |   using ::[01;31m[Kclock_t[m[K;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:64:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::clock[m[K’ has not been declared
+   64 |   using ::[01;31m[Kclock[m[K;
+      |           [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:65:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::difftime[m[K’ has not been declared
+   65 |   using ::[01;31m[Kdifftime[m[K;
+      |           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:66:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::mktime[m[K’ has not been declared
+   66 |   using ::[01;31m[Kmktime[m[K;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:67:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::time[m[K’ has not been declared
+   67 |   using ::[01;31m[Ktime[m[K;
+      |           [01;31m[K^~~~[m[K
+[01m[K/usr/include/c++/9/ctime:68:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::asctime[m[K’ has not been declared
+   68 |   using ::[01;31m[Kasctime[m[K;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:69:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::ctime[m[K’ has not been declared
+   69 |   using ::[01;31m[Kctime[m[K;
+      |           [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:70:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::gmtime[m[K’ has not been declared
+   70 |   using ::[01;31m[Kgmtime[m[K;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:71:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::localtime[m[K’ has not been declared
+   71 |   using ::[01;31m[Klocaltime[m[K;
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:72:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::strftime[m[K’ has not been declared
+   72 |   using ::[01;31m[Kstrftime[m[K;
+      |           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/ctime:80:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::timespec_get[m[K’ has not been declared
+   80 |   using ::[01;31m[Ktimespec_get[m[K;
+      |           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/rm_serial_driver.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+   10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76: CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial_driver.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/yiming/training/train/ros_rv/build/rm_serial_driver/rclcpp_components/node_main_rm_serial_driver_node.cpp:20[m[K:
+[01m[K/usr/include/c++/9/thread:[m[K In function ‘[01m[Kvoid std::this_thread::sleep_for(const std::chrono::duration<_Rep1, _Period1>&)[m[K’:
+[01m[K/usr/include/c++/9/thread:378:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::nanosleep[m[K’ has not been declared
+  378 |  while (::[01;31m[Knanosleep[m[K(&__ts, &__ts) == -1 && errno == EINTR)
+      |           [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rm_serial_driver_node.dir/build.make:76: CMakeFiles/rm_serial_driver_node.dir/rclcpp_components/node_main_rm_serial_driver_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/rm_serial_driver_node.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/my_serial_node",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dmy_serial_node_EXPORTS -I/home/yiming/training/train/ros_rv/src/my_serial_node/include -isystem /opt/ros/galactic/include -isystem /usr/include/eigen3 -std=gnu++17 -fPIC   -Wall -Werror -o CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o -c /home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp",
+  "file": "/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp",
+  "output": "CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o"
+},
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/my_serial_node",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dmy_serial_node_EXPORTS -I/home/yiming/training/train/ros_rv/src/my_serial_node/include -isystem /opt/ros/galactic/include -isystem /usr/include/eigen3 -std=gnu++17 -fPIC   -Wall -Werror -o CMakeFiles/my_serial_node.dir/src/crc.cpp.o -c /home/yiming/training/train/ros_rv/src/my_serial_node/src/crc.cpp",
+  "file": "/home/yiming/training/train/ros_rv/src/my_serial_node/src/crc.cpp",
+  "output": "CMakeFiles/my_serial_node.dir/src/crc.cpp.o"
+},
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/my_serial_node",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -isystem /opt/ros/galactic/include -std=gnu++17   -Wall -Werror -o CMakeFiles/my_serial_node_node.dir/rclcpp_components/node_main_my_serial_node_node.cpp.o -c /home/yiming/training/train/ros_rv/build/my_serial_node/rclcpp_components/node_main_my_serial_node_node.cpp",
+  "file": "/home/yiming/training/train/ros_rv/build/my_serial_node/rclcpp_components/node_main_my_serial_node_node.cpp",
+  "output": "CMakeFiles/my_serial_node_node.dir/rclcpp_components/node_main_my_serial_node_node.cpp.o"
+}
+]

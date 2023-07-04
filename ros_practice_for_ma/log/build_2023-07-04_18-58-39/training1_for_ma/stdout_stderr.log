@@ -1,0 +1,28 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:5:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    5 | int main([01;35m[Kint argc[m[K, char** argv){
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:5:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    5 | int main(int argc, [01;35m[Kchar** argv[m[K){
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker
+-- Set runtime path of "/home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/lib/training1_for_ma/talker" to ""
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/package_run_dependencies/training1_for_ma
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/parent_prefix_path/training1_for_ma
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.sh
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.sh
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/environment/path.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.bash
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.sh
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.zsh
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/local_setup.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/ament_index/resource_index/packages/training1_for_ma
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig.cmake
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig-version.cmake
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma/share/training1_for_ma/package.xml

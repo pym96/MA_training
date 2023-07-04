@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/rm_serial_driver",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Drm_serial_driver_EXPORTS -I/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/include -isystem /opt/ros/galactic/include -isystem /usr/include/eigen3 -std=gnu++17 -fPIC   -Wall -Werror -o CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o -c /home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/rm_serial_driver.cpp",
+  "file": "/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/rm_serial_driver.cpp",
+  "output": "CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o"
+},
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/rm_serial_driver",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Drm_serial_driver_EXPORTS -I/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/include -isystem /opt/ros/galactic/include -isystem /usr/include/eigen3 -std=gnu++17 -fPIC   -Wall -Werror -o CMakeFiles/rm_serial_driver.dir/src/crc.cpp.o -c /home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/crc.cpp",
+  "file": "/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/crc.cpp",
+  "output": "CMakeFiles/rm_serial_driver.dir/src/crc.cpp.o"
+},
+{
+  "directory": "/home/yiming/training/train/ros_rv/build/rm_serial_driver",
+  "command": "/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -isystem /opt/ros/galactic/include -std=gnu++17   -Wall -Werror -o CMakeFiles/rm_serial_driver_node.dir/rclcpp_components/node_main_rm_serial_driver_node.cpp.o -c /home/yiming/training/train/ros_rv/build/rm_serial_driver/rclcpp_components/node_main_rm_serial_driver_node.cpp",
+  "file": "/home/yiming/training/train/ros_rv/build/rm_serial_driver/rclcpp_components/node_main_rm_serial_driver_node.cpp",
+  "output": "CMakeFiles/rm_serial_driver_node.dir/rclcpp_components/node_main_rm_serial_driver_node.cpp.o"
+}
+]

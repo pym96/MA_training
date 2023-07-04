@@ -1,0 +1,179 @@
+[0.327s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.327s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f6844f6ff40>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f6844f6ff40>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f6844e947c0>)
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.361s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yiming/training/train/ros_rv'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extension 'ignore'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extension 'ignore_ament_install'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extensions ['colcon_pkg']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extension 'colcon_pkg'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extensions ['colcon_meta']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extension 'colcon_meta'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extensions ['ros']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_demo) by extension 'ros'
+[0.379s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_demo' with type 'ros.ament_cmake' and name 'my_demo'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extensions ['colcon_pkg']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extension 'colcon_pkg'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extensions ['colcon_meta']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_serial_node) by extension 'ros'
+[0.380s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_serial_node' with type 'ros.ament_cmake' and name 'my_serial_node'
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.405s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 264 installed packages in /opt/ros/galactic
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_target' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'my_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.460s] DEBUG:colcon.colcon_core.verb:Building package 'my_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yiming/training/train/ros_rv/build/my_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yiming/training/train/ros_rv/install/my_demo', 'merge_install': False, 'path': '/home/yiming/training/train/ros_rv/src/my_demo', 'symlink_install': False, 'test_result_base': None}
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_args' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_target' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'my_serial_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.461s] DEBUG:colcon.colcon_core.verb:Building package 'my_serial_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yiming/training/train/ros_rv/build/my_serial_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yiming/training/train/ros_rv/install/my_serial_node', 'merge_install': False, 'path': '/home/yiming/training/train/ros_rv/src/my_serial_node', 'symlink_install': False, 'test_result_base': None}
+[0.462s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.466s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.466s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yiming/training/train/ros_rv/src/my_demo' with build type 'ament_cmake'
+[0.466s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yiming/training/train/ros_rv/src/my_demo'
+[0.472s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.481s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yiming/training/train/ros_rv/src/my_serial_node' with build type 'ament_cmake'
+[0.481s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yiming/training/train/ros_rv/src/my_serial_node'
+[0.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[0.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[0.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo
+[0.799s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_demo)
+[0.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo' for CMake module files
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo' for CMake config files
+[0.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_demo', 'cmake_prefix_path')
+[0.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.ps1'
+[0.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.dsv'
+[0.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.sh'
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib'
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/bin'
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib/pkgconfig/my_demo.pc'
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib/python3.8/site-packages'
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/bin'
+[0.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.ps1'
+[0.818s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.dsv'
+[0.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.sh'
+[0.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.bash'
+[0.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.zsh'
+[0.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_rv/install/my_demo/share/colcon-core/packages/my_demo)
+[0.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_demo)
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo' for CMake module files
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo' for CMake config files
+[0.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_demo', 'cmake_prefix_path')
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.ps1'
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.dsv'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/hook/cmake_prefix_path.sh'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/bin'
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib/pkgconfig/my_demo.pc'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/lib/python3.8/site-packages'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_demo/bin'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.ps1'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.dsv'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.sh'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.bash'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.zsh'
+[0.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_rv/install/my_demo/share/colcon-core/packages/my_demo)
+[1.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[1.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_serial_node)
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node' for CMake module files
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node' for CMake config files
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node/bin'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node/lib/pkgconfig/my_serial_node.pc'
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node/lib/python3.8/site-packages'
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_rv/install/my_serial_node/bin'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_serial_node/share/my_serial_node/package.ps1'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_rv/install/my_serial_node/share/my_serial_node/package.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_serial_node/share/my_serial_node/package.sh'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_serial_node/share/my_serial_node/package.bash'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_rv/install/my_serial_node/share/my_serial_node/package.zsh'
+[1.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_rv/install/my_serial_node/share/colcon-core/packages/my_serial_node)
+[1.157s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.158s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.158s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[1.158s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.169s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.169s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.188s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.194s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_rv/install/local_setup.ps1'
+[1.196s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yiming/training/train/ros_rv/install/_local_setup_util_ps1.py'
+[1.199s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_rv/install/setup.ps1'
+[1.201s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_rv/install/local_setup.sh'
+[1.202s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yiming/training/train/ros_rv/install/_local_setup_util_sh.py'
+[1.203s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_rv/install/setup.sh'
+[1.206s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_rv/install/local_setup.bash'
+[1.207s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_rv/install/setup.bash'
+[1.210s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_rv/install/local_setup.zsh'
+[1.211s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_rv/install/setup.zsh'

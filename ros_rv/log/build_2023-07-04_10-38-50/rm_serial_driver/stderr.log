@@ -1,0 +1,14 @@
+[31mCMake Error at CMakeLists.txt:19 (message):
+  Syntax error in cmake code at
+
+    /home/yiming/training/train/ros_rv/src/rm_serial_driver-main/CMakeLists.txt:19
+
+  when parsing string
+
+    $PATH{tf2_geometry_msgs}
+
+  Syntax $PATH{{} is not supported.  Only ${}, $ENV{}, and $CACHE{} are
+  allowed.
+
+[0m
+make: *** [Makefile:335: cmake_check_build_system] Error 1

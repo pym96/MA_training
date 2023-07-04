@@ -1,0 +1,22 @@
+[0.048s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_package -- -j16 -l16
+[0.128s] [100%] Built target my_node
+[0.145s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_package -- -j16 -l16
+[0.276s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_package
+[0.315s] -- Install configuration: ""
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/lib/my_package/my_node
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[0.316s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.sh
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.dsv
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.bash
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.sh
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.zsh
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.dsv
+[0.317s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.dsv
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/packages/my_package
+[0.317s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[0.318s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[0.318s] -- Up-to-date: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.xml
+[0.328s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_package

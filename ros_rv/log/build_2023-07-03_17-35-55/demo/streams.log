@@ -1,0 +1,60 @@
+[0.035s] Invoking command in '/home/yiming/training/train/ros_rv/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/demo -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/demo
+[0.155s] -- The C compiler identification is GNU 9.4.0
+[0.246s] -- The CXX compiler identification is GNU 9.4.0
+[0.267s] -- Detecting C compiler ABI info
+[0.373s] -- Detecting C compiler ABI info - done
+[0.395s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.395s] -- Detecting C compile features
+[0.396s] -- Detecting C compile features - done
+[0.399s] -- Detecting CXX compiler ABI info
+[0.514s] -- Detecting CXX compiler ABI info - done
+[0.531s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.531s] -- Detecting CXX compile features
+[0.532s] -- Detecting CXX compile features - done
+[0.533s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.565s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.565s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.671s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.718s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.902s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.947s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.039s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.093s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.097s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.113s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.113s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.220s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.220s] -- Looking for pthread_create in pthreads
+[1.307s] -- Looking for pthread_create in pthreads - not found
+[1.307s] -- Looking for pthread_create in pthread
+[1.410s] -- Looking for pthread_create in pthread - found
+[1.413s] -- Found Threads: TRUE  
+[1.538s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.622s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.623s] -- Added test 'lint_cmake' to check CMake code style
+[1.624s] -- Added test 'xmllint' to check XML markup files
+[1.625s] -- Configuring done (1.6s)
+[1.628s] -- Generating done (0.0s)
+[1.630s] -- Build files have been written to: /home/yiming/training/train/ros_rv/build/demo
+[1.643s] Invoked command in '/home/yiming/training/train/ros_rv/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/demo -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/demo
+[1.650s] Invoking command in '/home/yiming/training/train/ros_rv/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/demo -- -j16 -l16
+[1.711s] Invoked command in '/home/yiming/training/train/ros_rv/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/demo -- -j16 -l16
+[1.828s] Invoking command in '/home/yiming/training/train/ros_rv/build/demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/demo
+[1.860s] -- Install configuration: ""
+[1.860s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+[1.860s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+[1.861s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/environment/ament_prefix_path.sh
+[1.861s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/environment/ament_prefix_path.dsv
+[1.861s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/environment/path.sh
+[1.862s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/environment/path.dsv
+[1.862s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/local_setup.bash
+[1.862s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/local_setup.sh
+[1.862s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/local_setup.zsh
+[1.863s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/local_setup.dsv
+[1.863s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/package.dsv
+[1.863s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/ament_index/resource_index/packages/demo
+[1.863s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/cmake/demoConfig.cmake
+[1.864s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/cmake/demoConfig-version.cmake
+[1.864s] -- Installing: /home/yiming/training/train/ros_rv/install/demo/share/demo/package.xml
+[1.875s] Invoked command in '/home/yiming/training/train/ros_rv/build/demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/demo

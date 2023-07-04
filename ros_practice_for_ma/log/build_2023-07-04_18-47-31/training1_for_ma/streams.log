@@ -1,0 +1,36 @@
+[0.031s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma
+[0.079s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.102s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.182s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.202s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.204s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.426s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.460s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.461s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.476s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.612s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.693s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.693s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.694s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include>
+[0.694s] -- Configured cppcheck exclude dirs and/or files: 
+[0.694s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.694s] -- Configured cpplint exclude dirs and/or files: 
+[0.695s] -- Added test 'lint_cmake' to check CMake code style
+[0.696s] -- Added test 'uncrustify' to check C / C++ code style
+[0.696s] -- Configured uncrustify additional arguments: 
+[0.696s] -- Added test 'xmllint' to check XML markup files
+[0.697s] -- Configuring done (0.6s)
+[0.706s] -- Generating done (0.0s)
+[0.707s] -- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma
+[0.717s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/install/training1_for_ma
+[0.722s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.800s] [ 50%] [32mBuilding CXX object CMakeFiles/training1_for_ma.dir/src/transform.cpp.o[0m
+[6.252s] [100%] [32m[1mLinking CXX executable training1_for_ma[0m
+[6.462s] /usr/bin/ld: CMakeFiles/training1_for_ma.dir/src/transform.cpp.o: in function `rclcpp::Publisher<geometry_msgs::PoseArray_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[6.463s] transform.cpp:(.text._ZN6rclcpp9PublisherIN13geometry_msgs10PoseArray_ISaIvEEES3_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS3_EE[_ZN6rclcpp9PublisherIN13geometry_msgs10PoseArray_ISaIvEEES3_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS3_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::PoseArray_<std::allocator<void> > >()'
+[6.463s] collect2: error: ld returned 1 exit status
+[6.464s] make[2]: *** [CMakeFiles/training1_for_ma.dir/build.make:165: training1_for_ma] Error 1
+[6.464s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/training1_for_ma.dir/all] Error 2
+[6.464s] make: *** [Makefile:146: all] Error 2
+[6.474s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

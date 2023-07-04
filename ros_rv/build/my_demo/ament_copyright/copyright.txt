@@ -1,0 +1,11 @@
+-- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+ - /opt/ros/galactic/bin/ament_copyright --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml
+
+/opt/ros/galactic/bin/ament_copyright:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import load_entry_point
+src/demo.cpp: could not find copyright notice
+1 errors, checked 1 files
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/copyright.xunit.xml'

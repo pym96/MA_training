@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_package.cppcheck"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.024"
+  skipped="0"
+>
+  <testcase
+    name="src/my_node.cpp"
+    classname="my_package.cppcheck"/>
+  <system-out>Checked files:
+* src/my_node.cpp</system-out>
+</testsuite>

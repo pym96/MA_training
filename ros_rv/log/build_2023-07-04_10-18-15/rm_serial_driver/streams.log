@@ -1,0 +1,11 @@
+[0.032s] Invoking command in '/home/yiming/training/train/ros_rv/build/rm_serial_driver': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/rm_serial_driver -- -j16 -l16
+[0.108s] [ 20%] [32mBuilding CXX object CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[0.113s] [ 60%] Built target rm_serial_driver_node
+[0.426s] [01m[K/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/src/rm_serial_driver.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.426s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[0.426s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.427s] compilation terminated.
+[0.429s] make[2]: *** [CMakeFiles/rm_serial_driver.dir/build.make:76: CMakeFiles/rm_serial_driver.dir/src/rm_serial_driver.cpp.o] Error 1
+[0.429s] make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial_driver.dir/all] Error 2
+[0.430s] make: *** [Makefile:146: all] Error 2
+[0.442s] Invoked command in '/home/yiming/training/train/ros_rv/build/rm_serial_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/rm_serial_driver -- -j16 -l16

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_demo.cpplint"
+  tests="1"
+  failures="1"
+  errors="0"
+  time="0.011"
+>
+  <testcase
+    name="legal/copyright [5] (/home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp:0)"
+    classname="my_demo.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <system-out>Checked files:
+* /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp</system-out>
+</testsuite>

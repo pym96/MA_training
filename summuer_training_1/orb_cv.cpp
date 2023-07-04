@@ -1,6 +1,8 @@
 // Copyright 2023 Pan Jiaxiang.
 // Licensed under the MIT License.
 
+// SSH: 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
+
 #include <iostream>
 #include <opencv2/core/core.hpp>
 #include <opencv2/features2d/features2d.hpp>

@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target '/home/yiming/training/train/ros_rv/src/my_serial_node/src/rm_serial_driver.cpp', needed by 'CMakeFiles/my_serial_node.dir/src/rm_serial_driver.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:146: all] Error 2

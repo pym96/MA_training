@@ -1,0 +1,16 @@
+-- run_test.py: invoking following command in '/home/yiming/training/train/ros_rv/src/my_demo':
+ - /opt/ros/galactic/bin/ament_cpplint --xunit-file /home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml
+
+/opt/ros/galactic/bin/ament_cpplint:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import load_entry_point
+/home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+Category 'legal/copyright' errors found: 1
+Total errors found: 1
+Using '--root=/home/yiming/training/train/ros_rv/src/my_demo/src' argument
+
+Done processing /home/yiming/training/train/ros_rv/src/my_demo/src/demo.cpp
+
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/yiming/training/train/ros_rv/build/my_demo/test_results/my_demo/cpplint.xunit.xml'

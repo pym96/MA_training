@@ -1,0 +1,64 @@
+In file included from [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:22[m[K:
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:41:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_aim_interfaces[m[K’ has not been declared
+   41 |   void sendData([01;31m[Kauto_aim_interfaces[m[K::msg::Target::SharedPtr msg);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:72:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_aim_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kbuiltin_interfaces[m[K’?
+   72 |   rclcpp::Subscription<[01;31m[Kauto_aim_interfaces[m[K::msg::Target>::SharedPtr target_sub_;
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kbuiltin_interfaces[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:72:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   72 |   rclcpp::Subscription<auto_aim_interfaces::msg::Target[01;31m[K>[m[K::SharedPtr target_sub_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:72:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:72:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   72 |   rclcpp::Subscription<auto_aim_interfaces::msg::Target>::[01;31m[KSharedPtr[m[K target_sub_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/include/my_serial_node/rm_serial_driver.hpp:72:69:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_sub_[m[K’ does not name a type
+   72 |   rclcpp::Subscription<auto_aim_interfaces::msg::Target>::SharedPtr [01;31m[Ktarget_sub_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:[m[K In constructor ‘[01m[Krm_serial_driver::RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:73:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_sub_[m[K’ was not declared in this scope
+   73 |   [01;31m[Ktarget_sub_[m[K = this->create_subscription<auto_aim_interfaces::msg::Target>(
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:73:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_aim_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kbuiltin_interfaces[m[K’?
+   73 |   target_sub_ = this->create_subscription<[01;31m[Kauto_aim_interfaces[m[K::msg::Target>(
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                           [32m[Kbuiltin_interfaces[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:73:23:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   73 |   target_sub_ = this->[01;31m[Kcreate_subscription<auto_aim_interfaces::msg::Target>[m[K(
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:75:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krm_serial_driver::RMSerialDriver::create_subscription<<expression error> >(const char [16], rclcpp::SensorDataQoS, std::_Bind_helper<false, void (rm_serial_driver::RMSerialDriver::*)(int), rm_serial_driver::RMSerialDriver*, const std::_Placeholder<1>&>::type)[m[K’
+   75 |     std::bind(&RMSerialDriver::sendData, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+                 from [01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:10[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  229 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:229:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:75:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   75 |     std::bind(&RMSerialDriver::sendData, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                                      [01;31m[K^[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:[m[K At global scope:
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:153:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_aim_interfaces[m[K’ does not name a type; did you mean ‘[01m[Kbuiltin_interfaces[m[K’?
+  153 | void RMSerialDriver::sendData(const [01;31m[Kauto_aim_interfaces[m[K::msg::Target::SharedPtr msg)
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kbuiltin_interfaces[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:153:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  153 | void RMSerialDriver::sendData(const auto_aim_interfaces::msg[01;31m[K::[m[KTarget::SharedPtr msg)
+      |                                                             [01;31m[K^~[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:153:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  153 | void RMSerialDriver::sendData[34m[K([m[Kconst auto_aim_interfaces::msg[01;31m[K:[m[K[32m[K:[m[KTarget::SharedPtr msg)
+      |                              [34m[K~[m[K                              [01;31m[K^[m[K[32m[K~[m[K
+      |                                                             [32m[K)[m[K
+[01m[K/home/yiming/training/train/ros_rv/src/my_serial_node/src/ma_serial.cpp:153:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  153 | void RMSerialDriver::sendData(const auto_aim_interfaces::msg[01;31m[K::[m[KTarget::SharedPtr msg)
+      |                                                             [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/my_serial_node.dir/build.make:76: CMakeFiles/my_serial_node.dir/src/ma_serial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

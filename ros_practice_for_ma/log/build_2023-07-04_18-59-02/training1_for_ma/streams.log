@@ -1,0 +1,10 @@
+[0.036s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.144s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/transform.cpp.o[0m
+[5.622s] [100%] [32m[1mLinking CXX executable talker[0m
+[5.829s] /usr/bin/ld: CMakeFiles/talker.dir/src/transform.cpp.o: in function `rclcpp::Publisher<geometry_msgs::PoseArray_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[5.829s] transform.cpp:(.text._ZN6rclcpp9PublisherIN13geometry_msgs10PoseArray_ISaIvEEES3_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS3_EE[_ZN6rclcpp9PublisherIN13geometry_msgs10PoseArray_ISaIvEEES3_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS3_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::PoseArray_<std::allocator<void> > >()'
+[5.829s] collect2: error: ld returned 1 exit status
+[5.830s] make[2]: *** [CMakeFiles/talker.dir/build.make:145: talker] Error 1
+[5.831s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2
+[5.831s] make: *** [Makefile:146: all] Error 2
+[5.838s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

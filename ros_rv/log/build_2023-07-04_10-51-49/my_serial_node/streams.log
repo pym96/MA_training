@@ -1,0 +1,7 @@
+[0.035s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16
+[0.110s] make[2]: *** No rule to make target '/home/yiming/training/train/ros_rv/src/my_serial_node/src/rm_serial_driver.cpp', needed by 'CMakeFiles/my_serial_node.dir/src/rm_serial_driver.cpp.o'.  Stop.
+[0.111s] make[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_serial_node.dir/all] Error 2
+[0.111s] make[1]: *** Waiting for unfinished jobs....
+[0.132s] [ 40%] Built target my_serial_node_node
+[0.133s] make: *** [Makefile:146: all] Error 2
+[0.142s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_serial_node -- -j16 -l16

@@ -1,0 +1,23 @@
+[0.034s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[0.119s] [100%] Built target demo
+[0.134s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_demo -- -j16 -l16
+[0.263s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_demo': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo
+[0.297s] -- Install configuration: ""
+[0.298s] -- Execute custom install script
+[0.298s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/lib/my_demo/demo
+[0.299s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/package_run_dependencies/my_demo
+[0.300s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/parent_prefix_path/my_demo
+[0.300s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/ament_prefix_path.sh
+[0.301s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/ament_prefix_path.dsv
+[0.302s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/path.sh
+[0.302s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/environment/path.dsv
+[0.303s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.bash
+[0.303s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.sh
+[0.304s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.zsh
+[0.305s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/local_setup.dsv
+[0.305s] -- Symlinking: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.dsv
+[0.310s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/ament_index/resource_index/packages/my_demo
+[0.310s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/cmake/my_demoConfig.cmake
+[0.310s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/cmake/my_demoConfig-version.cmake
+[0.311s] -- Up-to-date symlink: /home/yiming/training/train/ros_rv/install/my_demo/share/my_demo/package.xml
+[0.321s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_demo

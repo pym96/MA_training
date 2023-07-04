@@ -1,0 +1,45 @@
+[0.037s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_serial_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_serial_node -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_serial_node
+[0.146s] -- The C compiler identification is GNU 9.4.0
+[0.237s] -- The CXX compiler identification is GNU 9.4.0
+[0.257s] -- Detecting C compiler ABI info
+[0.351s] -- Detecting C compiler ABI info - done
+[0.371s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.372s] -- Detecting C compile features
+[0.372s] -- Detecting C compile features - done
+[0.375s] -- Detecting CXX compiler ABI info
+[0.474s] -- Detecting CXX compiler ABI info - done
+[0.489s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.490s] -- Detecting CXX compile features
+[0.490s] -- Detecting CXX compile features - done
+[0.491s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.528s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.528s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.616s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[0.647s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.652s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.825s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.871s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.957s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.040s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[1.043s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[1.108s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.110s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.126s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.126s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.230s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.230s] -- Looking for pthread_create in pthreads
+[1.321s] -- Looking for pthread_create in pthreads - not found
+[1.321s] -- Looking for pthread_create in pthread
+[1.428s] -- Looking for pthread_create in pthread - found
+[1.431s] -- Found Threads: TRUE  
+[1.925s] [31mCMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[1.925s]   ament_package_xml() package name 'my_serial_node' in '/package.xml' does
+[1.926s]   not match current PROJECT_NAME 'rm_serial_driver'.  You must call project()
+[1.926s]   with the same package name before.
+[1.926s] Call Stack (most recent call first):
+[1.926s]   /opt/ros/galactic/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[1.926s]   CMakeLists.txt:23 (ament_auto_find_build_dependencies)
+[1.926s] 
+[1.926s] [0m
+[1.927s] -- Configuring incomplete, errors occurred!
+[1.939s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_serial_node' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_serial_node -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_serial_node

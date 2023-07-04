@@ -1,0 +1,2 @@
+Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': /home/yiming/.local/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '8': /home/yiming/.local/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

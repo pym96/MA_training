@@ -1,0 +1,39 @@
+[0.031s] Invoking command in '/home/yiming/training/train/ros_rv/build/rm_serial_driver': /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/rm_serial_driver -- -j16 -l16
+[0.091s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[0.124s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.196s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[0.217s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.220s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.370s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.457s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[0.525s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.527s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.541s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.007s] Error parsing '/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/package.xml':
+[1.077s] Traceback (most recent call last):
+[1.077s]   File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 151, in <module>
+[1.077s]     main()
+[1.077s]   File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 54, in main
+[1.078s]     raise e
+[1.078s]   File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 50, in main
+[1.078s]     package = parse_package_string(
+[1.078s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.078s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.078s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/yiming/training/train/ros_rv/src/rm_serial_driver-main/package.xml':
+[1.078s] Error(s):
+[1.079s] - The generic dependency on 'tf2_geometry_msgs' is redundant with: exec_depend
+[1.099s] [31mCMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.099s]   execute_process(/usr/bin/python3
+[1.099s]   /opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.100s]   /home/yiming/training/train/ros_rv/src/rm_serial_driver-main/package.xml
+[1.100s]   /home/yiming/training/train/ros_rv/build/rm_serial_driver/ament_cmake_core/package.cmake)
+[1.100s]   returned error code 1
+[1.100s] Call Stack (most recent call first):
+[1.100s]   /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.100s]   /opt/ros/galactic/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[1.101s]   CMakeLists.txt:23 (ament_auto_find_build_dependencies)
+[1.101s] 
+[1.101s] [0m
+[1.101s] -- Configuring incomplete, errors occurred!
+[1.111s] make: *** [Makefile:335: cmake_check_build_system] Error 1
+[1.120s] Invoked command in '/home/yiming/training/train/ros_rv/build/rm_serial_driver' returned '2': /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/rm_serial_driver -- -j16 -l16

@@ -1,0 +1,55 @@
+[0.040s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_package -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_package
+[0.162s] -- The C compiler identification is GNU 9.4.0
+[0.256s] -- The CXX compiler identification is GNU 9.4.0
+[0.274s] -- Detecting C compiler ABI info
+[0.375s] -- Detecting C compiler ABI info - done
+[0.398s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.399s] -- Detecting C compile features
+[0.399s] -- Detecting C compile features - done
+[0.402s] -- Detecting CXX compiler ABI info
+[0.515s] -- Detecting CXX compiler ABI info - done
+[0.535s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.536s] -- Detecting CXX compile features
+[0.536s] -- Detecting CXX compile features - done
+[0.538s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.572s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.573s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.678s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.767s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.768s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.768s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yiming/training/train/ros_rv/src/my_package/include>
+[0.768s] -- Configured cppcheck exclude dirs and/or files: 
+[0.769s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.769s] -- Configured cpplint exclude dirs and/or files: 
+[0.769s] -- Added test 'lint_cmake' to check CMake code style
+[0.770s] -- Added test 'uncrustify' to check C / C++ code style
+[0.770s] -- Configured uncrustify additional arguments: 
+[0.771s] -- Added test 'xmllint' to check XML markup files
+[0.771s] -- Configuring done (0.7s)
+[0.775s] -- Generating done (0.0s)
+[0.776s] -- Build files have been written to: /home/yiming/training/train/ros_rv/build/my_package
+[0.787s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_rv/src/my_package -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_rv/install/my_package
+[0.794s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_package -- -j16 -l16
+[0.866s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[0.909s] [100%] [32m[1mLinking CXX executable my_node[0m
+[0.960s] [100%] Built target my_node
+[0.976s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_rv/build/my_package -- -j16 -l16
+[1.102s] Invoking command in '/home/yiming/training/train/ros_rv/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_package
+[1.140s] -- Install configuration: ""
+[1.140s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/lib/my_package/my_node
+[1.141s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[1.141s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[1.141s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[1.142s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[1.142s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.sh
+[1.142s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.dsv
+[1.143s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.bash
+[1.143s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.sh
+[1.143s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.zsh
+[1.143s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.dsv
+[1.144s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.dsv
+[1.144s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/packages/my_package
+[1.144s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[1.144s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[1.144s] -- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.xml
+[1.155s] Invoked command in '/home/yiming/training/train/ros_rv/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_rv/build/my_package

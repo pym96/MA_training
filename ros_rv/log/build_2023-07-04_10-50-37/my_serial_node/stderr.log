@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+  ament_package_xml() package name 'my_serial_node' in '/package.xml' does
+  not match current PROJECT_NAME 'rm_serial_driver'.  You must call project()
+  with the same package name before.
+Call Stack (most recent call first):
+  /opt/ros/galactic/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+  CMakeLists.txt:23 (ament_auto_find_build_dependencies)
+
+[0m

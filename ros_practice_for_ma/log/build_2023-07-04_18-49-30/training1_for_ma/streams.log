@@ -1,0 +1,27 @@
+[0.042s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16
+[0.102s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.131s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.213s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.252s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.452s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.453s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.468s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.673s] -- Configuring done (0.6s)
+[0.678s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[0.678s]   Cannot find source file:
+[0.678s] 
+[0.678s]     src/publisher_member_function.cpp
+[0.678s] 
+[0.678s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.679s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.679s] 
+[0.679s] [0m
+[0.679s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[0.679s]   No SOURCES given to target: talker
+[0.679s] 
+[0.680s] [0m
+[0.680s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.687s] make: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.697s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/build/training1_for_ma -- -j16 -l16

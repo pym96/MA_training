@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yiming/training/train/ros_rv/src/my_package/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yiming/training/train/ros_rv/build/my_package
+[ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable my_node[0m
+[100%] Built target my_node
+-- Install configuration: ""
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/lib/my_package/my_node
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.sh
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.sh
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/environment/path.dsv
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.bash
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.sh
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.zsh
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/local_setup.dsv
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.dsv
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/ament_index/resource_index/packages/my_package
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+-- Installing: /home/yiming/training/train/ros_rv/install/my_package/share/my_package/package.xml
