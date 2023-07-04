@@ -1,0 +1,16 @@
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/MA_susbriber/MA_subscriber
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/package_run_dependencies/MA_susbriber
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/parent_prefix_path/MA_susbriber
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.bash
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.zsh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/packages/MA_susbriber
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig.cmake
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig-version.cmake
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.xml

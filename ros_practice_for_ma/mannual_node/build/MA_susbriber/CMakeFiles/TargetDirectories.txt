@@ -1,0 +1,10 @@
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/MA_susbriber_uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/MA_subscriber.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/test.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/rebuild_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/list_install_components.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/install.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/install/local.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber/CMakeFiles/install/strip.dir

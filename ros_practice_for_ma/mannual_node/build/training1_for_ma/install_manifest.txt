@@ -1,0 +1,16 @@
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/lib/training1_for_ma/talker
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/ament_index/resource_index/package_run_dependencies/training1_for_ma
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/ament_index/resource_index/parent_prefix_path/training1_for_ma
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/environment/ament_prefix_path.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/environment/path.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/environment/path.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/local_setup.bash
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/local_setup.sh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/local_setup.zsh
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/local_setup.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.dsv
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/ament_index/resource_index/packages/training1_for_ma
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig.cmake
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/cmake/training1_for_maConfig-version.cmake
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.xml

@@ -1,0 +1,36 @@
+[0.042s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma
+[0.159s] -- The C compiler identification is GNU 9.4.0
+[0.252s] -- The CXX compiler identification is GNU 9.4.0
+[0.268s] -- Detecting C compiler ABI info
+[0.367s] -- Detecting C compiler ABI info - done
+[0.388s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.389s] -- Detecting C compile features
+[0.389s] -- Detecting C compile features - done
+[0.392s] -- Detecting CXX compiler ABI info
+[0.486s] -- Detecting CXX compiler ABI info - done
+[0.504s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.504s] -- Detecting CXX compile features
+[0.505s] -- Detecting CXX compile features - done
+[0.507s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.543s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.543s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.639s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.693s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.850s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.888s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.978s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.055s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.057s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.074s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.075s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.176s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.176s] -- Looking for pthread_create in pthreads
+[1.265s] -- Looking for pthread_create in pthreads - not found
+[1.266s] -- Looking for pthread_create in pthread
+[1.365s] -- Looking for pthread_create in pthread - found
+[1.367s] -- Found Threads: TRUE  
+[1.516s] -- Found OpenCV: /opt/intel/openvino_2021.4.752/opencv (found version "4.5.3") 
+[1.584s] -- Configuring done (1.5s)
+[1.595s] -- Generating done (0.0s)
+[1.595s] -- Build files have been written to: /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma

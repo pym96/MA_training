@@ -21,7 +21,7 @@ class EigenDemoPublisher: public rclcpp::Node
     public:
         EigenDemoPublisher()
         : Node("demo_publisher"), count_(0){
-            publisher_ = this->create_publisher<std_msgs::msg::String>("MA_train", 10);   
+            publisher_ = this->create_publisher<std_msgs::msg::String>("MA_train", rclcpp::QoS(rclcpp::KeepLast(10)).best_effort());   
             timer_ = this->create_wall_timer(500ms,std::bind(&EigenDemoPublisher::publishCallback,this));
         }
 

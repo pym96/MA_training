@@ -1,0 +1,8 @@
+WARNING: Package name "MA_susbriber" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:6:14:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Kargc[m[K’ set but not used [[01;35m[K-Wunused-but-set-parameter[m[K]
+    6 | int main([01;35m[Kint argc[m[K, char** argv){
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:6:27:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Kargv[m[K’ set but not used [[01;35m[K-Wunused-but-set-parameter[m[K]
+    6 | int main(int argc, [01;35m[Kchar** argv[m[K){
+      |                    [01;35m[K~~~~~~~^~~~[m[K

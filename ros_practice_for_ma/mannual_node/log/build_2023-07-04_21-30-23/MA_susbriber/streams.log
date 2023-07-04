@@ -1,0 +1,22 @@
+[0.061s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16
+[0.151s] [100%] Built target MA_subscriber
+[0.162s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16
+[0.252s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber
+[0.293s] -- Install configuration: ""
+[0.293s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/MA_susbriber/MA_subscriber
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/package_run_dependencies/MA_susbriber
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/parent_prefix_path/MA_susbriber
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.sh
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.dsv
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.sh
+[0.294s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.dsv
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.bash
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.sh
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.zsh
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.dsv
+[0.295s] -- Installing: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.dsv
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/packages/MA_susbriber
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig.cmake
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig-version.cmake
+[0.295s] -- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.xml
+[0.325s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber

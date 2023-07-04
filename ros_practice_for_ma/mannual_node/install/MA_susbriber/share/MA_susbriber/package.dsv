@@ -1,0 +1,8 @@
+source;share/MA_susbriber/hook/cmake_prefix_path.ps1
+source;share/MA_susbriber/hook/cmake_prefix_path.dsv
+source;share/MA_susbriber/hook/cmake_prefix_path.sh
+source;share/MA_susbriber/local_setup.bash
+source;share/MA_susbriber/local_setup.dsv
+source;share/MA_susbriber/local_setup.ps1
+source;share/MA_susbriber/local_setup.sh
+source;share/MA_susbriber/local_setup.zsh

@@ -1,0 +1,50 @@
+[0.050s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber
+[0.161s] -- The C compiler identification is GNU 9.4.0
+[0.244s] -- The CXX compiler identification is GNU 9.4.0
+[0.262s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.374s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.374s] -- Detecting C compile features
+[0.375s] -- Detecting C compile features - done
+[0.378s] -- Detecting CXX compiler ABI info
+[0.479s] -- Detecting CXX compiler ABI info - done
+[0.497s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.497s] -- Detecting CXX compile features
+[0.498s] -- Detecting CXX compile features - done
+[0.500s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.539s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.539s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.631s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.680s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.685s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.834s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.872s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.965s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.037s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.040s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.061s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.063s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.160s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.160s] -- Looking for pthread_create in pthreads
+[1.244s] -- Looking for pthread_create in pthreads - not found
+[1.244s] -- Looking for pthread_create in pthread
+[1.343s] -- Looking for pthread_create in pthread - found
+[1.346s] -- Found Threads: TRUE  
+[1.478s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.519s] WARNING: Package name "MA_susbriber" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.548s] [31mCMake Error at CMakeLists.txt:43 (install):
+[1.548s]   install does not recognize sub-command TARGET
+[1.548s] 
+[1.548s] [0m
+[1.550s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.551s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.551s] -- Configured cppcheck include dirs: /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/include
+[1.551s] -- Configured cppcheck exclude dirs and/or files: 
+[1.552s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.552s] -- Configured cpplint exclude dirs and/or files: 
+[1.552s] -- Added test 'lint_cmake' to check CMake code style
+[1.553s] -- Added test 'uncrustify' to check C / C++ code style
+[1.553s] -- Configured uncrustify additional arguments: 
+[1.553s] -- Added test 'xmllint' to check XML markup files
+[1.555s] -- Configuring incomplete, errors occurred!
+[1.568s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake /home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber -DCMAKE_INSTALL_PREFIX=/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber

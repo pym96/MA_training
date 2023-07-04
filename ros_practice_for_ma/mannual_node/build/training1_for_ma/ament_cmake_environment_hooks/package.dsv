@@ -1,0 +1,4 @@
+source;share/training1_for_ma/local_setup.bash
+source;share/training1_for_ma/local_setup.dsv
+source;share/training1_for_ma/local_setup.sh
+source;share/training1_for_ma/local_setup.zsh

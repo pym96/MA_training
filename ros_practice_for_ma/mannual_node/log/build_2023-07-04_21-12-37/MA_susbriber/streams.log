@@ -1,0 +1,10 @@
+[0.060s] Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16
+[0.146s] [ 50%] [32mBuilding CXX object CMakeFiles/MA_subscriber.dir/src/MA_train_subsriber.cpp.o[0m
+[0.278s] [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:4:10:[m[K [01;31m[Kfatal error: [m[KMA_subsriber/MA_subsriber.hpp: No such file or directory
+[0.278s]     4 | #include [01;31m[K"MA_subsriber/MA_subsriber.hpp"[m[K
+[0.278s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.278s] compilation terminated.
+[0.280s] make[2]: *** [CMakeFiles/MA_subscriber.dir/build.make:76: CMakeFiles/MA_subscriber.dir/src/MA_train_subsriber.cpp.o] Error 1
+[0.280s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MA_subscriber.dir/all] Error 2
+[0.280s] make: *** [Makefile:146: all] Error 2
+[0.312s] Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16

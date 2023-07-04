@@ -1,0 +1,9 @@
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/demo_uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/test.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/rebuild_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/list_install_components.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/install.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/install/local.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo/CMakeFiles/install/strip.dir

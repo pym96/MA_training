@@ -1,0 +1,229 @@
+[0.269s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.269s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd717494f70>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd717494f70>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd7173b7790>)
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.299s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yiming/training/train/ros_practice_for_ma/mannual_node'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/MA_susbriber) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'src/MA_susbriber' with type 'ros.ament_cmake' and name 'MA_susbriber'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/demo' with type 'ros.ament_cmake' and name 'demo'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/training1_for_ma) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/training1_for_ma' with type 'ros.ament_cmake' and name 'training1_for_ma'
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.341s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/yiming/training/train/ros_practice_for_ma/install
+[0.343s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 264 installed packages in /opt/ros/galactic
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'MA_susbriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'MA_susbriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber', 'merge_install': False, 'path': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber', 'symlink_install': False, 'test_result_base': None}
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_target' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo', 'merge_install': False, 'path': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/demo', 'symlink_install': False, 'test_result_base': None}
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'training1_for_ma' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'training1_for_ma' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma', 'merge_install': False, 'path': '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma', 'symlink_install': False, 'test_result_base': None}
+[0.398s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.402s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber' with build type 'ament_cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber'
+[0.407s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/demo' with build type 'ament_cmake'
+[0.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/demo'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.419s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.434s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma' with build type 'ament_cmake'
+[0.435s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma'
+[0.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16
+[0.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo -- -j16 -l16
+[0.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma -- -j16 -l16
+[0.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo -- -j16 -l16
+[0.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo
+[0.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma -- -j16 -l16
+[0.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(demo)
+[0.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/demo
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo' for CMake module files
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo' for CMake config files
+[0.698s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo', 'cmake_prefix_path')
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.ps1'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.dsv'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.sh'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/bin'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/lib/pkgconfig/demo.pc'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/lib/python3.8/site-packages'
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/bin'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.ps1'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.dsv'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.sh'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.bash'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.zsh'
+[0.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/colcon-core/packages/demo)
+[0.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --build /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/MA_susbriber -- -j16 -l16
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma
+[0.774s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(training1_for_ma)
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma' for CMake module files
+[0.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/yiming/.local/bin/cmake --install /home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma' for CMake config files
+[0.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('training1_for_ma', 'cmake_prefix_path')
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/hook/cmake_prefix_path.ps1'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/hook/cmake_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/hook/cmake_prefix_path.sh'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/lib'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/bin'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/lib/pkgconfig/training1_for_ma.pc'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/lib/python3.8/site-packages'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/bin'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.bash'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/training1_for_ma/package.zsh'
+[0.795s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/training1_for_ma/share/colcon-core/packages/training1_for_ma)
+[0.801s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(demo)
+[0.803s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo' for CMake module files
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo' for CMake config files
+[0.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo', 'cmake_prefix_path')
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.ps1'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.dsv'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/hook/cmake_prefix_path.sh'
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/bin'
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/lib/pkgconfig/demo.pc'
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/lib/python3.8/site-packages'
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/bin'
+[0.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.ps1'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.dsv'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.sh'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.bash'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/demo/package.zsh'
+[0.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/demo/share/colcon-core/packages/demo)
+[0.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(MA_susbriber)
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber' for CMake module files
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber' for CMake config files
+[0.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('MA_susbriber', 'cmake_prefix_path')
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/hook/cmake_prefix_path.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/hook/cmake_prefix_path.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/hook/cmake_prefix_path.sh'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/bin'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/pkgconfig/MA_susbriber.pc'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/python3.8/site-packages'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/bin'
+[0.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.ps1'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.dsv'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.sh'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.bash'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.zsh'
+[0.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/colcon-core/packages/MA_susbriber)
+[0.883s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[0.884s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.895s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.895s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.895s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.916s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.919s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/local_setup.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/_local_setup_util_ps1.py'
+[0.923s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/setup.ps1'
+[0.926s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/local_setup.sh'
+[0.928s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/_local_setup_util_sh.py'
+[0.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/setup.sh'
+[0.931s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/local_setup.bash'
+[0.932s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/setup.bash'
+[0.934s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/local_setup.zsh'
+[0.934s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/setup.zsh'

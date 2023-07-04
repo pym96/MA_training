@@ -1,0 +1,5 @@
+In file included from [01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/src/transform.cpp:1[m[K:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:[m[K In member function ‘[01m[Kvoid EigenDemoPublisher::publishCallback()[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/training1_for_ma/include/training1_for_ma/transform.hpp:46:18:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kresult[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   46 |             auto [01;35m[Kresult[m[K = shear_mat * points;
+      |                  [01;35m[K^~~~~~[m[K

@@ -1,0 +1,5 @@
+WARNING: Package name "MA_susbriber" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[31mCMake Error at CMakeLists.txt:43 (install):
+  install does not recognize sub-command TARGET
+
+[0m

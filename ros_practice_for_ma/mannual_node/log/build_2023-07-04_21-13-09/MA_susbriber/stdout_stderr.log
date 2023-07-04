@@ -1,0 +1,28 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/MA_subscriber.dir/src/MA_train_subsriber.cpp.o[0m
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:7:14:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Kargc[m[K’ set but not used [[01;35m[K-Wunused-but-set-parameter[m[K]
+    7 | int main([01;35m[Kint argc[m[K, char** argv){
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/yiming/training/train/ros_practice_for_ma/mannual_node/src/MA_susbriber/src/MA_train_subsriber.cpp:7:27:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Kargv[m[K’ set but not used [[01;35m[K-Wunused-but-set-parameter[m[K]
+    7 | int main(int argc, [01;35m[Kchar** argv[m[K){
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable MA_subscriber[0m
+[100%] Built target MA_subscriber
+-- Install configuration: ""
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/MA_susbriber/MA_subscriber
+-- Set runtime path of "/home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/lib/MA_susbriber/MA_subscriber" to ""
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/package_run_dependencies/MA_susbriber
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/parent_prefix_path/MA_susbriber
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/environment/path.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.bash
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.sh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.zsh
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/local_setup.dsv
+-- Installing: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.dsv
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/ament_index/resource_index/packages/MA_susbriber
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig.cmake
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/cmake/MA_susbriberConfig-version.cmake
+-- Up-to-date: /home/yiming/training/train/ros_practice_for_ma/mannual_node/install/MA_susbriber/share/MA_susbriber/package.xml

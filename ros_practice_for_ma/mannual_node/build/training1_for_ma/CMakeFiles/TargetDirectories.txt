@@ -1,0 +1,10 @@
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/training1_for_ma_uninstall.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/talker.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/test.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/rebuild_cache.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/list_install_components.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/install.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/install/local.dir
+/home/yiming/training/train/ros_practice_for_ma/mannual_node/build/training1_for_ma/CMakeFiles/install/strip.dir
