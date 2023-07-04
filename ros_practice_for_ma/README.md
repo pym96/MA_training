@@ -13,7 +13,7 @@ If you wanna see the topic or wanna know what is qos, please open a new terminal
 ### 1. qos reliable 
     ros2 topic echo /MA_train --qos-reliability "reliable"
 
-### 2. qps best effort
+### 2. qos best effort
     ros2 topic ehco /MA_train --qos-reliability "best_effort"
 
 AND SEE THE DIFFERENCE OF THEM
