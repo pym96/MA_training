@@ -1,0 +1,3 @@
+/home/yiming/training/train/camera_calibration/build/CMakeFiles/CB.dir
+/home/yiming/training/train/camera_calibration/build/CMakeFiles/edit_cache.dir
+/home/yiming/training/train/camera_calibration/build/CMakeFiles/rebuild_cache.dir
