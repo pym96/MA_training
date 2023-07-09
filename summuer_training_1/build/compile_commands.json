@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/home/yiming/training/train/summuer_training_1/build",
-  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -I/home/yiming/training/train/summuer_training_1/modules -isystem /opt/intel/openvino_2021.4.752/opencv/include    -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++17 -o CMakeFiles/MA.dir/orb_cv.cpp.o -c /home/yiming/training/train/summuer_training_1/orb_cv.cpp",
-  "file": "/home/yiming/training/train/summuer_training_1/orb_cv.cpp"
+  "directory": "/home/dan/train/train/MA_training/summuer_training_1/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/dan/train/train/MA_training/summuer_training_1\\\" -I/usr/include/eigen3 -I/home/dan/train/train/MA_training/summuer_training_1/modules -isystem /usr/include/opencv4   -Wall -Werror -o CMakeFiles/MA.dir/EKF.cpp.o -c /home/dan/train/train/MA_training/summuer_training_1/EKF.cpp",
+  "file": "/home/dan/train/train/MA_training/summuer_training_1/EKF.cpp"
 },
 {
-  "directory": "/home/yiming/training/train/summuer_training_1/build/modules",
-  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/train/summuer_training_1/modules -I/usr/include/eigen3 -isystem /opt/intel/openvino_2021.4.752/opencv/include  -fPIC   -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++17 -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/yiming/training/train/summuer_training_1/modules/cv/cv.cpp",
-  "file": "/home/yiming/training/train/summuer_training_1/modules/cv/cv.cpp"
+  "directory": "/home/dan/train/train/MA_training/summuer_training_1/build/modules",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/dan/train/train/MA_training/summuer_training_1\\\" -Dmodules_EXPORTS -I/usr/include/eigen3 -I/home/dan/train/train/MA_training/summuer_training_1/modules -isystem /usr/include/opencv4 -fPIC   -Wall -Werror -std=gnu++11 -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.cpp",
+  "file": "/home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.cpp"
 },
 {
-  "directory": "/home/yiming/training/train/summuer_training_1/build/modules",
-  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/yiming/training/train/summuer_training_1\\\" -Dmodules_EXPORTS -I/home/yiming/training/train/summuer_training_1/modules -I/usr/include/eigen3 -isystem /opt/intel/openvino_2021.4.752/opencv/include  -fPIC   -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++17 -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/yiming/training/train/summuer_training_1/modules/fmt_lib/fmt_lib.cpp",
-  "file": "/home/yiming/training/train/summuer_training_1/modules/fmt_lib/fmt_lib.cpp"
+  "directory": "/home/dan/train/train/MA_training/summuer_training_1/build/modules",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DPROJECT_DIR=\\\"/home/dan/train/train/MA_training/summuer_training_1\\\" -Dmodules_EXPORTS -I/usr/include/eigen3 -I/home/dan/train/train/MA_training/summuer_training_1/modules -isystem /usr/include/opencv4 -fPIC   -Wall -Werror -std=gnu++11 -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/dan/train/train/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp",
+  "file": "/home/dan/train/train/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp"
 }
 ]

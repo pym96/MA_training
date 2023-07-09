@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MA.dir/orb_cv.cpp.o"
+  "CMakeFiles/MA.dir/EKF.cpp.o"
+  "CMakeFiles/MA.dir/EKF.cpp.o.d"
   "bin/MA"
   "bin/MA.pdb"
 )
