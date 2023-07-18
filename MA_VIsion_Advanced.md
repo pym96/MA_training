@@ -77,6 +77,34 @@ $$
 差分运动学使我们能够通过控制左右轮子的线速度来实现机器人的整体运动，例如直线运动、旋转运动和曲线运动等。它为差分驱动机器人的控制和路径规划提供了重要的基础。
 ```
 
+# ROS General knowledge （ROS 通用知识)
+
+## 通信
+
+### Service 
+    Service 是一种同步通信机制，用于节点之间的请求-响应模式的通信。
+    Service 定义了一个请求消息和一个响应消息，节点可以通过调用服务来发送请求，并等待接收响应。
+    服务通常用于执行较短的操作，例如查询传感器数据、请求机器人执行特定任务等。
+    Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 rospy）进行调用和实现。
+
+### Action  
+    Action 是一种异步通信机制，用于节点之间执行长时间运行的任务或行为。
+    Action 由三个主要组件组成：Action Goal（目标）、Action Result（结果）和Action Feedback（反馈）。
+    Action Goal 是发送给执行节点的请求消息，Action Result 是执行节点发送的任务完成消息，而 Action Feedback 是执行节点在执行过程中发送的反馈消息。
+    Action 通常用于执行较长时间的任务，如导航、路径规划或图像处理等。
+    Action 使用 rostopic、rosmsg 和 rosaction 命令行工具或 ROS 客户端库进行调用和实现。
+
+服务和动作都是基于 ROS 消息的，你需要定义自己的服务和动作消息类型来描述请求、响应、目标、结果和反馈的数据结构。
+
+使用服务和动作可以实现节点之间的高级通信和任务协作。服务适用于简单的请求-响应模式，而动作适用于复杂的长时间运行任务。选择使用服务还是动作取决于你的应用需求和通信模式的特点。
+
+### Topic
+    Topic 是一种一对多的通信机制，其中一个节点作为发布者发布消息，而其他节点可以作为订阅者接收该消息。
+    Topic 使用特定的消息类型来定义数据的结构和格式。发布者发布消息时，订阅者可以通过订阅相应的Topic来接收并处理消息。
+    Topic 可以是实时或非实时的，具体取决于通信的需求和实现。
+    Topic 基于ROS中的消息传递机制，发布者和订阅者之间通过ROS Master进行协调和连接（因此确保你的roscore是valid的).
+
+
 # ROS2知识
 
 ## CMAKE in ros2
@@ -125,7 +153,9 @@ rospack find [package_name]
 // catkin 的作用和 ros2 的colcon 很像我觉得， 以后谁有不同理解欢迎来打我的脸（From Pan)
 ```
 
-### 1.catkin_create_pkg2.catkin_make
+### 1.catkin_create_pkg
+
+### 2.catkin_make
 
 ```c++
 // 这时要回到 /src的上级目录， 比如catkin_create_pkg 时我们在 ~/ros_ws/src下，这时候要换到 ~/ros_ws下
