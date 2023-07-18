@@ -185,6 +185,13 @@ https://zhuanlan.zhihu.com/p/384578650
 
 这些只是`rosbag`的一些基本用法示例。您可以通过运行`rosbag --help`命令来获取更多命令选项和使用说明。此外，ROS文档中也有关于`rosbag`的详细信息，您可以查阅官方文档以获取更多帮助。
 
+## ROS1 bug
+### roscore 
+	WARNING: Could not change permissions for folder [/home/ma/.ros/log/20713ec6-2522-11ee-acad-2bf8c6a50870], make sure that the parent folder has correct permissions.
+	then 
+ sudo chown -R ma:ma /home/ma/.ros/log/
+
+
 # Nav2
 
 ## Intro: Nav2 is the professionally supported spiritual successor of the ros navigation stack
