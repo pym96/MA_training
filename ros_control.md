@@ -4,7 +4,8 @@
 
 ## 1. Ros control 大体框架
 
-![image-20230711152430220](/home/ma/.config/Typora/typora-user-images/image-20230711152430220.png)
+![图片](https://github.com/pym96/MA_training/assets/105438207/b6f3fa09-a16e-4efc-90b6-22281ef42647)
+
 
 图片来源http://wiki.ros.org/ros_control
 
