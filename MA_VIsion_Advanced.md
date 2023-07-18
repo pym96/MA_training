@@ -96,7 +96,7 @@ $$
 ```
 https://zhuanlan.zhihu.com/p/438191834
 ```
-
+## ros bag
 
 
 # ROS 1 知识
@@ -146,6 +146,44 @@ rospack find [package_name]
 ```
 https://zhuanlan.zhihu.com/p/384578650
 ```
+
+## rosbag
+
+在ROS 1 中，`rosbag`是一个用于记录和回放ROS消息数据的工具, 我们可以使用`rosbag`来记录ROS话题的消息，并在稍后的时间点进行回放或分析。
+
+下面是一些常见的`rosbag`使用示例：
+
+1. 记录ROS话题的消息：
+   ```
+   rosbag record -a
+   ```
+   这将记录所有活动话题的消息。您还可以指定特定的话题来进行记录。
+
+2. 记录指定话题的消息：
+   ```
+   rosbag record -O <bag文件名> <话题1> <话题2> ...
+   ```
+   使用`-O`选项指定要保存的`rosbag`文件的名称，并在后面列出要记录的话题。
+
+3. 回放rosbag文件：
+   ```
+   rosbag play <bag文件名>.bag
+   ```
+   这将回放指定的`rosbag`文件。您可以在回放时使用`-s`选项来指定回放的开始时间，使用`-r`选项来指定回放速率。
+
+4. 显示rosbag文件信息：
+   ```
+   rosbag info <bag文件名>.bag
+   ```
+   这将显示有关`rosbag`文件的详细信息，例如包含的话题、消息数量等。
+
+5. 导出rosbag文件中的消息：
+   ```
+   rosbag export <bag文件名>.bag <输出目录>
+   ```
+   这将从`rosbag`文件中提取消息，并将其导出到指定的输出目录中。
+
+这些只是`rosbag`的一些基本用法示例。您可以通过运行`rosbag --help`命令来获取更多命令选项和使用说明。此外，ROS文档中也有关于`rosbag`的详细信息，您可以查阅官方文档以获取更多帮助。
 
 # Nav2
 
