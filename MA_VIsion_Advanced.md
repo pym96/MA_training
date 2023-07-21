@@ -100,7 +100,7 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 ## Quaternion
 
 https://eater.net/quaternions/video/intro
-
+https://www.youtube.com/watch?v=zjMuIxRvygQ
 
 # ROS General knowledge （ROS 通用知识)
 
