@@ -136,6 +136,10 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 
     解耦和模块化: 使用Topic可以将SLAM系统的不同功能模块解耦，使其能够独立开发和测试。每个模块只需关注自己所需的输入数据，并通过Topic与其他模块进行通信。这种模块化设计有助于减少代码之间的依赖性，提高代码的可维护性和可重用性。
 
+## ROS rviz visualization type
+
+http://wiki.ros.org/rviz/DisplayTypes/Marker
+
 # ROS2知识
 
 ## CMAKE in ros2
