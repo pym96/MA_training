@@ -97,6 +97,11 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 
     可视化和应用：通过将IMU数据与其他传感器数据（例如相机数据或GPS数据）结合使用，你可以实现更高级的应用，如姿态控制、导航和姿势识别等。可视化工具和算法库（如ROS中的rviz、robot_localization包）可以帮助你可视化和分析IMU数据，以及与其他传感器数据进行集成和展示。
 
+## Quaternion
+
+https://eater.net/quaternions/video/intro
+
+
 # ROS General knowledge （ROS 通用知识)
 
 ## 通信
