@@ -9,3 +9,8 @@ https://www.robomaster.com/zh-CN/resource/pages/activities/1015
 
 ## 2. 卡尔曼滤波
 1.卡尔曼滤波器如果不看K(卡尔曼增益），P（协方差矩阵），剩下的部分就是一个状态观测器，所以要理解卡尔曼滤波器的滤波作用可以尝试观察这个观测器的极点变化曲线。这些极点最后都会收敛到一个很小的范围内，所以卡尔曼滤波器可以简化成极点固定的状态观测器。
+
+
+## 3. 坐标系转化知识
+下边这篇文章讲的很不错，建议参考
+https://www.fdxlabs.com/calculate-x-y-z-real-world-coordinates-from-a-single-camera-using-opencv/
