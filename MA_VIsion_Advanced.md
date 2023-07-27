@@ -1,3 +1,32 @@
+# C++ 部分
+
+## 1. attribute in the rail of struct
+
+```c++
+struct MyStruct{
+  // define something here
+}__attribute__((something));
+
+/** 例如，C++ 中对 `__attribute__` 常见的使用包括：
+
+`__attribute__((packed))`：该属性告诉编译器最小化结构体成员之间的填充，以减少内存使用。它确保编译器在结构体成员之间不插入任何填充字节。
+
+`__attribute__((aligned(x)))`：该属性指定结构体或变量的对齐要求，确保它在内存中按照 'x' 字节的倍数对齐。
+
+`__attribute__((noreturn))`：该属性告诉编译器一个函数不会返回给调用者。它通常用于执行像 `exit()` 或无限循环等操作的函数。
+
+`__attribute__((deprecated))`：该属性将一个函数、变量或类型标记为已废弃，表示不建议使用它，而应使用替代选项。
+
+`__attribute__((unused))`：该属性抑制关于未使用变量或函数的警告，表示编译器明确知道该实体被有意地不使用。
+
+值得注意的是，`__attribute__` 的使用是特定于编译器的，其行为可能在不同版本的 GCC 或其他编译器之间有所不同。过度依赖这一特性可能使你的代码不够可移植且难以维护，因此通常建议避免使用特定于编译器的扩展，如果可能的话。
+
+如果需要为结构体或函数提供特定属性并希望保持可移植性，考虑使用标准的 C++ 机制，比如 `alignas`、`[[nodiscard]]` 或 C++11 及以上版本中的 `[[deprecated]]` 属性，这些机制更加标准化和广泛支持。
+*/
+```
+
+
+
 # ROS_CONTROL 文档
 
 ## 构建工业级移动机械臂
@@ -86,15 +115,15 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 
     坐标系：IMU数据通常以三个坐标轴表示。常见的坐标系是右手坐标系，其中X轴指向前方，Y轴指向左侧，Z轴指向上方。在使用IMU数据时，你需要了解坐标系的定义，以正确解释和使用数据。
     **视觉组的三个基本的坐标系: 世界坐标系， 云台坐标系， 相机坐标系均基于此。**
-
+    
     加速度计数据：加速度计测量物体在三个轴向上的加速度。数据通常以米/秒^2（m/s^2）为单位表示。正值表示正方向的加速度，负值表示反方向的加速度。根据物体的运动状态和方向，你可以通过分析加速度计数据获得关于物体的加速度和动作信息。
-
+    
     陀螺仪数据：陀螺仪测量物体绕各轴旋转的角速度。数据通常以弧度/秒（rad/s）为单位表示。正值表示顺时针旋转，负值表示逆时针旋转。通过分析陀螺仪数据，你可以获得关于物体的旋转速度和方向信息。
-
+    
     磁力计数据：磁力计测量物体周围的磁场强度。数据通常以特定的单位（例如微特斯拉，μT）表示。通过分析磁力计数据，你可以获取关于物体相对于地球磁场的方向和姿态信息。
-
+    
     数据融合和姿态估计：IMU数据通常需要进行数据融合和处理，以获得更准确和稳定的姿态估计。这通常涉及使用滤波器（如卡尔曼滤波器或互补滤波器）来将加速度计、陀螺仪和磁力计数据结合起来，估计物体的姿态。
-
+    
     可视化和应用：通过将IMU数据与其他传感器数据（例如相机数据或GPS数据）结合使用，你可以实现更高级的应用，如姿态控制、导航和姿势识别等。可视化工具和算法库（如ROS中的rviz、robot_localization包）可以帮助你可视化和分析IMU数据，以及与其他传感器数据进行集成和展示。
 
 ## Quaternion
@@ -102,22 +131,28 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 https://eater.net/quaternions/video/intro
 https://www.youtube.com/watch?v=zjMuIxRvygQ
 
+
+
 # ROS General knowledge （ROS 通用知识)
 
 ## 通信
 
 ### Service 
-    Service 是一种同步通信机制，用于节点之间的请求-响应模式的通信。
-    Service 定义了一个请求消息和一个响应消息，节点可以通过调用服务来发送请求，并等待接收响应。
-    服务通常用于执行较短的操作，例如查询传感器数据、请求机器人执行特定任务等。
-    Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 rospy）进行调用和实现。
+```c++
+Service 是一种同步通信机制，用于节点之间的请求-响应模式的通信。
+Service 定义了一个请求消息和一个响应消息，节点可以通过调用服务来发送请求，并等待接收响应。
+服务通常用于执行较短的操作，例如查询传感器数据、请求机器人执行特定任务等。
+Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 rospy）进行调用和实现。
+
+// 参考用库 std_srvs: http://wiki.ros.org/std_srvs
+```
 
 ### Action  
     Action 是一种异步通信机制，用于节点之间执行长时间运行的任务或行为。
     Action 由三个主要组件组成：Action Goal（目标）、Action Result（结果）和Action Feedback（反馈）。
     Action Goal 是发送给执行节点的请求消息，Action Result 是执行节点发送的任务完成消息，而 Action Feedback 是执行节点在执行过程中发送的反馈消息。
     Action 通常用于执行较长时间的任务，如导航、路径规划或图像处理等。
-
+    
     Action 使用 rostopic、rosmsg 和 rosaction 命令行工具或 ROS 客户端库进行调用和实现。
 
 服务和动作都是基于 ROS 消息的，你需要定义自己的服务和动作消息类型来描述请求、响应、目标、结果和反馈的数据结构。
@@ -128,22 +163,73 @@ https://www.youtube.com/watch?v=zjMuIxRvygQ
     Topic 是一种一对多的通信机制，其中一个节点作为发布者发布消息，而其他节点可以作为订阅者接收该消息。
     Topic 使用特定的消息类型来定义数据的结构和格式。发布者发布消息时，订阅者可以通过订阅相应的Topic来接收并处理消息。
     Topic 可以是实时或非实时的，具体取决于通信的需求和实现。
-
+    
     Topic 基于ROS中的消息传递机制，发布者和订阅者之间通过ROS Master进行协调和连接（因此确保你的roscore是valid的).
     **SLAM任务一般采用topic作为通信机制，这可以大大提高效率，以下为官话：**
     SLAM中使用Topic的一些优势和原因：
-
+    
     实时性和并发性: Topic提供了一种实时和并发处理数据的机制。SLAM算法通常需要实时地接收和处理来自多个传感器的数据，包括里程计数据、激光扫描数据等。通过使用Topic，不同的节点可以并行地订阅和处理这些数据，以实现高效的并发计算。
-
+    
     可扩展性: Topic允许多个节点同时订阅同一个Topic，这使得SLAM系统可以轻松地扩展为多个功能模块。例如，你可以同时运行视觉特征提取、地图更新、位姿估计等模块，这些模块可以独立地订阅并处理里程计数据，从而提高系统的灵活性和可扩展性。
-
+    
     数据共享和集成: 使用Topic，SLAM系统可以方便地共享数据和信息。里程计数据对于多个模块来说是一个重要的输入，通过在Topic上发布里程计数据，其他模块可以方便地订阅并使用这些数据。这种数据共享和集成有助于实现SLAM系统的整体一致性和性能提升。
-
+    
     解耦和模块化: 使用Topic可以将SLAM系统的不同功能模块解耦，使其能够独立开发和测试。每个模块只需关注自己所需的输入数据，并通过Topic与其他模块进行通信。这种模块化设计有助于减少代码之间的依赖性，提高代码的可维护性和可重用性。
 
-## ROS rviz visualization type
+## ROS rviz visualization type: visualization_msgs
 
 http://wiki.ros.org/rviz/DisplayTypes/Marker
+
+## ROS tf
+
+```c++
+// Ros tf （ Transform library ），是ros 里的一个重要组成部分， 它是一个用于机器人应用中坐标系转换的库， 相信查看这份文档的人对三维刚体运动多少都有些了解， 即在三维空间中 旋转加平移可以表示任何物体在空间中的运动， 而任何此类变换都需要在坐标系中进行， 我们虽然可以用 Eigen库结合矩阵比较简单的完成此类操作，但是坐标系的变换在所难免， 比如在自瞄任务中就需要涉及到至少三个坐标系的转换（相机坐标系，世界坐标系，云台坐标系）才能配合电控完成云台控制的任务， 以下ROS tf 包括的核心概念
+
+1. Coordinate Frames： 中文翻译（好吧，是我自己翻译的）是坐标帧，我叫他位置帧（因为感觉更好理解），每一帧都代表了物体在3D空间的方向与位置， 结合RV来说， 当调车时采用rviz可视化时你会看到多个坐标系的可视化情况，他们都可以被赋予名字，比如 “Odom”、“Camera”等等，所以一个机器人可以有多个 位置帧。
+  
+2. Transform: 一个Transform 表示 两个位置帧之间的旋转和平移，就像Eigen库用Rotation矩阵或者偏移向量 描述三维刚体运动一样， 你同样可以采用Eigen来完成这些操作， 但tf提供了更多更方便的操作，比如可以在rviz中将每一步可视化；并且不同坐标系之间的转化关系可以又parent frame 和 children frame 之间的差别进行推导。
+ 
+3. tf2 ros：这是一个ros官方给的 package， 用于work with tf， 包括publisher和subscriber用来广播和监听tf的transforms
+  
+4. tf2 transform Broadcaster and listener: tf2_ros 的重要组成部分， transform broadcaster 用于发布 frame to another frame 的变化信息， transfrom listener 监听并缓存最新的 transform消息并参与应用。
+  
+5. tf_echo: 用于打印最新两帧转化的命令行工具
+  
+6. tf _static: TF 的一个库，用于固定不变的帧。
+```
+
+## ros and 线程
+
+### 1. rclcpp 有关内容
+
+```c++
+// rclcpp::AsyncParametersClient 
+https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1AsyncParametersClient.html
+
+// What: 通过同步，获取节点参数
+
+
+// How: 通过同步获取节点参数
+
+auto parameters_client = std::make_shared<rclcpp::SyncParametersClient> (node, "set param node name");
+
+// How: 通过异步获得节点参数
+
+auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, "set param node name");
+
+
+
+
+
+
+
+```
+
+### 2. Composing multiple nodes in a single process
+
+```c++
+// 1. components
+```
 
 # ROS2知识
 
@@ -171,6 +257,154 @@ https://zhuanlan.zhihu.com/p/438191834
 ## ros2 for unity
 
 Examplified with ros2 humble here: https://github.com/RobotecAI/ros2-for-unity
+
+## ros2 serial driver
+
+```
+// 官方文档地址如下
+https://docs.ros.org/en/humble/p/serial_driver/generated/classdrivers_1_1serial__driver_1_1SerialDriver.html#class-documentation
+```
+
+### Namespace
+
+### Class
+
+```c++
+// The most important head file is serial_driver.hpp
+class SerialDriver
+   explicit SerialDriver(const IoContext &ctx);
+	 void init_port(const std::string &device_name, const SerialPortConfig &config);
+	 std::shared_ptr<SerialPort> port() const;
+
+class SerialPort 
+  /**
+  Default constructor.
+
+		Parameters:
+			ctx – [in] An IoContext object to handle threads
+
+			device_name – [in] The name of the serial device in the OS
+
+			serial_port_config – [in] Configuration options for the serial port
+  */
+   SerialPort(const IoContext &ctx, const std::string &device_name, const SerialPortConfig serial_port_config);
+
+
+class SerialPortConfig:	
+/**
+	SerialPortConfig(uint32_t baud_rate,  flow_control, Parity parity, StopBits stop_bits)：类的构造函数，用于创建 SerialPortConfig 对象。它接受四个参数：baud_rate（波特率）、flow_control（数据流控制方式）、parity（奇偶校验方式）和 stop_bits（停止位数量）。
+
+uint32_t get_baud_rate() const：返回配置的波特率（baud rate）值，单位为 bps（比特每秒）。
+
+spb::baud_rate get_baud_rate_asio() const：返回配置的波特率作为 ASIO（Asynchronous I/O）对象。ASIO 是一种用于异步 I/O 操作的库。
+
+FlowControl get_flow_control() const：返回配置的数据流控制方式（Flow Control）。
+
+spb::flow_control::type get_flow_control_asio() const：返回配置的数据流控制方式作为 ASIO 对象。
+
+Parity get_parity() const：返回配置的奇偶校验方式（Parity）。
+
+spb::parity::type get_parity_asio() const：返回配置的奇偶校验方式作为 ASIO 对象。
+
+StopBits get_stop_bits() const：返回配置的停止位数量（Stop Bits）。
+
+spb::stop_bits::type get_stop_bits_asio() const：返回配置的停止位数量作为 ASIO 对象。
+*/
+		
+```
+
+
+
+### Enums
+
+```c++
+FlowControl
+/**
+FlowControl是一个枚举（Enum）类型，它定义在文件serial_port.hpp中，并在drivers::serial_driver命名空间中。该枚举类型用于表示串行通信（Serial Communication）中的数据流控制（Flow Control）方式。
+
+在串行通信中，数据流控制用于确保数据的可靠传输和处理。当数据发送方和接收方的处理速度不匹配时，可能会导致数据丢失或溢出。数据流控制机制通过发送特殊的控制信号来调节数据传输的速率，以确保数据的正确接收和处理。
+
+在FlowControl枚举中，有三个可能的值：
+
+NONE: 表示没有数据流控制。在这种情况下，数据发送方和接收方之间没有流控制信号的交互，数据按照原始速率发送和接收。
+
+HARDWARE: 表示硬件流控制。使用硬件流控制时，数据发送方和接收方之间使用硬件信号线（如RTS：Request to Send/CTS:Clear to send）来进行流控制。当接收缓冲区满时，数据发送方将停止发送数据，直到接收缓冲区有足够的空间接收数据。
+
+SOFTWARE: 表示软件流控制。使用软件流控制时，数据发送方和接收方之间使用控制字符（如XON/XOFF）来进行流控制。当接收缓冲区满时，接收方发送XOFF信号给发送方，发送方停止发送数据，直到接收方发送XON信号恢复数据传输。
+
+补充：RTS and CTS
+
+RTS（Request to Send）：由数据接收方（通常是接收端设备）发送给数据发送方（通常是发送端设备）。当接收方的接收缓冲区准备好接收数据时，它会发送 RTS 信号给发送方，请求发送方开始传输数据。
+
+CTS（Clear to Send）：发送方接收到 RTS 信号后，如果它的发送缓冲区也准备好发送数据，就会发送 CTS 信号给接收方。接收方收到 CTS 信号后，确认接收缓冲区已经准备好，发送方开始传输数据。
+
+RTS/CTS 是一种硬件流控制方式，因此不需要发送特殊字符或字节来进行流控制。相比软件流控制（如 XON/XOFF），RTS/CTS 的优点在于它的响应速度更快，不会增加传输数据的字节数。
+
+请注意，RTS/CTS 的使用需要硬件支持，即串行通信设备（如串口、USB串口转换器等）必须具备 RTS 和 CTS 信号线。在某些情况下，硬件设备可能不支持 RTS/CTS 流控制，因此在选择流控制方式时应考虑设备的兼容性。
+*/
+
+Parity
+/**
+`Parity`是另一个枚举（Enum）类型，同样定义在文件`serial_port.hpp`中，位于`drivers::serial_driver`命名空间中。该枚举类型用于表示串行通信（Serial Communication）中的奇偶校验（Parity）位。
+
+在串行通信中，奇偶校验用于检测和纠正数据传输中的错误。它通过在每个数据字节后添加一个奇偶校验位来实现。奇偶校验位的值取决于数据字节中的位的总数（奇数或偶数），以及校验位的类型（奇校验或偶校验）。接收方在接收数据时会计算接收到的数据中的奇偶校验位，并与发送方发送的校验位进行比较，从而判断数据是否正确传输。
+
+在`Parity`枚举中，有三个可能的值：
+
+1. `NONE`: 表示不使用奇偶校验。在这种情况下，数据传输不包含奇偶校验位，数据以原始形式发送和接收，不进行校验。
+
+2. `ODD`: 表示使用奇校验。在这种情况下，数据传输包含一个奇校验位，使得数据字节中的位总数（包括校验位）为奇数。
+
+3. `EVEN`: 表示使用偶校验。在这种情况下，数据传输包含一个偶校验位，使得数据字节中的位总数（包括校验位）为偶数。
+
+奇偶校验位在串行通信中是一个简单但有效的错误检测机制。使用奇偶校验可以帮助在传输过程中发现并纠正少量的数据错误，提高数据传输的可靠性。然而，奇偶校验并不能纠正所有类型的错误，对于更高级的错误检测和纠正，通常需要更复杂的校验方法。
+
+
+在该项目中，我们采用的是CRC校验， 此后我们都将采用此种校验方式。
+*/
+
+StopBits
+/**
+`StopBits`是另一个枚举（Enum）类型，同样定义在文件`serial_port.hpp`中，位于`drivers::serial_driver`命名空间中。该枚举类型用于表示串行通信（Serial Communication）中的停止位（Stop Bits）数量。
+
+在串行通信中，每个数据字节都由数据位（Data Bits）、奇偶校验位（如果启用了奇偶校验）和停止位组成。停止位用于标识一个数据字节的结束。在每个数据字节的后面，发送方会插入指定数量的停止位，接收方在接收数据时，根据停止位的位置来识别数据帧的边界。
+
+在`StopBits`枚举中，有三个可能的值：
+
+1. `ONE`: 表示使用一个停止位。在这种情况下，每个数据帧由一个数据位、一个奇偶校验位（如果启用了奇偶校验）和一个停止位组成。
+
+2. `ONE_POINT_FIVE`: 表示使用1.5个停止位。这种情况下并不常见，通常只在特殊情况下使用。每个数据帧由一个数据位、一个奇偶校验位（如果启用了奇偶校验）和1.5个停止位组成。
+
+3. `TWO`: 表示使用两个停止位。在这种情况下，每个数据帧由一个数据位、一个奇偶校验位（如果启用了奇偶校验）和两个停止位组成。
+
+停止位的数量是串行通信的重要参数，它与数据传输的稳定性和可靠性密切相关。通常，大多数串行通信设备和协议使用一个停止位，但在某些特殊情况下，可能需要使用更多的停止位来满足特定设备或协议的要求。
+*/
+```
+
+
+
+### Typedef
+
+### 总结：如何使用？
+
+```c++
+// 一般采用 unique_ptr 来保存SerialDriver 对象
+
+#include <serial_driver/serial_driver.hpp>
+
+std::unique_ptr<drivers::serial_driver::SerialDriver> serial_driver;
+std::unique_ptr<drivers::serial_driver::SerialPortConfig> device_conifg;
+
+
+/**
+	device_name: Your port name like /tty/ACM0
+	device_config: driver::serial_driver::SerialPortConfig: 
+							包含三个部分：FlowControl, Parity, Stopbits
+*/
+
+serial_driver->init_port("device_name",device_conifg);
+```
+
 
 
 # ROS 1 知识
