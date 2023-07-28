@@ -25,6 +25,19 @@ struct MyStruct{
 */
 ```
 
+## C++20 新特性
+
+### Designated initializer
+
+```c++
+// 在C++ 20 中， .value_name = value 是一种声明类和结构体成员的一种新的方式。
+Detector::LightParams l_params = {
+    .min_ratio = declare_parameter("light.min_ratio", 0.1),
+    .max_ratio = declare_parameter("light.max_ratio", 0.4),
+    .max_angle = declare_parameter("light.max_angle", 40.0)};
+//指定的初始值设定项允许您在初始化期间指定结构或类中特定成员的值，而不必按声明顺序为所有成员提供值。
+```
+
 
 
 # ROS_CONTROL 文档
@@ -131,8 +144,6 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 https://eater.net/quaternions/video/intro
 https://www.youtube.com/watch?v=zjMuIxRvygQ
 
-
-
 # ROS General knowledge （ROS 通用知识)
 
 ## 通信
@@ -217,12 +228,6 @@ auto parameters_client = std::make_shared<rclcpp::SyncParametersClient> (node, "
 
 auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, "set param node name");
 
-
-
-
-
-
-
 ```
 
 ### 2. Composing multiple nodes in a single process
@@ -231,7 +236,103 @@ auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, 
 // 1. components
 ```
 
+## Cv_bridge
+
+![image-20230727160910693](/Users/dan/Library/Application Support/typora-user-images/image-20230727160910693.png)
+
+```c++
+// 具体内容请参考文档 http://wiki.ros.org/cv_bridge
+```
+
+## QOS
+
+```c++
+// qos (quality of service): 在ros中可以简单的理解为不同节点之间通信的要求，比如best effort, default 
+
+// 用法 
+#include <rclcpp/qos.hpp>
+
+// 文档地址如下：
+https://docs.ros.org/en/ros2_packages/rolling/api/rclcpp/generated/classrclcpp_1_1SensorDataQoS.html
+```
+
+
+
+## rcl_interfaces
+
+```c++
+// 描述：The ros client library common interfaces. 包含 ROS 客户端库并将在后台使用的消息和服务来传达更高级别的概念，例如参数。
+
+// rcl_interfaces::msg::Parameterdescriptor， 本质上是一个定义在ROS2 中间层
+
+// 文档地址： https://docs.ros.org/en/humble/Concepts/Basic/About-Interfaces.html
+
+// 如何使用
+
+// # 1. 如果不用, 例子如下：
+
+#include "rclcpp/rclcpp.hpp"
+
+int main(int argc, char** argv){
+  
+  rclcpp::init(argc, argv);
+  
+  auto node = rclcpp::Node::make_shared("my_node");
+ 
+  // Declare the parameter with an initial node
+  int parameter = delcare_parameter<int>("my_parameter",666);
+  
+   // Check and set limitations on the parameter value
+    if (my_parameter < 0) {
+        RCLCPP_WARN(node->get_logger(), "my_parameter cannot be negative. Setting to 0.");
+        my_parameter = 0;
+    } else if (my_parameter > 100) {
+        RCLCPP_WARN(node->get_logger(), "my_parameter cannot exceed 100. Setting to 100.");
+        my_parameter = 100;
+    }
+
+    RCLCPP_INFO(node->get_logger(), "my_parameter: %d", my_parameter);
+  
+  rclcpp::shutdown();
+  
+  return 0;
+}
+
+// 可以看到，代码在加了约束之后变得很臃肿， 为了代码的整洁，因此采用 rcl_interfaces::msgParamtertDescriptor 来使用函数进行约束， 以下为例子：
+
+  rcl_interfaces::msg::ParameterDescriptor param_desc; // 声明对象
+  param_desc.integer_range.resize(1); // resize inter_range 数组
+  param_desc.integer_range[0].step = 1; // 确保每个 parameter 都是1的倍数
+  param_desc.integer_range[0].from_value = 0; // 最小值为0
+  param_desc.integer_range[0].to_value = 255; // 最大值为 255
+  int binary_thres = declare_parameter("binary_thres", 160, param_desc);
+
+  param_desc.description = "0-RED, 1-BLUE"; // 参数描述以供参考
+  param_desc.integer_range[0].from_value = 0; // 最小值
+  param_desc.integer_range[0].to_value = 1; // 最大值
+  auto detect_color = declare_parameter("detect_color", RED, param_desc);
+
+// 你可以能对integer_range.resize(1) 有疑问， 但只要记住，如果要增加范围约束就要使用它，反例如下：
+rcl_interfaces::msg::ParameterDescriptor param_desc;
+param_desc.description = "This parameter has no constraints.";
+auto my_parameter = declare_parameter("my_parameter", 42, param_desc);
+
+```
+
+
+
 # ROS2知识
+
+## Ament 包工具
+
+```c++
+// 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
+
+// C++ 中使用 ament 方便构建的一些工具
+auto pkg_path = ament_index_cpp::get_package_share_directory("your package name");
+```
+
+
 
 ## CMAKE in ros2
 
@@ -408,6 +509,8 @@ serial_driver->init_port("device_name",device_conifg);
 
 
 # ROS 1 知识
+
+## ROS1 实践知识我写到了 github ma_train_for_ros 里，包括Cmake怎么写，自定义可运行节点怎么写，launch怎么写等等，里边也有 .md文件介绍，感兴趣的可以自己去看
 
 ## 辅助功能包的介绍
 
@@ -722,5 +825,25 @@ https://docs.openvino.ai/2022.3/get_started.html
 
 ```
 https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_Convert_Model_From_PyTorch.html
+```
+
+## ONNX format file
+
+### 1. What： 它是什么？
+
+```c++
+// ONNX: Open Neural Network Exchange
+/**
+	一种表示机器学习模型的文件格式（通常是深度学习即各种神经网络）， 提高了深度学习模型的可移植性，以下未ONNX 文件的核心用处：
+	1. 模型转化： 它允许开发者跨平台使用深度学习模型， 使得项目的协作更好并权衡不同模型的的效率使其效率最大化。
+	2. 部署方便： 由于ONNX 已经被许多深度学习框架所适配（Pytorch、TensorFlow...），所以它可以被很容易的部署。
+ 还有很多好处，我就不废话了-> _ -> 
+*/
+```
+
+### 2. 如何使用它？
+
+```
+
 ```
 
