@@ -191,6 +191,37 @@ Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 r
 
 http://wiki.ros.org/rviz/DisplayTypes/Marker
 
+```c++
+// 这部分代码示例请参考 github 中的 ma_train_for_ros 仓库， 经过我本人的学习来看，此部分较为简单，应该只有以下这部分需要理解一下：
+
+在ROS 2中，`visualization_msgs::msg::Marker` 消息有三种不同的动作类型：
+
+1. `visualization_msgs::msg::Marker::ADD`：该动作类型用于向可视化场景中添加一个新的标记（Marker）。如果已存在具有相同`id`的标记，它将被新的标记替换。
+
+2. `visualization_msgs::msg::Marker::MODIFY`：该动作类型用于修改可视化场景中的现有标记。标记的`id`必须与现有标记的`id`匹配，该动作才能生效。例如，如果你想更改已显示标记的颜色、位置或方向，可以发布一个带有`MODIFY`动作和相应`id`的新标记消息。
+
+3. `visualization_msgs::msg::Marker::DELETE`：该动作类型用于从可视化场景中删除现有标记。同样，标记的`id`必须与现有标记的`id`匹配，该标记才会被删除。这在你想从场景中删除一个标记时很有用，也许因为它不再相关或不需要显示。
+
+在RViz 2中，你可以通过将`visualization_msgs::msg::Marker`消息发布到`visualization_marker`主题来使用这些动作类型。根据你使用的动作类型，RViz 2将添加一个新标记、修改现有标记或从可视化场景中删除一个标记。这使得你可以根据应用程序的需求动态更新和管理在RViz 2中显示的可视化效果。
+  
+  
+visualization_msgs::msg::Marker消息的三种动作类型（ADD、MODIFY和DELETE），它们在操作上的差异如下：
+
+ADD动作：使用ADD动作时，你无需指定id，它会直接添加一个新的标记到可视化场景中。如果已经存在具有相同id的标记，它会被新的标记替换。
+
+MODIFY动作：使用MODIFY动作时，你需要指定要修改的现有标记的id。只有标记的id匹配现有标记的id时，才能对该标记进行修改。你可以通过发布带有MODIFY动作和相应id的新标记消息来更改标记的属性，例如位置、颜色或大小。
+
+DELETE动作：使用DELETE动作时，同样需要指定要删除的现有标记的id。只有标记的id匹配现有标记的id时，该标记才会从可视化场景中删除。
+
+所以，总结起来：
+
+ADD动作用于添加新的标记，无需id。
+MODIFY动作用于修改现有标记，需要指定相应的id。
+DELETE动作用于删除现有标记，也需要指定相应的id。
+```
+
+
+
 ## ROS tf
 
 ```c++
@@ -325,11 +356,28 @@ auto my_parameter = declare_parameter("my_parameter", 42, param_desc);
 
 ## Ament 包工具
 
+### C++ 工具
+
 ```c++
 // 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
 
 // C++ 中使用 ament 方便构建的一些工具
 auto pkg_path = ament_index_cpp::get_package_share_directory("your package name");
+```
+
+### Cmake工具
+
+```makefile
+# 当你在你的包中使用ament_export_dependencies()时，你正在告诉ROS 2构建系统和依赖管理工具，你的包需要依赖于这些指定的其他包，作用如下：
+
+# 传递依赖信息： 当你的包作为依赖项被其他ROS 2包使用时，通过使用ament_export_dependencies()，你的包会将它所依赖的其他包的信息传递给其他包。这样，当其他包构建时，它们会知道它们需要满足你的包的依赖关系。
+
+
+# 链接依赖库： 通过在ament_export_dependencies()中指定依赖包，你的包在编译时会链接到这些依赖包的库，以确保你的包能够正确地使用其中定义的功能和消息类型。
+
+ament_export_dependencies(ament_cmake rclcpp std_msgs visualization_msgs)
+
+
 ```
 
 
