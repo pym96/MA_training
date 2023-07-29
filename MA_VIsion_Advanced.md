@@ -1,6 +1,6 @@
 # C++ 部分
 
-## 1. attribute in the rail of struct
+## attribute in the rail of struct
 
 ```c++
 struct MyStruct{
@@ -36,6 +36,16 @@ Detector::LightParams l_params = {
     .max_ratio = declare_parameter("light.max_ratio", 0.4),
     .max_angle = declare_parameter("light.max_angle", 40.0)};
 //指定的初始值设定项允许您在初始化期间指定结构或类中特定成员的值，而不必按声明顺序为所有成员提供值。
+```
+
+## Why smart pointer?
+
+```c++
+// 首先要提出一个问题：当构建项目时，你是倾向于用对象管理资源还是用指针管理资源？
+
+
+
+
 ```
 
 
