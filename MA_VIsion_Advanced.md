@@ -381,6 +381,195 @@ auto my_parameter = declare_parameter("my_parameter", 42, param_desc);
 
 ```
 
+## ROS with smart pointer
+
+### ROS1 
+
+```c++
+/**
+在ROS 1中，使用的C++客户端库是roscpp，它与ROS 2的rclcpp不同。在roscpp中，并没有像ROS 2中rclcpp那样普遍使用`std::shared_ptr`。在ROS 1的roscpp中，资源管理主要使用裸指针（raw pointers）和boost库中的`boost::shared_ptr`。
+
+以下是在ROS 1中常见的资源管理方式：
+
+1. **ROS节点（Node）**:
+   - 在ROS 1中，节点通常使用裸指针来管理。例如，通过`ros::NodeHandle`创建的节点对象通常不使用智能指针进行管理。
+
+2. **ROS订阅者（Subscriber）和发布者（Publisher）**:
+   - ROS 1中的订阅者和发布者通常也使用裸指针或者boost库中的`boost::shared_ptr`进行管理。例如，通过`ros::Subscriber`和`ros::Publisher`创建的对象通常使用这些方法来管理。
+*/
+#include <ros/ros.h>
+#include <std_msgs/String.h>
+#include <boost/shared_ptr.hpp>
+
+class MyNode {
+public:
+  MyNode() {
+    // Create a publisher with boost::shared_ptr
+    publisher_ = boost::make_shared<ros::Publisher>(
+      nh_.advertise<std_msgs::String>("topic_name", 10)
+    );
+
+    // Create a subscriber with boost::shared_ptr
+    subscriber_ = boost::make_shared<ros::Subscriber>(
+      nh_.subscribe("topic_name", 10, &MyNode::messageCallback, this)
+    );
+  }
+
+  // Callback function
+  void messageCallback(const std_msgs::String::ConstPtr& msg) {
+    ROS_INFO("Received message: %s", msg->data.c_str());
+  }
+
+private:
+  ros::NodeHandle nh_;
+  // Publisher with boost::shared_ptr
+  boost::shared_ptr<ros::Publisher> publisher_;
+
+  // Subscriber with boost::shared_ptr
+  boost::shared_ptr<ros::Subscriber> subscriber_;
+};
+
+int main(int argc, char** argv) {
+  ros::init(argc, argv, "my_node");
+
+  // Create a node
+  MyNode node;
+
+  ros::spin();
+
+  return 0;
+}
+
+
+/**
+3. **回调函数**:
+   - ROS 1中的回调函数也通常使用裸指针。例如，订阅者回调函数使用的参数是指向ROS消息的裸指针。
+
+4. **节点执行器（Node Handle）**:
+   - ROS 1的节点执行器使用`ros::NodeHandle`对象，它在创建时不使用智能指针。
+
+需要注意的是，ROS 1是在ROS 2之前的版本，因此在ROS 1中可能没有像ROS 2中那样普遍使用现代C++特性和智能指针。ROS 1仍然使用了boost库来提供智能指针的功能（`boost::shared_ptr`），但它没有像ROS 2中的`std::shared_ptr`那样成为标准C++特性。
+*/
+
+
+/**
+总结：
+使用ROS 1，并且想要使用智能指针来更方便地管理资源，可以考虑使用boost库中的`boost::shared_ptr`。如果您在ROS 2中进行开发，rclcpp库已经采用了现代C++特性，包括`std::shared_ptr`，这使得资源管理更加便捷。
+*/
+```
+
+
+
+### ROS2 
+
+```c++
+/**
+在ROS 2中，rclcpp库提供了许多使用`std::shared_ptr`的类和对象，这是因为ROS 2中的C++客户端库（rclcpp）采用了现代C++编程范式，尤其是智能指针。使用`std::shared_ptr`可以更方便地管理资源的生命周期，避免内存泄漏和悬空指针等问题。以下是一些常见情况下使用`std::shared_ptr`的示例：
+*/
+
+/**
+1. **ROS 2节点（Node）**:
+   - 在ROS 2中，使用`rclcpp::Node::SharedPtr`来管理ROS 2节点对象的生命周期。这样做可以确保节点在不再需要时正确释放资源，用起来像java 虚拟机那样舒畅。
+*/
+
+
+/**
+2. **ROS 2订阅者（Subscriber）和发布者（Publisher）**:
+   - 通常使用`rclcpp::Subscription`和`rclcpp::Publisher`类的`SharedPtr`版本来管理订阅者和发布者的生命周期。这样做可以避免因订阅者和发布者的生命周期不匹配而导致的问题。
+*/
+
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <memory>
+
+class MyNode : public rclcpp::Node {
+public:
+  MyNode() : Node("my_node") {
+    // Create a publisher with std::shared_ptr
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic_name", 10);
+
+    // Create a subscriber with std::shared_ptr
+    subscriber_ = this->create_subscription<std_msgs::msg::String>(
+      "topic_name",
+      10,
+      std::bind(&MyNode::messageCallback, this, std::placeholders::_1)
+    );
+  }
+
+private:
+  // Publisher with std::shared_ptr
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+
+  // Subscriber with std::shared_ptr
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_;
+
+  // Callback function using std::shared_ptr as the parameter
+  void messageCallback(const std_msgs::msg::String::SharedPtr msg) {
+    RCLCPP_INFO(get_logger(), "Received message: %s", msg->data.c_str());
+  }
+};
+
+int main(int argc, char** argv) {
+  rclcpp::init(argc, argv);
+
+  // Create a node with std::shared_ptr
+  auto node = std::make_shared<MyNode>();
+
+  rclcpp::spin(node);
+
+  rclcpp::shutdown();
+  return 0;
+}
+
+
+/**
+3. **回调函数**:
+   - 当您将回调函数与ROS 2订阅者或服务端（Service）相关联时，可以使用`std::shared_ptr`作为回调函数的参数类型。这样做可以确保回调函数中访问的资源在合适的时候被正确释放。
+*/
+
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <memory>
+
+// Callback function type using std::shared_ptr as the parameter
+void messageCallback(const std_msgs::msg::String::SharedPtr msg) {
+  RCLCPP_INFO(rclcpp::get_logger("subscriber_node"), "Received message: %s", msg->data.c_str());
+}
+
+int main(int argc, char** argv) {
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("subscriber_node");
+
+  // Create a subscriber and associate the callback function with it
+  auto subscriber = node->create_subscription<std_msgs::msg::String>(
+    "topic_name",
+    10, // Queue size
+    messageCallback // Callback function
+  );
+
+  rclcpp::spin(node);
+
+  rclcpp::shutdown();
+  return 0;
+}
+
+
+/**
+4. **节点执行器（Executor）**:
+   - 节点执行器是用于执行ROS 2节点的主要循环的实用程序。`rclcpp::executors::SingleThreadedExecutor`和`rclcpp::executors::MultiThreadedExecutor`等执行器类通常使用`std::shared_ptr`来管理节点和回调函数。
+*/
+
+
+/** 总结：
+使用`std::shared_ptr`可以使资源的管理更容易，特别是在复杂的ROS 2应用程序中。智能指针的优点包括：
+
+- 自动处理资源的生命周期，避免手动释放资源和内存泄漏。
+- 提供简单的共享所有权机制，有助于在多个地方共享资源。
+- 可以很好地处理异步操作，特别是在多线程环境下。
+*/
+
+```
+
 
 
 # ROS2知识
