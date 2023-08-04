@@ -1501,4 +1501,7 @@ https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_
 # 导航理论知识(姿态+方位+位置+速度+感知的决策集合)
 
 ## Deep reinforcement learning(深度强化学习)
+![AI](https://github.com/pym96/MA_training/assets/105438207/593ecd8e-ab4a-411a-92f1-26ff13a467b9)
+![DRL](https://github.com/pym96/MA_training/assets/105438207/1f7db6ef-df0e-4635-a7e8-f4fc49018dd1)
+
 
