@@ -69,6 +69,67 @@ Detector::LightParams l_params = {
 */
 ```
 
+## std::bind with std::place_holder
+
+~~~c++
+/**
+`std::bind` 和 `std::placeholders` 是 C++11 中引入的功能，它们通常用于创建函数对象（Function Objects），也称为函数包装器（Function Wrappers）。`std::bind` 允许我们将函数与其参数绑定在一起，形成一个新的可调用对象。`std::placeholders` 则是用于占位参数，表示在调用绑定的函数对象时，某些参数是预留的，需要在实际调用时再提供。
+
+首先，先来了解一下 `std::bind` 的用法：
+
+```cpp
+*/
+
+#include <functional> // 包含头文件以使用 std::bind 和 std::placeholders
+
+// 示例函数，接受两个整数参数并返回它们的和
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    // 使用 std::bind 将函数 add 与参数 10 绑定
+    auto add_10 = std::bind(add, 10, std::placeholders::_1);
+
+    // 调用 add_10，并传入一个参数作为第二个参数
+    int result = add_10(5); // 此时相当于调用 add(10, 5)
+    std::cout << "Result: " << result << std::endl; // 输出 Result: 15
+
+    return 0;
+}
+
+
+/**
+在上面的例子中，我们使用 `std::bind` 创建了一个新的函数对象 `add_10`，它是函数 `add` 与参数 `10` 绑定在一起的结果。我们使用 `std::placeholders::_1` 来表示第一个预留的参数位置。当我们调用 `add_10(5)` 时，实际上是调用了 `add(10, 5)`，返回结果为 15。
+
+我们也可以绑定多个参数：
+
+```cpp
+*/
+
+#include <functional>
+#include <iostream>
+
+void print_sum(int a, int b, int c) {
+    std::cout << "Sum: " << (a + b + c) << std::endl;
+}
+
+int main() {
+    auto print_sum_abc = std::bind(print_sum, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+
+    // 调用 print_sum_abc，并传入三个参数
+    print_sum_abc(10, 20, 30); // 输出 Sum: 60
+
+    return 0;
+}
+
+/**
+在这个例子中，我们使用 `std::bind` 将函数 `print_sum` 与三个参数绑定在一起，然后通过 `print_sum_abc(10, 20, 30)` 调用，实际上是调用了 `print_sum(10, 20, 30)`，输出结果为 60。
+
+通过 `std::bind` 和 `std::placeholders`，我们可以方便地创建灵活的函数对象，并在稍后提供参数。这在某些场景下非常有用，特别是在设计回调函数时。然而，在现代的 C++ 中，推荐使用 Lambda 表达式来替代 `std::bind`，因为 Lambda 表达式更加灵活、清晰，并且在性能上通常更好。
+*/
+~~~
+
 
 
 # ROS_CONTROL 文档
@@ -249,6 +310,9 @@ DELETE动作：使用DELETE动作时，同样需要指定要删除的现有标�
 ADD动作用于添加新的标记，无需id。
 MODIFY动作用于修改现有标记，需要指定相应的id。
 DELETE动作用于删除现有标记，也需要指定相应的id。
+  
+// 对于makrer array 
+关于marker_array 的理解，可将其理解为一个类型为 marker 的 vector，它可以管理多个 marker 并做到同时发布。
 ```
 
 
@@ -311,11 +375,22 @@ auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, 
 ```c++
 // qos (quality of service): 在ros中可以简单的理解为不同节点之间通信的要求，比如best effort, default 
 
+/**
+在这个例子中，我们使用 `std::bind` 将函数 `print_sum` 与三个参数绑定在一起，然后通过 `print_sum_abc(10, 20, 30)` 调用，实际上是调用了 `print_sum(10, 20, 30)`，输出结果为 60。
+
+通过 `std::bind` 和 `std::placeholders`，我们可以方便地创建灵活的函数对象，并在稍后提供参数。这在某些场景下非常有用，特别是在设计回调函数时。然而，在现代的 C++ 中，推荐使用 Lambda 表达式来替代 `std::bind`，因为 Lambda 表达式更加灵活、清晰，并且在性能上通常更好。
+*/
+
+
+
 // 用法 
 #include <rclcpp/qos.hpp>
 
 // 文档地址如下：
 https://docs.ros.org/en/ros2_packages/rolling/api/rclcpp/generated/classrclcpp_1_1SensorDataQoS.html
+
+// 自定义qos blog 如下：
+https://blog.csdn.net/sph123s/article/details/108223669
 ```
 
 
@@ -570,6 +645,267 @@ int main(int argc, char** argv) {
 
 ```
 
+## Sensor_msgs/msg
+
+### Sensor_msgs/msg/camera_info.hpp
+
+```c++
+# This message defines meta information for a camera. It should be in a
+# camera namespace on topic "camera_info" and accompanied by up to five
+# image topics named:
+#
+#   image_raw - raw data from the camera driver, possibly Bayer encoded
+#   image            - monochrome, distorted
+#   image_color      - color, distorted
+#   image_rect       - monochrome, rectified
+#   image_rect_color - color, rectified
+#
+# The image_pipeline contains packages (image_proc, stereo_image_proc)
+# for producing the four processed image topics from image_raw and
+# camera_info. The meaning of the camera parameters are described in
+# detail at http://www.ros.org/wiki/image_pipeline/CameraInfo.
+#
+# The image_geometry package provides a user-friendly interface to
+# common operations using this meta information. If you want to, e.g.,
+# project a 3d point into image coordinates, we strongly recommend
+# using image_geometry.
+#
+# If the camera is uncalibrated, the matrices D, K, R, P should be left
+# zeroed out. In particular, clients may assume that K[0] == 0.0
+# indicates an uncalibrated camera.
+
+#######################################################################
+#                     Image acquisition info                          #
+#######################################################################
+
+# Time of image acquisition, camera coordinate frame ID
+Header header    # Header timestamp should be acquisition time of image
+                 # Header frame_id should be optical frame of camera
+                 # origin of frame should be optical center of camera
+                 # +x should point to the right in the image
+                 # +y should point down in the image
+                 # +z should point into the plane of the image
+
+
+#######################################################################
+#                      Calibration Parameters                         #
+#######################################################################
+# These are fixed during camera calibration. Their values will be the #
+# same in all messages until the camera is recalibrated. Note that    #
+# self-calibrating systems may "recalibrate" frequently.              #
+#                                                                     #
+# The internal parameters can be used to warp a raw (distorted) image #
+# to:                                                                 #
+#   1. An undistorted image (requires D and K)                        #
+#   2. A rectified image (requires D, K, R)                           #
+# The projection matrix P projects 3D points into the rectified image.#
+#######################################################################
+
+# The image dimensions with which the camera was calibrated. Normally
+# this will be the full camera resolution in pixels.
+uint32 height
+uint32 width
+
+# The distortion model used. Supported models are listed in
+# sensor_msgs/distortion_models.h. For most cameras, "plumb_bob" - a
+# simple model of radial and tangential distortion - is sufficent.
+string distortion_model
+
+# The distortion parameters, size depending on the distortion model.
+# For "plumb_bob", the 5 parameters are: (k1, k2, t1, t2, k3).
+float64[] D
+
+# Intrinsic camera matrix for the raw (distorted) images.
+#     [fx  0 cx]
+# K = [ 0 fy cy]
+#     [ 0  0  1]
+# Projects 3D points in the camera coordinate frame to 2D pixel
+# coordinates using the focal lengths (fx, fy) and principal point
+# (cx, cy).
+float64[9]  K # 3x3 row-major matrix
+
+# Rectification matrix (stereo cameras only)
+# A rotation matrix aligning the camera coordinate system to the ideal
+# stereo image plane so that epipolar lines in both stereo images are
+# parallel.
+float64[9]  R # 3x3 row-major matrix
+
+# Projection/camera matrix
+#     [fx'  0  cx' Tx]
+# P = [ 0  fy' cy' Ty]
+#     [ 0   0   1   0]
+# By convention, this matrix specifies the intrinsic (camera) matrix
+#  of the processed (rectified) image. That is, the left 3x3 portion
+#  is the normal camera intrinsic matrix for the rectified image.
+# It projects 3D points in the camera coordinate frame to 2D pixel
+#  coordinates using the focal lengths (fx', fy') and principal point
+#  (cx', cy') - these may differ from the values in K.
+# For monocular cameras, Tx = Ty = 0. Normally, monocular cameras will
+#  also have R = the identity and P[1:3,1:3] = K.
+# For a stereo pair, the fourth column [Tx Ty 0]' is related to the
+#  position of the optical center of the second camera in the first
+#  camera's frame. We assume Tz = 0 so both cameras are in the same
+#  stereo image plane. The first camera always has Tx = Ty = 0. For
+#  the right (second) camera of a horizontal stereo pair, Ty = 0 and
+#  Tx = -fx' * B, where B is the baseline between the cameras.
+# Given a 3D point [X Y Z]', the projection (x, y) of the point onto
+#  the rectified image is given by:
+#  [u v w]' = P * [X Y Z 1]'
+#         x = u / w
+#         y = v / w
+#  This holds for both images of a stereo pair.
+float64[12] P # 3x4 row-major matrix
+
+
+#######################################################################
+#                      Operational Parameters                         #
+#######################################################################
+# These define the image region actually captured by the camera       #
+# driver. Although they affect the geometry of the output image, they #
+# may be changed freely without recalibrating the camera.             #
+#######################################################################
+
+# Binning refers here to any camera setting which combines rectangular
+#  neighborhoods of pixels into larger "super-pixels." It reduces the
+#  resolution of the output image to
+#  (width / binning_x) x (height / binning_y).
+# The default values binning_x = binning_y = 0 is considered the same
+#  as binning_x = binning_y = 1 (no subsampling).
+uint32 binning_x
+uint32 binning_y
+
+# Region of interest (subwindow of full camera resolution), given in
+#  full resolution (unbinned) image coordinates. A particular ROI
+#  always denotes the same window of pixels on the camera sensor,
+#  regardless of binning settings.
+# The default setting of roi (all values 0) is considered the same as
+#  full resolution (roi.width = width, roi.height = height).
+RegionOfInterest roi
+
+  
+// Compact defination
+std_msgs/Header header
+uint32 height
+uint32 width
+string distortion_model
+float64[] D
+float64[9] K
+float64[9] R
+float64[12] P
+uint32 binning_x
+uint32 binning_y
+sensor_msgs/RegionOfInterest roi
+
+
+// 用来保存相机的基本参数比如：相机的extrinsic 矩阵和intrinsic矩阵和 distortion paramters 
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/camera_info.hpp>
+
+class CameraNode : public rclcpp::Node {
+public:
+  CameraNode() : Node("camera_node") {
+    // Create a publisher for CameraInfo message
+    publisher_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("camera_info", 10);
+
+    // Create a timer to publish CameraInfo every 1 second
+    timer_ = this->create_wall_timer(
+      std::chrono::seconds(1),
+      std::bind(&CameraNode::publishCameraInfo, this)
+    );
+
+    // Create a subscriber for CameraInfo message
+    subscriber_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
+      "camera_info",
+      10,
+      std::bind(&CameraNode::cameraInfoCallback, this, std::placeholders::_1)
+    );
+  }
+
+private:
+  rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr publisher_;
+  rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr subscriber_;
+  rclcpp::TimerBase::SharedPtr timer_;
+
+  void publishCameraInfo() {
+    // Create a CameraInfo message
+    auto camera_info_msg = std::make_shared<sensor_msgs::msg::CameraInfo>();
+
+    // Populate the CameraInfo message with some dummy data
+    camera_info_msg->header.stamp = this->now();
+    camera_info_msg->height = 480;
+    camera_info_msg->width = 640;
+
+    // Publish the CameraInfo message
+    publisher_->publish(camera_info_msg);
+  }
+
+  void cameraInfoCallback(const sensor_msgs::msg::CameraInfo::SharedPtr msg) {
+    // Callback function to process incoming CameraInfo messages
+    // Here you can access the data in the received CameraInfo message
+    RCLCPP_INFO(get_logger(), "Received CameraInfo message with height: %d and width: %d", msg->height, msg->width);
+  }
+};
+
+int main(int argc, char** argv) {
+  rclcpp::init(argc, argv);
+
+  // Create a node
+  auto node = std::make_shared<CameraNode>();
+
+  rclcpp::spin(node);
+
+  rclcpp::shutdown();
+
+  return 0;
+}
+
+```
+
+## Image_transport in ros
+
+```c++
+// 在ROS（机器人操作系统）中，image_transport 是一个用于图像传输的包，它提供了一种优化的图像传输方式，旨在减少图像传输的延迟和带宽占用。
+
+image_transport 提供了一种在ROS节点之间传输图像数据的机制，支持不同的传输方式（Transport）以适应不同的需求。传输方式可以在配置文件中指定，允许开发人员根据系统需求选择适当的传输策略。常见的传输方式包括 raw、compressed、theora 等。
+
+以下是一些 image_transport 的重要概念和用法：
+
+传输方式（Transport）： image_transport 允许用户选择图像传输的方式。每种传输方式都有其优点和限制，例如 compressed 传输可以减小带宽占用，但会增加处理时间。不同传输方式适用于不同的应用场景。
+
+ImageTransport 类： image_transport 包提供了 ImageTransport 类，它是用于创建图像传输对象的工具。你可以使用 ImageTransport 类创建发布者和订阅者，以便在节点之间传输图像数据。
+
+图像消息格式： image_transport 支持将图像消息格式进行压缩，从而减小传输的数据量。这对于在带宽受限的情况下特别有用。
+
+图像话题： 用 image_transport创建图像话题来发布和接收图像数据。这些话题可以用于在ROS节点之间传递图像信息。
+  
+// 如何更改传输方式？
+更改传输方式（例如 `Raw`、`Compressed`、`Theora` 等）通常通过修改话题名称来实现。在 `image_transport` 中，不同的传输方式使用不同的话题名称后缀来标识。
+
+传输方式和话题名称的对应关系如下：
+- `raw` 传输方式：在话题名称后添加 `_raw` 后缀，例如 `"camera_image_raw"`。
+- `compressed` 传输方式：在话题名称后添加 `_compressed` 后缀，例如 `"camera_image_compressed"`。
+- `theora` 传输方式：在话题名称后添加 `_theora` 后缀，例如 `"camera_image_theora"`。
+
+通过在话题名称中添加不同的后缀，你可以在不同的传输方式之间进行切换，从而实现不同的数据传输策略，以适应不同的带宽和处理需求。
+
+举个例子，如果你想从 `compressed` 传输方式切换到 `theora` 传输方式，只需将发布者和订阅者的话题名称中的后缀从 `_compressed` 改为 `_theora` 即可，其他部分的代码保持不变。
+  
+// 为什么要用 image_transport?
+在ROS中，`Image` 消息的传输最好与 `image_transport` 结合使用，主要是出于以下几个原因：
+
+1. **减小带宽和处理负担：** 图像数据通常具有较大的数据量，特别是在高分辨率或高帧率的情况下。使用 `image_transport` 可以选择不同的传输方式（如 `compressed` 或 `theora`），通过压缩图像数据来减小带宽占用，从而降低通信和处理的负担。
+
+2. **实时性：** 有些传输方式在传输图像数据时能够提供更低的延迟，特别是在网络带宽受限的情况下。这对于需要实时图像数据的应用非常重要，如机器人控制、视觉导航等。
+
+3. **可扩展性：** `image_transport` 提供了一种灵活的机制，可以根据实际需求选择不同的传输方式。这样，你可以根据应用的性能需求、硬件资源和通信环境来选择最适合的传输方式。
+
+4. **与可视化工具的兼容性：** `image_transport` 与ROS的可视化工具（如RViz）集成得很好，可以在这些工具中方便地显示图像数据，以便进行调试和可视化分析。
+
+5. **多平台支持：** `image_transport` 为不同的图像传输方式提供了统一的接口，这样你可以在不同的硬件平台和通信环境中使用相同的代码。
+
+总结： `image_transport` 为在ROS中传输图像数据提供了一种更加灵活、高效和实时的方式，使图像数据在不同的应用场景中能够更好地满足需求。
+```
+
 
 
 # ROS2知识
@@ -579,7 +915,7 @@ int main(int argc, char** argv) {
 ### C++ 工具
 
 ```c++
-// 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
+ // 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
 
 // C++ 中使用 ament 方便构建的一些工具
 auto pkg_path = ament_index_cpp::get_package_share_directory("your package name");
@@ -775,6 +1111,53 @@ serial_driver->init_port("device_name",device_conifg);
 ```
 
 
+
+## Rclcpp::ParameterEventHandler 监听参数的动态变化
+
+```c++
+// ROS1 中，paramter参数机制无法实现动态监控（需要配合专门的动态机制），比如正在使用的参数被其他节点改变了，如果不重新查询的话就无法确定改变后的值，ROS1的例子如下：
+
+#include <ros/ros.h>
+#include <dynamic_reconfigure/server.h>
+#include <your_package_name/YourConfig.h>  // Replace with your dynamic reconfigure message type
+
+// Callback function for dynamic reconfigure
+void dynamicReconfigureCallback(your_package_name::YourConfig &config, uint32_t level)
+{
+    ROS_INFO("Received new parameter value: %d", config.your_parameter_name);
+}
+
+int main(int argc, char** argv)
+{
+    ros::init(argc, argv, "dynamic_param_demo");
+    ros::NodeHandle nh;
+
+    // Create dynamic reconfigure server
+    dynamic_reconfigure::Server<your_package_name::YourConfig> server;
+    dynamic_reconfigure::Server<your_package_name::YourConfig>::CallbackType f;
+
+    f = boost::bind(&dynamicReconfigureCallback, _1, _2);
+    server.setCallback(f);
+
+    ros::spin();
+
+    return 0;
+}
+
+// 但在ros2 中，由于引入了rclcpp::ParamterEvenHandler 机制，我们无须动态监控，只需给parameter改变时加一个回调函数即可。
+ // Debug param change moniter
+  std::shared_ptr<rclcpp::ParameterEventHandler> debug_param_sub_;
+  std::shared_ptr<rclcpp::ParameterCallbackHandle> debug_cb_handle_;
+
+  debug_param_sub_ = std::make_shared<rclcpp::ParameterEventHandler>(this);
+  debug_cb_handle_ =
+    debug_param_sub_->add_parameter_callback("debug", [this](const rclcpp::Parameter & p) {
+      debug_ = p.as_bool();
+      debug_ ? createDebugPublishers() : destroyDebugPublishers();
+    });
+
+
+```
 
 # ROS 1 知识
 
@@ -1115,3 +1498,6 @@ https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_
 
 ```
 
+# 导航理论知识
+
+## 
