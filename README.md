@@ -22,3 +22,5 @@ https://www.fdxlabs.com/calculate-x-y-z-real-world-coordinates-from-a-single-cam
 https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#:~:text=Linux%20Serial%20Ports%20Using%20C%2FC%2B%2B%201%20Everything%20Is,...%208%20VMIN%20and%20VTIME%20%28c_cc%29%20...%20%E6%9B%B4%E5%A4%9A%E9%A1%B9%E7%9B%AE
 
 对于使用ROS的成员， 关于ros_serial_driver包的使用请参考 MA_vision_advanced.md 文档，里边有较简单易懂的介绍。
+
+# 想重开学电气（不是）
