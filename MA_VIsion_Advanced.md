@@ -130,6 +130,10 @@ int main() {
 */
 ~~~
 
+# Linux 
+
+## Give permission to your serial port
+sudo chmod a+rw /dev/ttyACM0
 
 
 # ROS_CONTROL 文档
