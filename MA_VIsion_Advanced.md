@@ -2,7 +2,7 @@
 
 ## attribute in the rail of struct
 
-```c++
+````c++
 struct MyStruct{
   // define something here
 }__attribute__((something));
@@ -23,7 +23,49 @@ struct MyStruct{
 
 如果需要为结构体或函数提供特定属性并希望保持可移植性，考虑使用标准的 C++ 机制，比如 `alignas`、`[[nodiscard]]` 或 C++11 及以上版本中的 `[[deprecated]]` 属性，这些机制更加标准化和广泛支持。
 */
+
+
+示例如下：
+struct ReceivePacket
+{
+  uint8_t header = 0x5A;
+  uint8_t detect_color : 1;  // 0-red 1-blue
+  bool reset_tracker : 1;
+  uint8_t reserved : 6;
+  float roll;
+  float pitch;
+  float yaw;
+  float aim_x;
+  float aim_y;
+  float aim_z;
+  uint16_t checksum = 0;
+} __attribute__((packed));
+  问：当一个特定的对象被建立时，比如ReceivePacket p; p的各个变量在内存上是按结构体内的声明顺序分布的吗？
+    
+    
+  答：
+   当一个特定的对象（例如 `ReceivePacket p;`）被创建时，结构体内的成员变量在内存上是按照结构体内的声明顺序进行分布的。这意味着内存中的布局将按照在结构体中声明的顺序存储每个成员变量。
+
+以上成员变量的声明顺序是：
+
+```cpp
+uint8_t header = 0x5A;
+uint8_t detect_color : 1;  // 0-red 1-blue
+bool reset_tracker : 1;
+uint8_t reserved : 6;
+float roll;
+float pitch;
+float yaw;
+float aim_x;
+float aim_y;
+float aim_z;
+uint16_t checksum = 0;
 ```
+
+在内存中，`p` 对象的布局将按照上述顺序存储这些成员变量。每个成员变量将按照其对应的类型在内存中占据相应的字节大小，并按照顺序紧密地排列在一起，以构成完整的结构体对象 `p`。
+
+但结构体的内存布局还可能受到编译器的优化和对齐方式的影响。为了确保结构体成员的正确对齐，有时编译器可能在成员之间添加填充字节，所以可以使用 `__attribute__((packed))` 这样的特性来告诉编译器不要进行额外的填充，以便更精确地控制结构体的内存布局。
+````
 
 ## C++20 新特性
 
@@ -130,10 +172,6 @@ int main() {
 */
 ~~~
 
-# Linux 
-
-## Give permission to your serial port
-sudo chmod a+rw /dev/ttyACM0
 
 
 # ROS_CONTROL 文档
@@ -239,6 +277,10 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 
 https://eater.net/quaternions/video/intro
 https://www.youtube.com/watch?v=zjMuIxRvygQ
+
+## Control theory
+
+d
 
 # ROS General knowledge （ROS 通用知识)
 
@@ -1364,7 +1406,7 @@ https://navigation.ros.org/
     </joint>
 ```
 
-## Using xacro to write URDF eaiser
+## Using xacro to write URDF eaiser: xacro就像urdf 的函数形式一样，使得link或者joint更加方便移植或调用
 
 ```xml
 # All things are stored in the name.urdf.xacro file
@@ -1505,7 +1547,4 @@ https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_
 # 导航理论知识(姿态+方位+位置+速度+感知的决策集合)
 
 ## Deep reinforcement learning(深度强化学习)
-![AI](https://github.com/pym96/MA_training/assets/105438207/593ecd8e-ab4a-411a-92f1-26ff13a467b9)
-![DRL](https://github.com/pym96/MA_training/assets/105438207/1f7db6ef-df0e-4635-a7e8-f4fc49018dd1)
-
 
