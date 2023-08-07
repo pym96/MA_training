@@ -172,6 +172,18 @@ int main() {
 */
 ~~~
 
+## std::vector resize() and reserve()
+
+```c++
+reserve() 用于预留内存容量，不改变大小。
+resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
+  
+ `resize()` 会改变 vector 的大小，并且可能会导致内存分配和重新分配。当你使用 `resize()` 增加 vector 的大小时，如果新的大小超过了当前容量，vector 可能会重新分配内存以容纳更多的元素，这可能会导致内存重新分配和拷贝。如果新的大小小于当前容量，vector 不会重新分配内存，但超出新大小的元素会被删除。
+
+总结：`resize()` 可以改变 vector 的大小，但可能会影响内存的分配和使用情况。如果预先分配足够的内存而不改变 vector 的大小，可以使用 `reserve()` 函数。
+  
+```
+
 
 
 # ROS_CONTROL 文档
@@ -1547,4 +1559,18 @@ https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_
 # 导航理论知识(姿态+方位+位置+速度+感知的决策集合)
 
 ## Deep reinforcement learning(深度强化学习)
+
+### ROS基本坐标系理解：map、odom、base_link、base_laser
+
+```c++
+map:地图坐标系，顾名思义，一般设该坐标系为固定坐标系（fixed frame），一般与机器人所在的世界坐标系一致。
+
+base_link:机器人本体坐标系，与机器人中心重合，当然有些机器人(PR 2)是base_footprint,其实是一个意思。
+
+odom：里程计坐标系，这里要区分开odom topic，这是两个概念，一个是坐标系，一个是根据编码器（或者视觉等）计算的里程计。但是两者也有关系，odom topic 转化得位姿矩阵是odom-->base_link的tf关系。这时可有会有疑问，odom和map坐标系是不是重合的？（这也是我写这个博客解决的主要问题）可以很肯定的告诉你，机器人运动开始是重合的。但是，随着时间的推移是不重合的，而出现的偏差就是里程计的累积误差。那map-->odom的tf怎么得到?就是在一些校正传感器合作校正的package比如amcl会给出一个位置估计（localization），这可以得到map-->base_link的tf，所以估计位置和里程计位置的偏差也就是odom与map的坐标系偏差。所以，如果你的odom计算没有错误，那么map-->odom的tf就是0.
+
+一般起始时认为map 与odom的坐标系重合一致。 随着里程计的累计误差。 /odom的messsage数据是相对odom frame的值。如果odom数据都正确，那map 与odom始终重合。 但实际中有里程累计误差。 就需要做补偿。 利用运动预测与scanmatcher 得到的/odom与原订阅的odom不同。 两者的差异就通过调整坐标系间的变换反应出来，使scan数据尽量与地图想匹配。。 odom的消息你可以认为只与底盘驱动有关，相对map就认为作了融合调整。
+
+base_laser:激光雷达的坐标系，与激光雷达的安装点有关，其与base_link的tf为固定的。
+```
 
