@@ -187,6 +187,12 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
 
 
 # ROS_CONTROL 文档
+![image](https://github.com/pym96/MA_training/assets/105438207/6a785eca-ad86-45f6-a913-f29453a69004)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/ab893ef5-3fce-4a8b-b908-2fc2311d33bf)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/f4651975-182d-4b92-89ab-04b4a5ce0851)
+
 
 ## 构建工业级移动机械臂
 
