@@ -197,6 +197,17 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
 
 ![image](https://github.com/pym96/MA_training/assets/105438207/5f4d03be-a0af-402c-82d6-959328e4506c)
 
+### 开环控制
+![image](https://github.com/pym96/MA_training/assets/105438207/c9d07bd7-7170-4f2f-8441-ef91cd8443fa)
+
+### 闭环控制
+![image](https://github.com/pym96/MA_training/assets/105438207/0b3eef61-798e-4667-a2e5-42077c977ec2)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/3b8b8e76-8dfb-40eb-9433-629966ba0ecd)
+
+### Demo in real 
+![image](https://github.com/pym96/MA_training/assets/105438207/6ef3e1ec-4bbd-4b95-a5b4-a94ae6745454)
+
 
 ## 构建工业级移动机械臂
 
