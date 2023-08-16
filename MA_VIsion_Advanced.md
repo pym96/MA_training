@@ -208,6 +208,10 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
 ### Demo in real 
 ![image](https://github.com/pym96/MA_training/assets/105438207/6ef3e1ec-4bbd-4b95-a5b4-a94ae6745454)
 
+### Camera in ros 
+![image](https://github.com/pym96/MA_training/assets/105438207/6a8d58de-4eaf-4076-9e5d-e787848b1a9e)
+
+
 
 ## 构建工业级移动机械臂
 
