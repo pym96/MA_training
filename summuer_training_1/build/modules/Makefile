@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/summuer_training_1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/summuer_training_1/build
+=======
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1/build
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +94,24 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles /home/dan/train/train/MA_training/summuer_training_1/build/modules//CMakeFiles/progress.marks
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles 0
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules//CMakeFiles/progress.marks
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 0
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/clean
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/clean
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +120,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/preinstall
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/preinstall
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/preinstall
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/preinstall
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : depend
 
 # Convenience name for target.
 modules/CMakeFiles/modules.dir/rule:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/CMakeFiles/modules.dir/rule
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/CMakeFiles/modules.dir/rule
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : modules/CMakeFiles/modules.dir/rule
 
 # Convenience name for target.
@@ -127,7 +160,11 @@ modules: modules/CMakeFiles/modules.dir/rule
 
 # fast build rule for target.
 modules/fast:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : modules/fast
 
 cv/cv.o: cv/cv.cpp.o
@@ -135,7 +172,11 @@ cv/cv.o: cv/cv.cpp.o
 
 # target to build an object file
 cv/cv.cpp.o:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.o
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.o
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : cv/cv.cpp.o
 
 cv/cv.i: cv/cv.cpp.i
@@ -143,7 +184,11 @@ cv/cv.i: cv/cv.cpp.i
 
 # target to preprocess a source file
 cv/cv.cpp.i:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.i
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.i
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : cv/cv.cpp.i
 
 cv/cv.s: cv/cv.cpp.s
@@ -151,7 +196,11 @@ cv/cv.s: cv/cv.cpp.s
 
 # target to generate assembly for a file
 cv/cv.cpp.s:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.s
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/cv/cv.cpp.s
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : cv/cv.cpp.s
 
 fmt_lib/fmt_lib.o: fmt_lib/fmt_lib.cpp.o
@@ -159,7 +208,11 @@ fmt_lib/fmt_lib.o: fmt_lib/fmt_lib.cpp.o
 
 # target to build an object file
 fmt_lib/fmt_lib.cpp.o:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : fmt_lib/fmt_lib.cpp.o
 
 fmt_lib/fmt_lib.i: fmt_lib/fmt_lib.cpp.i
@@ -167,7 +220,11 @@ fmt_lib/fmt_lib.i: fmt_lib/fmt_lib.cpp.i
 
 # target to preprocess a source file
 fmt_lib/fmt_lib.cpp.i:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : fmt_lib/fmt_lib.cpp.i
 
 fmt_lib/fmt_lib.s: fmt_lib/fmt_lib.cpp.s
@@ -175,7 +232,11 @@ fmt_lib/fmt_lib.s: fmt_lib/fmt_lib.cpp.s
 
 # target to generate assembly for a file
 fmt_lib/fmt_lib.cpp.s:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : fmt_lib/fmt_lib.cpp.s
 
 # Help Target
@@ -204,6 +265,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : cmake_check_build_system
 

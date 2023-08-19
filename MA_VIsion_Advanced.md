@@ -1,8 +1,14 @@
 # C++ 部分
 
+<<<<<<< HEAD
 ## attribute in the rail of struct
 
 ````c++
+=======
+## 1. attribute in the rail of struct
+
+```c++
+>>>>>>> b4fbe88 (Add deep learning demo)
 struct MyStruct{
   // define something here
 }__attribute__((something));
@@ -23,6 +29,7 @@ struct MyStruct{
 
 如果需要为结构体或函数提供特定属性并希望保持可移植性，考虑使用标准的 C++ 机制，比如 `alignas`、`[[nodiscard]]` 或 C++11 及以上版本中的 `[[deprecated]]` 属性，这些机制更加标准化和广泛支持。
 */
+<<<<<<< HEAD
 
 
 示例如下：
@@ -67,6 +74,10 @@ uint16_t checksum = 0;
 但结构体的内存布局还可能受到编译器的优化和对齐方式的影响。为了确保结构体成员的正确对齐，有时编译器可能在成员之间添加填充字节，所以可以使用 `__attribute__((packed))` 这样的特性来告诉编译器不要进行额外的填充，以便更精确地控制结构体的内存布局。
 ````
 
+=======
+```
+
+>>>>>>> b4fbe88 (Add deep learning demo)
 ## C++20 新特性
 
 ### Designated initializer
@@ -80,6 +91,7 @@ Detector::LightParams l_params = {
 //指定的初始值设定项允许您在初始化期间指定结构或类中特定成员的值，而不必按声明顺序为所有成员提供值。
 ```
 
+<<<<<<< HEAD
 ## Why smart pointer?
 
 ```c++
@@ -212,6 +224,11 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
 ![image](https://github.com/pym96/MA_training/assets/105438207/6a8d58de-4eaf-4076-9e5d-e787848b1a9e)
 
 
+=======
+
+
+# ROS_CONTROL 文档
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 ## 构建工业级移动机械臂
 
@@ -315,10 +332,13 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
 https://eater.net/quaternions/video/intro
 https://www.youtube.com/watch?v=zjMuIxRvygQ
 
+<<<<<<< HEAD
 ## Control theory
 
 d
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 # ROS General knowledge （ROS 通用知识)
 
 ## 通信
@@ -366,6 +386,7 @@ Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 r
 
 http://wiki.ros.org/rviz/DisplayTypes/Marker
 
+<<<<<<< HEAD
 ```c++
 // 这部分代码示例请参考 github 中的 ma_train_for_ros 仓库， 经过我本人的学习来看，此部分较为简单，应该只有以下这部分需要理解一下：
 
@@ -400,6 +421,8 @@ DELETE动作用于删除现有标记，也需要指定相应的id。
 
 
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 ## ROS tf
 
 ```c++
@@ -458,6 +481,7 @@ auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, 
 ```c++
 // qos (quality of service): 在ros中可以简单的理解为不同节点之间通信的要求，比如best effort, default 
 
+<<<<<<< HEAD
 /**
 在这个例子中，我们使用 `std::bind` 将函数 `print_sum` 与三个参数绑定在一起，然后通过 `print_sum_abc(10, 20, 30)` 调用，实际上是调用了 `print_sum(10, 20, 30)`，输出结果为 60。
 
@@ -466,14 +490,19 @@ auto parameters_client = std::make_shared<rclcpp::AsyncParametersClient> (node, 
 
 
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 // 用法 
 #include <rclcpp/qos.hpp>
 
 // 文档地址如下：
 https://docs.ros.org/en/ros2_packages/rolling/api/rclcpp/generated/classrclcpp_1_1SensorDataQoS.html
+<<<<<<< HEAD
 
 // 自定义qos blog 如下：
 https://blog.csdn.net/sph123s/article/details/108223669
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 ```
 
 
@@ -539,6 +568,7 @@ auto my_parameter = declare_parameter("my_parameter", 42, param_desc);
 
 ```
 
+<<<<<<< HEAD
 ## ROS with smart pointer
 
 ### ROS1 
@@ -989,21 +1019,29 @@ ImageTransport 类： image_transport 包提供了 ImageTransport 类，它是�
 总结： `image_transport` 为在ROS中传输图像数据提供了一种更加灵活、高效和实时的方式，使图像数据在不同的应用场景中能够更好地满足需求。
 ```
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 
 # ROS2知识
 
 ## Ament 包工具
 
+<<<<<<< HEAD
 ### C++ 工具
 
 ```c++
  // 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
+=======
+```c++
+// 同 ROS1 中的 catkin, ROS2 中也有自己的一套包管理工具， 叫做 ament
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 // C++ 中使用 ament 方便构建的一些工具
 auto pkg_path = ament_index_cpp::get_package_share_directory("your package name");
 ```
 
+<<<<<<< HEAD
 ### Cmake工具
 
 ```makefile
@@ -1019,6 +1057,8 @@ ament_export_dependencies(ament_cmake rclcpp std_msgs visualization_msgs)
 
 ```
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 
 ## CMAKE in ros2
@@ -1195,6 +1235,7 @@ serial_driver->init_port("device_name",device_conifg);
 
 
 
+<<<<<<< HEAD
 ## Rclcpp::ParameterEventHandler 监听参数的动态变化
 
 ```c++
@@ -1242,6 +1283,8 @@ int main(int argc, char** argv)
 
 ```
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)
 # ROS 1 知识
 
 ## ROS1 实践知识我写到了 github ma_train_for_ros 里，包括Cmake怎么写，自定义可运行节点怎么写，launch怎么写等等，里边也有 .md文件介绍，感兴趣的可以自己去看
@@ -1443,7 +1486,11 @@ https://navigation.ros.org/
     </joint>
 ```
 
+<<<<<<< HEAD
 ## Using xacro to write URDF eaiser: xacro就像urdf 的函数形式一样，使得link或者joint更加方便移植或调用
+=======
+## Using xacro to write URDF eaiser
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 ```xml
 # All things are stored in the name.urdf.xacro file
@@ -1581,6 +1628,7 @@ https://docs.openvino.ai/2022.3/openvino_docs_MO_DG_prepare_model_convert_model_
 
 ```
 
+<<<<<<< HEAD
 # 导航理论知识(姿态+方位+位置+速度+感知的决策集合)
 
 ## Deep reinforcement learning(深度强化学习)
@@ -1599,3 +1647,5 @@ odom：里程计坐标系，这里要区分开odom topic，这是两个概念，
 base_laser:激光雷达的坐标系，与激光雷达的安装点有关，其与base_link的tf为固定的。
 ```
 
+=======
+>>>>>>> b4fbe88 (Add deep learning demo)

@@ -1,7 +1,13 @@
 modules/CMakeFiles/modules.dir/cv/cv.cpp.o: \
+<<<<<<< HEAD
  /home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.cpp \
  /usr/include/stdc-predef.h \
  /home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.hpp \
+=======
+ /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/cv/cv.cpp \
+ /usr/include/stdc-predef.h \
+ /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/cv/cv.hpp \
+>>>>>>> b4fbe88 (Add deep learning demo)
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

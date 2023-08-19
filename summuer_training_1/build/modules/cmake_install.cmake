@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/dan/train/train/MA_training/summuer_training_1/modules
+=======
+# Install script for directory: /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

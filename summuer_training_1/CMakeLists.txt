@@ -10,6 +10,10 @@ set(SRC_LIST orb_cv.cpp)
 set(2D_2D pose_estimation_2d_to_2d.cpp)
 set(KALMAN kalman_filter.cpp)
 set(EKF EKF.cpp)
+<<<<<<< HEAD
+=======
+set(TEST test.cpp)
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 ## Export compile commands for clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -29,8 +33,17 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 message(STATUS "Current binary working dir is " ${PROJECT_BINARY_DIR})
 message(STATUS "Current source working dir is " ${PROJECT_SOURCE_DIR})
 
+<<<<<<< HEAD
 add_executable(${PROJECT_NAME} ${EKF})
 
 include_directories(modules)
 add_subdirectory(modules)
 target_link_libraries(MA modules)
+=======
+# add_executable(${PROJECT_NAME} ${EKF})
+add_executable(T ${TEST})
+
+include_directories(modules)
+add_subdirectory(modules)
+target_link_libraries(T modules)
+>>>>>>> b4fbe88 (Add deep learning demo)

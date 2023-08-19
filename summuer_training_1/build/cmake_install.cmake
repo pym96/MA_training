@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/dan/train/train/MA_training/summuer_training_1
+=======
+# Install script for directory: /home/dan/train/train/MA_training/MA_training/summuer_training_1
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +48,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+<<<<<<< HEAD
   include("/home/dan/train/train/MA_training/summuer_training_1/build/modules/cmake_install.cmake")
+=======
+  include("/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules/cmake_install.cmake")
+>>>>>>> b4fbe88 (Add deep learning demo)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +63,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/home/dan/train/train/MA_training/summuer_training_1/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> b4fbe88 (Add deep learning demo)
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

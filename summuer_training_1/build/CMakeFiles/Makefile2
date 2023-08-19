@@ -54,16 +54,27 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/summuer_training_1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/summuer_training_1/build
+=======
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1/build
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+<<<<<<< HEAD
 all: CMakeFiles/MA.dir/all
+=======
+all: CMakeFiles/T.dir/all
+>>>>>>> b4fbe88 (Add deep learning demo)
 all: modules/all
 .PHONY : all
 
@@ -72,7 +83,11 @@ preinstall: modules/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+<<<<<<< HEAD
 clean: CMakeFiles/MA.dir/clean
+=======
+clean: CMakeFiles/T.dir/clean
+>>>>>>> b4fbe88 (Add deep learning demo)
 clean: modules/clean
 .PHONY : clean
 
@@ -92,6 +107,7 @@ modules/clean: modules/CMakeFiles/modules.dir/clean
 .PHONY : modules/clean
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for target CMakeFiles/MA.dir
 
 # All Build rule for target.
@@ -116,6 +132,32 @@ MA: CMakeFiles/MA.dir/rule
 CMakeFiles/MA.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/clean
 .PHONY : CMakeFiles/MA.dir/clean
+=======
+# Target rules for target CMakeFiles/T.dir
+
+# All Build rule for target.
+CMakeFiles/T.dir/all: modules/CMakeFiles/modules.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles --progress-num=1,2 "Built target T"
+.PHONY : CMakeFiles/T.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/T.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/T.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 0
+.PHONY : CMakeFiles/T.dir/rule
+
+# Convenience name for target.
+T : CMakeFiles/T.dir/rule
+.PHONY : T
+
+# clean rule for target.
+CMakeFiles/T.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/clean
+.PHONY : CMakeFiles/T.dir/clean
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 #=============================================================================
 # Target rules for target modules/CMakeFiles/modules.dir
@@ -124,14 +166,24 @@ CMakeFiles/MA.dir/clean:
 modules/CMakeFiles/modules.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles --progress-num=3,4,5 "Built target modules"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles --progress-num=3,4,5 "Built target modules"
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : modules/CMakeFiles/modules.dir/all
 
 # Build rule for subdir invocation for target.
 modules/CMakeFiles/modules.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/CMakeFiles/modules.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/CMakeFiles/modules.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 0
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : modules/CMakeFiles/modules.dir/rule
 
 # Convenience name for target.

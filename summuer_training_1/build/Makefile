@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/summuer_training_1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/summuer_training_1/build
+=======
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1/build
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +94,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles /home/dan/train/train/MA_training/summuer_training_1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles /home/dan/train/train/MA_training/MA_training/summuer_training_1/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles 0
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : all
 
 # The main clean target
@@ -117,6 +130,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named MA
 
 # Build rule for target.
@@ -128,6 +142,19 @@ MA: cmake_check_build_system
 MA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/build
 .PHONY : MA/fast
+=======
+# Target rules for targets named T
+
+# Build rule for target.
+T : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T
+.PHONY : T
+
+# fast build rule for target.
+T/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/build
+.PHONY : T/fast
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 #=============================================================================
 # Target rules for targets named modules
@@ -142,6 +169,7 @@ modules/fast:
 	$(MAKE) $(MAKESILENT) -f modules/CMakeFiles/modules.dir/build.make modules/CMakeFiles/modules.dir/build
 .PHONY : modules/fast
 
+<<<<<<< HEAD
 EKF.o: EKF.cpp.o
 .PHONY : EKF.o
 
@@ -165,6 +193,31 @@ EKF.s: EKF.cpp.s
 EKF.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/EKF.cpp.s
 .PHONY : EKF.cpp.s
+=======
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T.dir/build.make CMakeFiles/T.dir/test.cpp.s
+.PHONY : test.cpp.s
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Help Target
 help:
@@ -174,11 +227,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+<<<<<<< HEAD
 	@echo "... MA"
 	@echo "... modules"
 	@echo "... EKF.o"
 	@echo "... EKF.i"
 	@echo "... EKF.s"
+=======
+	@echo "... T"
+	@echo "... modules"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : help
 
 

@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/summuer_training_1
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/summuer_training_1/build
+=======
+CMAKE_SOURCE_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/dan/train/train/MA_training/MA_training/summuer_training_1/build
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Include any dependencies generated for this target.
 include modules/CMakeFiles/modules.dir/depend.make
@@ -72,6 +79,7 @@ include modules/CMakeFiles/modules.dir/flags.make
 modules/CMakeFiles/modules.dir/cv/cv.cpp.o: modules/CMakeFiles/modules.dir/flags.make
 modules/CMakeFiles/modules.dir/cv/cv.cpp.o: ../modules/cv/cv.cpp
 modules/CMakeFiles/modules.dir/cv/cv.cpp.o: modules/CMakeFiles/modules.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object modules/CMakeFiles/modules.dir/cv/cv.cpp.o"
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/CMakeFiles/modules.dir/cv/cv.cpp.o -MF CMakeFiles/modules.dir/cv/cv.cpp.o.d -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.cpp
 
@@ -82,10 +90,23 @@ modules/CMakeFiles/modules.dir/cv/cv.cpp.i: cmake_force
 modules/CMakeFiles/modules.dir/cv/cv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules.dir/cv/cv.cpp.s"
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/train/train/MA_training/summuer_training_1/modules/cv/cv.cpp -o CMakeFiles/modules.dir/cv/cv.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object modules/CMakeFiles/modules.dir/cv/cv.cpp.o"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/CMakeFiles/modules.dir/cv/cv.cpp.o -MF CMakeFiles/modules.dir/cv/cv.cpp.o.d -o CMakeFiles/modules.dir/cv/cv.cpp.o -c /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/cv/cv.cpp
+
+modules/CMakeFiles/modules.dir/cv/cv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules.dir/cv/cv.cpp.i"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/cv/cv.cpp > CMakeFiles/modules.dir/cv/cv.cpp.i
+
+modules/CMakeFiles/modules.dir/cv/cv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules.dir/cv/cv.cpp.s"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/cv/cv.cpp -o CMakeFiles/modules.dir/cv/cv.cpp.s
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o: modules/CMakeFiles/modules.dir/flags.make
 modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o: ../modules/fmt_lib/fmt_lib.cpp
 modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o: modules/CMakeFiles/modules.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o"
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -MF CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o.d -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/dan/train/train/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp
 
@@ -96,6 +117,18 @@ modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i: cmake_force
 modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s"
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/train/train/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -MF CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o.d -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.o -c /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp
+
+modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp > CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.i
+
+modules/CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/fmt_lib/fmt_lib.cpp -o CMakeFiles/modules.dir/fmt_lib/fmt_lib.cpp.s
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Object files for target modules
 modules_OBJECTS = \
@@ -164,18 +197,31 @@ modules/libmodules.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 modules/libmodules.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 modules/libmodules.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 modules/libmodules.so: modules/CMakeFiles/modules.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libmodules.so"
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/modules.dir/link.txt --verbose=$(VERBOSE)
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libmodules.so"
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/modules.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> b4fbe88 (Add deep learning demo)
 
 # Rule to build all files generated by this target.
 modules/CMakeFiles/modules.dir/build: modules/libmodules.so
 .PHONY : modules/CMakeFiles/modules.dir/build
 
 modules/CMakeFiles/modules.dir/clean:
+<<<<<<< HEAD
 	cd /home/dan/train/train/MA_training/summuer_training_1/build/modules && $(CMAKE_COMMAND) -P CMakeFiles/modules.dir/cmake_clean.cmake
 .PHONY : modules/CMakeFiles/modules.dir/clean
 
 modules/CMakeFiles/modules.dir/depend:
 	cd /home/dan/train/train/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/summuer_training_1 /home/dan/train/train/MA_training/summuer_training_1/modules /home/dan/train/train/MA_training/summuer_training_1/build /home/dan/train/train/MA_training/summuer_training_1/build/modules /home/dan/train/train/MA_training/summuer_training_1/build/modules/CMakeFiles/modules.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules && $(CMAKE_COMMAND) -P CMakeFiles/modules.dir/cmake_clean.cmake
+.PHONY : modules/CMakeFiles/modules.dir/clean
+
+modules/CMakeFiles/modules.dir/depend:
+	cd /home/dan/train/train/MA_training/MA_training/summuer_training_1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/train/train/MA_training/MA_training/summuer_training_1 /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules /home/dan/train/train/MA_training/MA_training/summuer_training_1/build /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules /home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules/CMakeFiles/modules.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> b4fbe88 (Add deep learning demo)
 .PHONY : modules/CMakeFiles/modules.dir/depend
 

@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles/MA.dir
 /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles/edit_cache.dir
 /home/dan/train/train/MA_training/summuer_training_1/build/CMakeFiles/rebuild_cache.dir
 /home/dan/train/train/MA_training/summuer_training_1/build/modules/CMakeFiles/modules.dir
 /home/dan/train/train/MA_training/summuer_training_1/build/modules/CMakeFiles/edit_cache.dir
 /home/dan/train/train/MA_training/summuer_training_1/build/modules/CMakeFiles/rebuild_cache.dir
+=======
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles/T.dir
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles/edit_cache.dir
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/CMakeFiles/rebuild_cache.dir
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules/CMakeFiles/modules.dir
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules/CMakeFiles/edit_cache.dir
+/home/dan/train/train/MA_training/MA_training/summuer_training_1/build/modules/CMakeFiles/rebuild_cache.dir
+>>>>>>> b4fbe88 (Add deep learning demo)

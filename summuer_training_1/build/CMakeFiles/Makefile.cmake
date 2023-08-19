@@ -62,6 +62,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+<<<<<<< HEAD
   "CMakeFiles/MA.dir/DependInfo.cmake"
+=======
+  "CMakeFiles/T.dir/DependInfo.cmake"
+>>>>>>> b4fbe88 (Add deep learning demo)
   "modules/CMakeFiles/modules.dir/DependInfo.cmake"
   )
