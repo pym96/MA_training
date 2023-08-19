@@ -1584,6 +1584,9 @@ def generate_launch_description():
 
 # 深度学习 + 自瞄
 
+## yolov8 to train detection model
+https://www.youtube.com/watch?v=wuZtUMEiKWY
+
 ## 什么是 openvino?
 
 ```
