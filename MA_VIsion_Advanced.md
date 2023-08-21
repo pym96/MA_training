@@ -3,7 +3,6 @@
 ## attribute in the rail of struct
 
 ````c++
-=======
 ## 1. attribute in the rail of struct
 
 ```c++
@@ -28,7 +27,6 @@ struct MyStruct{
 
 如果需要为结构体或函数提供特定属性并希望保持可移植性，考虑使用标准的 C++ 机制，比如 `alignas`、`[[nodiscard]]` 或 C++11 及以上版本中的 `[[deprecated]]` 属性，这些机制更加标准化和广泛支持。
 */
-<<<<<<< HEAD
 
 
 示例如下：
@@ -75,7 +73,6 @@ uint16_t checksum = 0;
 
 ```
 
->>>>>>> b4fbe88 (Add deep learning demo)
 ## C++20 新特性
 
 ### Designated initializer
@@ -224,11 +221,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 ![image](https://github.com/pym96/MA_training/assets/105438207/6a8d58de-4eaf-4076-9e5d-e787848b1a9e)
 
 
-=======
 
 
 # ROS_CONTROL 文档
->>>>>>> b4fbe88 (Add deep learning demo)
 
 ## 构建工业级移动机械臂
 
@@ -386,7 +381,6 @@ Service 使用 rosservice 命令行工具或 ROS 客户端库（如 roscpp 或 r
 
 http://wiki.ros.org/rviz/DisplayTypes/Marker
 
-<<<<<<< HEAD
 ```c++
 // 这部分代码示例请参考 github 中的 ma_train_for_ros 仓库， 经过我本人的学习来看，此部分较为简单，应该只有以下这部分需要理解一下：
 
@@ -421,8 +415,6 @@ DELETE动作用于删除现有标记，也需要指定相应的id。
 
 
 
-=======
->>>>>>> b4fbe88 (Add deep learning demo)
 ## ROS tf
 
 ```c++
@@ -568,7 +560,7 @@ auto my_parameter = declare_parameter("my_parameter", 42, param_desc);
 
 ```
 
-<<<<<<< HEAD
+
 ## ROS with smart pointer
 
 ### ROS1 
@@ -1235,7 +1227,7 @@ serial_driver->init_port("device_name",device_conifg);
 
 
 
-<<<<<<< HEAD
+
 ## Rclcpp::ParameterEventHandler 监听参数的动态变化
 
 ```c++
@@ -1283,8 +1275,7 @@ int main(int argc, char** argv)
 
 ```
 
-=======
->>>>>>> b4fbe88 (Add deep learning demo)
+
 # ROS 1 知识
 
 ## ROS1 实践知识我写到了 github ma_train_for_ros 里，包括Cmake怎么写，自定义可运行节点怎么写，launch怎么写等等，里边也有 .md文件介绍，感兴趣的可以自己去看
@@ -1650,5 +1641,4 @@ odom：里程计坐标系，这里要区分开odom topic，这是两个概念，
 base_laser:激光雷达的坐标系，与激光雷达的安装点有关，其与base_link的tf为固定的。
 ```
 
-=======
->>>>>>> b4fbe88 (Add deep learning demo)
+
