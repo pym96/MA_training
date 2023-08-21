@@ -1,6 +1,5 @@
 # C++ 部分
 
-<<<<<<< HEAD
 ## attribute in the rail of struct
 
 ````c++
@@ -74,7 +73,6 @@ uint16_t checksum = 0;
 但结构体的内存布局还可能受到编译器的优化和对齐方式的影响。为了确保结构体成员的正确对齐，有时编译器可能在成员之间添加填充字节，所以可以使用 `__attribute__((packed))` 这样的特性来告诉编译器不要进行额外的填充，以便更精确地控制结构体的内存布局。
 ````
 
-=======
 ```
 
 >>>>>>> b4fbe88 (Add deep learning demo)
@@ -91,7 +89,6 @@ Detector::LightParams l_params = {
 //指定的初始值设定项允许您在初始化期间指定结构或类中特定成员的值，而不必按声明顺序为所有成员提供值。
 ```
 
-<<<<<<< HEAD
 ## Why smart pointer?
 
 ```c++
@@ -196,6 +193,9 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
   
 ```
 
+# Docker
+## Start with docker 
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
 
 
 # ROS_CONTROL 文档
