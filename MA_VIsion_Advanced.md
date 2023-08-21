@@ -1577,7 +1577,7 @@ def generate_launch_description():
 
 ## yolov8 to train detection model
 https://www.youtube.com/watch?v=wuZtUMEiKWY
-
+https://www.youtube.com/watch?v=m9fH9OWn8YM
 ## 什么是 openvino?
 
 ```
