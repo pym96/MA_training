@@ -28,3 +28,17 @@ https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-port
 
 # 想重开学电气（不是）
 
+## 青工会
+![image](https://github.com/pym96/MA_training/assets/105438207/6fb0bac7-908d-4e32-b87f-e7234b0faabe)
+
+### 反前哨
+![image](https://github.com/pym96/MA_training/assets/105438207/dd153b62-5d1f-4a6c-8326-9544e717d206)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/3daa0d01-02ab-47c2-ab84-7e017436526a)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/2fa4978a-fa78-4bd6-b68a-2c8907a16d35)
+
+![image](https://github.com/pym96/MA_training/assets/105438207/0fab7d85-574b-4d7a-ba16-7bf7c3e420a4)
+
+
+
