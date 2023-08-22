@@ -6,7 +6,7 @@
 ## 1. attribute in the rail of struct
 
 ```c++
->>>>>>> b4fbe88 (Add deep learning demo)
+
 struct MyStruct{
   // define something here
 }__attribute__((something));
@@ -193,6 +193,26 @@ resize() 用于改变 vector 的大小，可以增加或减少元素的数量。
 # Docker
 ## Start with docker 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
+
+```c++
+// 基础的命令：
+docker images
+docker imaegs rm image_name
+docker run -it image_name
+// image运行成为container后提交更改命令：
+docker ps （查看当前运行的container name）
+docker commit -m "Some description" container_name
+//对于container的命令
+docker ps -a （查看所有容器名）
+docker start container_name
+docker stop container_name
+docker exec -it container_name /bin/bash // 运行某个容器
+  
+// 将当前pc的文件或者文件夹拷贝到container中
+ docker ps <PC_path> <container_name>:destination_path 
+```
+
+
 
 
 # ROS_CONTROL 文档
