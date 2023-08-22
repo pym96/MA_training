@@ -2,6 +2,8 @@
 
 ## 请在任何时候都在CMakeLists.txt 里加上 add_definitions(-Wall -Werror)
 
+![image](https://github.com/pym96/MA_training/assets/105438207/242835ce-01ec-4875-8795-b48db1ab0a63)
+
 
 ## 1. 打符参考
 1.
