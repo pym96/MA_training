@@ -6,7 +6,7 @@
 ## 1. attribute in the rail of struct
 
 ```c++
->>>>>>> b4fbe88 (Add deep learning demo)
+
 struct MyStruct{
   // define something here
 }__attribute__((something));
