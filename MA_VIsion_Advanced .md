@@ -1583,6 +1583,8 @@ def generate_launch_description():
 
 # 深度学习 + 自瞄
 
+部署库：tensorrtx[NVIDIA GPU]、openvino[inter GPU、CPU]
+
 ## yolov8 to train detection model
 https://www.youtube.com/watch?v=wuZtUMEiKWY
 https://www.youtube.com/watch?v=m9fH9OWn8YM
