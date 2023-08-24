@@ -28,6 +28,8 @@ https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-port
 
 对于使用ROS的成员， 关于ros_serial_driver包的使用请参考 MA_vision_advanced.md 文档，里边有较简单易懂的介绍。
 
+ROS坐标系规则:https://www.ros.org/reps/rep-0103.html
+
 # 想重开学电气（不是）
 
 ## 青工会
