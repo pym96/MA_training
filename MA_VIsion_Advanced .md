@@ -1394,10 +1394,11 @@ https://navigation.ros.org/
 
 # Ros URDF
 
-
-
 ```c++
 // 在学习URDF之前，请先了解tf2, ros 的所有位姿都是parent frame 和 child frame 之间的变化
+
+// IF your ubuntu is 20.04, then you can source ros2 foxy in your ./basrc file, turorial below is a good demo for your practise.
+https://automaticaddison.com/how-to-create-a-simulated-mobile-robot-in-ros-2-using-urdf/
 ```
 
 ## UDRF xml 文件的基本结构
@@ -1650,3 +1651,122 @@ odom：里程计坐标系，这里要区分开odom topic，这是两个概念，
 base_laser:激光雷达的坐标系，与激光雷达的安装点有关，其与base_link的tf为固定的。
 ```
 
+# Blog:
+
+## Robot State Publisher vs. Joint State Publisher
+
+In order to understand the difference between the packages, it is important you first understand that every [robot](https://automaticaddison.com/definition-of-a-robot/) is made up of two components:
+
+1. Joints
+2. Links
+
+### Links and Joints in Robotics
+
+Links are the rigid pieces of a robot. They are the “bones”. 
+
+Links are connected to each other by joints. Joints are the pieces of the robot that move, enabling motion between connected links.
+
+Consider the human arm below as an example. The shoulder, elbow, and  wrist are joints. The upper arm, forearm and palm of the hand are links.
+
+![image-20230825150510237](/home/dan/.config/Typora/typora-user-images/image-20230825150510237.png)
+
+For a robotic arm, links and joints look like this.
+
+![image-20230825150530819](/home/dan/.config/Typora/typora-user-images/image-20230825150530819.png)
+
+You can see that a robotic arm is made of rigid pieces (links) and non-rigid pieces (joints). [Servo motors](https://automaticaddison.com/how-to-control-a-servo-motor-using-arduino/) at the joints cause the links of a [robotic arm](https://automaticaddison.com/how-to-build-a-diy-aluminium-6-dof-robotic-arm-from-scratch/) to move.
+
+For a [mobile robot with LIDAR](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/), links and joints look like this:
+
+![image-20230825150602920](/home/dan/.config/Typora/typora-user-images/image-20230825150602920.png)
+
+The wheel joints are [revolute joints](https://automaticaddison.com/how-to-do-the-graphical-approach-to-inverse-kinematics/). Revolute joints cause rotational motion. The wheel joints in the photo connect the wheel link to the base link.
+
+Fixed joints have no motion at all. You can see that the LIDAR is  connected to the base of the robot via a fixed joint (i.e. this could be a simple screw that connects the LIDAR to the base of the robot).
+
+You can also have prismatic joints. The SCARA robot in [this post](https://automaticaddison.com/how-to-find-displacement-vectors-for-robotic-arms/) has a prismatic joint. Prismatic joints cause linear motion between links (as opposed to rotational motion).
+
+### Difference Between the Robot State Publisher and the Joint State Publisher
+
+Whenever we want a robot to complete a specific task (e.g. move a  certain distance in an environment, pick up an object, etc.), we have to have a way to know the position and velocity of each joint at all  times. The **Joint State Publisher** does exactly this.
+
+The Joint State Publisher package keeps track of the position (i.e. [angle in radians](https://automaticaddison.com/how-to-control-multiple-servo-motors-using-arduino/) for a [servo motor](https://automaticaddison.com/how-to-determine-what-torque-you-need-for-your-servo-motors/) or [displacement](https://automaticaddison.com/how-to-find-displacement-vectors-for-robotic-arms/) in meters for a [linear actuator](https://en.wikipedia.org/wiki/Linear_actuator)) and [velocity of each joint](https://automaticaddison.com/the-ultimate-guide-to-jacobian-matrices-for-robotics/) of a robot and [publishes these values](https://automaticaddison.com/create-a-publisher-and-subscriber-in-c-ros-2-foxy-fitzroy/) to the ROS system as [sensor_msgs/JointState](http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html) messages.
+
+The Robot State Publisher then takes two main inputs:
+
+1. The [sensor_msgs/JointState](http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html) messages from the Joint State Publisher. 
+2. A model of the robot in [URDF file](https://automaticaddison.com/how-to-build-a-simulated-mobile-manipulator-using-ros/) format.
+
+The Robot State Publisher takes that information, outputs the position and orientation of each [coordinate frame of the robot](https://automaticaddison.com/coordinate-frames-and-transforms-for-ros-based-mobile-robots/), and publishes this data to the [tf2 package](http://wiki.ros.org/tf2). 
+
+The tf2 package is responsible for keeping track of the position and  orientation of all coordinate frames of a robot over time. At any given  time, you can [query the tf2 package](https://navigation.ros.org/setup_guides/transformation/setup_transforms.html) to find out the position and orientation of any coordinate frame (i.e.  “child frame”) relative to another coordinate frame (i.e. “parent”  frame).
+
+​			![robonaut-from-nasa](https://automaticaddison.com/wp-content/uploads/2021/08/robonaut-from-nasa.jpg)	
+
+In this post, I will explain the difference between the [Robot State Publisher](http://wiki.ros.org/robot_state_publisher) and the [Joint State Publisher](http://wiki.ros.org/joint_state_publisher) ROS packages. 
+
+In order to understand the difference between the packages, it is important you first understand that every [robot](https://automaticaddison.com/definition-of-a-robot/) is made up of two components:
+
+1. Joints
+2. Links
+
+### Links and Joints in Robotics
+
+Links are the rigid pieces of a robot. They are the “bones”. 
+
+Links are connected to each other by joints. Joints are the pieces of the robot that move, enabling motion between connected links.
+
+<iframe id="aswift_3" name="aswift_3" style="left: 0px; top: 0px; border: 0px; width: 529px; height: 280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="529" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8920854049012025&amp;output=html&amp;h=280&amp;adk=4023373465&amp;adf=3371585677&amp;pi=t.aa~a.505906024~i.11~rp.4&amp;w=529&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1692946475&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=1189668290&amp;ad_type=text_image&amp;format=529x280&amp;url=https%3A%2F%2Fautomaticaddison.com%2Frobot-state-publisher-vs-joint-state-publisher%2F&amp;fwr=0&amp;pra=3&amp;rh=133&amp;rw=529&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;dt=1692946475777&amp;bpp=2&amp;bdt=1259&amp;idt=2&amp;shv=r20230823&amp;mjsv=m202308210101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D753dbec0fd6dc474-2271a52212e3000e%3AT%3D1692946337%3ART%3D1692946337%3AS%3DALNI_MYyEc1Jr5vK6A8k0Dfo2rLzqMAN8w&amp;gpic=UID%3D00000c3312896eb1%3AT%3D1692946337%3ART%3D1692946337%3AS%3DALNI_Map5f071tO94omKkM0rdCxnuztGrA&amp;prev_fmts=0x0%2C1164x280%2C1005x124&amp;nras=4&amp;correlator=7533902262955&amp;frm=20&amp;pv=1&amp;ga_vid=939580869.1692687995&amp;ga_sid=1692946475&amp;ga_hid=1221932303&amp;ga_fc=1&amp;u_tz=480&amp;u_his=5&amp;u_h=800&amp;u_w=1280&amp;u_ah=773&amp;u_aw=1206&amp;u_cd=24&amp;u_sd=2&amp;adx=290&amp;ady=2059&amp;biw=1206&amp;bih=688&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44800951%2C31077097&amp;oid=2&amp;pvsid=3428621506850627&amp;tmod=1291494254&amp;nvt=1&amp;ref=https%3A%2F%2Fautomaticaddison.com%2Fhow-to-create-a-simulated-mobile-robot-in-ros-2-using-urdf%2F&amp;fc=1408&amp;brdim=74%2C27%2C74%2C27%2C1206%2C27%2C1206%2C773%2C1206%2C688&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;btvi=2&amp;fsb=1&amp;xpc=Tc34Z9PCso&amp;p=https%3A//automaticaddison.com&amp;dtd=29" data-google-container-id="a!4" data-google-query-id="CJaOxoqd94ADFRtOwgUdJfsDWA" data-load-complete="true"></iframe>
+
+Consider the human arm below as an example. The shoulder, elbow, and  wrist are joints. The upper arm, forearm and palm of the hand are links.
+
+![link_joint](https://automaticaddison.com/wp-content/uploads/2021/08/link_joint.jpg)
+
+For a robotic arm, links and joints look like this.
+
+![link-joint-robotic-arm](https://automaticaddison.com/wp-content/uploads/2021/08/link-joint-robotic-arm.jpg)
+
+You can see that a robotic arm is made of rigid pieces (links) and non-rigid pieces (joints). [Servo motors](https://automaticaddison.com/how-to-control-a-servo-motor-using-arduino/) at the joints cause the links of a [robotic arm](https://automaticaddison.com/how-to-build-a-diy-aluminium-6-dof-robotic-arm-from-scratch/) to move.
+
+For a [mobile robot with LIDAR](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/), links and joints look like this:
+
+![mobile-robot-joints-links](https://automaticaddison.com/wp-content/uploads/2021/08/mobile-robot-joints-links.jpg)
+
+The wheel joints are [revolute joints](https://automaticaddison.com/how-to-do-the-graphical-approach-to-inverse-kinematics/). Revolute joints cause rotational motion. The wheel joints in the photo connect the wheel link to the base link.
+
+Fixed joints have no motion at all. You can see that the LIDAR is  connected to the base of the robot via a fixed joint (i.e. this could be a simple screw that connects the LIDAR to the base of the robot).
+
+You can also have prismatic joints. The SCARA robot in [this post](https://automaticaddison.com/how-to-find-displacement-vectors-for-robotic-arms/) has a prismatic joint. Prismatic joints cause linear motion between links (as opposed to rotational motion).
+
+### Difference Between the Robot State Publisher and the Joint State Publisher
+
+Whenever we want a robot to complete a specific task (e.g. move a  certain distance in an environment, pick up an object, etc.), we have to have a way to know the position and velocity of each joint at all  times. The **Joint State Publisher** does exactly this.
+
+The Joint State Publisher package keeps track of the position (i.e. [angle in radians](https://automaticaddison.com/how-to-control-multiple-servo-motors-using-arduino/) for a [servo motor](https://automaticaddison.com/how-to-determine-what-torque-you-need-for-your-servo-motors/) or [displacement](https://automaticaddison.com/how-to-find-displacement-vectors-for-robotic-arms/) in meters for a [linear actuator](https://en.wikipedia.org/wiki/Linear_actuator)) and [velocity of each joint](https://automaticaddison.com/the-ultimate-guide-to-jacobian-matrices-for-robotics/) of a robot and [publishes these values](https://automaticaddison.com/create-a-publisher-and-subscriber-in-c-ros-2-foxy-fitzroy/) to the ROS system as [sensor_msgs/JointState](http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html) messages.
+
+The Robot State Publisher then takes two main inputs:
+
+1. The [sensor_msgs/JointState](http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html) messages from the Joint State Publisher. 
+2. A model of the robot in [URDF file](https://automaticaddison.com/how-to-build-a-simulated-mobile-manipulator-using-ros/) format.
+
+The Robot State Publisher takes that information, outputs the position and orientation of each [coordinate frame of the robot](https://automaticaddison.com/coordinate-frames-and-transforms-for-ros-based-mobile-robots/), and publishes this data to the [tf2 package](http://wiki.ros.org/tf2). 
+
+The tf2 package is responsible for keeping track of the position and  orientation of all coordinate frames of a robot over time. At any given  time, you can [query the tf2 package](https://navigation.ros.org/setup_guides/transformation/setup_transforms.html) to find out the position and orientation of any coordinate frame (i.e.  “child frame”) relative to another coordinate frame (i.e. “parent”  frame).
+
+For example, if we are using ROS 2 and want to know the position and  orientation of the LIDAR link relative to the base of the robot, we  would use the following command:
+
+```
+ros2 run tf2_ros tf2_echo base_link lidar_link
+```
+
+The syntax is:
+
+```
+ros2 run tf2_ros tf2_echo <parent frame> <child frame>
+```
+
+### Joint State Publisher: Simulation vs. Real World
+
+When you are creating [robots in simulation using a tool like Gazebo](https://automaticaddison.com/how-to-simulate-a-robot-using-gazebo-and-ros-2/), you are going to want to use the [joint state publisher Gazebo plugin](http://docs.ros.org/en/jade/api/gazebo_plugins/html/gazebo__ros__joint__state__publisher_8h_source.html) to publish the position and orientation of the joints (i.e. publish the [sensor_msgs/JointState](http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html) messages).
+
+In a real-world robotics project, you will want to write your own  joint state publisher. You can find examples of how to do this [here](https://answers.ros.org/question/276405/how-to-write-my-own-joint-state/), [here](https://answers.ros.org/question/345823/having-trouble-publishing-jointstate-msg-from-arduino/), and [here](https://github.com/lucasw/carbot/blob/master/carbot_control/scripts/command_to_joint_state.py).
