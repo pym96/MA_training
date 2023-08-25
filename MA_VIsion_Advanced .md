@@ -298,8 +298,6 @@ $$
 需要注意的是，在ROS 2中，.svg文件的具体用途和功能可能会根据上下文、具体的应用程序或使用的框架而有所不同。因此，.svg文件的确切目的将取决于正在开发的ROS 2项目以及它如何与应用程序的图形组件集成。
 ```
 
-### 
-
 # 知识补充：
 
 ## 差分运动学
@@ -322,7 +320,7 @@ $$
 差分运动学使我们能够通过控制左右轮子的线速度来实现机器人的整体运动，例如直线运动、旋转运动和曲线运动等。它为差分驱动机器人的控制和路径规划提供了重要的基础。
 ```
 
-## IMU (Inertial measurement unit)
+## IMU (Inertial measurement unit): In robotics, [odometry](https://en.wikipedia.org/wiki/Odometry) is about using data from sensors to estimate the change in a robot’s  position, orientation, and velocity over time relative to some [point (e.g. x=0, y=0, z=0)](https://www.ros.org/reps/rep-0105.html#coordinate-frames). 
 
 你可以粗浅的将其理解为基于牛顿力学测量单元，其具体定义如下：
 IMU（惯性测量单元）是一种传感器组合，通常包括加速度计、陀螺仪和磁力计，用于测量和提供关于物体的姿态、加速度和角速度等信息。理解IMU数据可以帮助你获取和分析物体的运动和姿态信息。
@@ -341,6 +339,8 @@ IMU（惯性测量单元）是一种传感器组合，通常包括加速度计�
     数据融合和姿态估计：IMU数据通常需要进行数据融合和处理，以获得更准确和稳定的姿态估计。这通常涉及使用滤波器（如卡尔曼滤波器或互补滤波器）来将加速度计、陀螺仪和磁力计数据结合起来，估计物体的姿态。
     
     可视化和应用：通过将IMU数据与其他传感器数据（例如相机数据或GPS数据）结合使用，你可以实现更高级的应用，如姿态控制、导航和姿势识别等。可视化工具和算法库（如ROS中的rviz、robot_localization包）可以帮助你可视化和分析IMU数据，以及与其他传感器数据进行集成和展示。
+    
+    
 
 ## Quaternion
 
@@ -1391,6 +1391,16 @@ https://zhuanlan.zhihu.com/p/384578650
 // 1. 确保安装好了ros2
 https://navigation.ros.org/
 ```
+
+##  Tutorail and blog for navigation in ros2
+
+1. ### Set Up the Odometry for a Simulated Mobile Robot in ROS 2
+
+```c++
+// https://automaticaddison.com/set-up-the-odometry-for-a-simulated-mobile-robot-in-ros-2/
+```
+
+
 
 # Ros URDF
 
