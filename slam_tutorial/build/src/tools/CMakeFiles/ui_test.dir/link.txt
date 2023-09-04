@@ -1,0 +1,1 @@
+/usr/bin/c++ -w CMakeFiles/ui_test.dir/ui/ui_test.cc.o -o /home/dan/train/train/MA_training/MA_training/slam_tutorial/bin/ui_test  /home/dan/train/train/MA_training/MA_training/slam_tutorial/lib/libslam_tutorial.tools.a 

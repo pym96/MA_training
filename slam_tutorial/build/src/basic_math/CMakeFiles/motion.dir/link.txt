@@ -1,0 +1,1 @@
+/usr/bin/c++ -w CMakeFiles/motion.dir/motion.cpp.o -o /home/dan/train/train/MA_training/MA_training/slam_tutorial/bin/motion  /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1 -Wl,--as-needed 

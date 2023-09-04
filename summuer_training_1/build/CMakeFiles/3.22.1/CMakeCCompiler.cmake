@@ -2,10 +2,14 @@ set(CMAKE_C_COMPILER "/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 <<<<<<< HEAD
+<<<<<<< HEAD
 set(CMAKE_C_COMPILER_VERSION "11.3.0")
 =======
 set(CMAKE_C_COMPILER_VERSION "11.4.0")
 >>>>>>> b4fbe88 (Add deep learning demo)
+=======
+set(CMAKE_C_COMPILER_VERSION "11.4.0")
+>>>>>>> 21002ca (Add some openvino demo)
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")

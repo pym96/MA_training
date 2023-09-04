@@ -1,5 +1,6 @@
 CMakeFiles/MA.dir/EKF.cpp.o: \
 <<<<<<< HEAD
+<<<<<<< HEAD
  /home/dan/train/train/MA_training/summuer_training_1/EKF.cpp \
  /usr/include/stdc-predef.h \
  /home/dan/train/train/MA_training/summuer_training_1/modules/ekf/ekf.hpp \
@@ -8,6 +9,11 @@ CMakeFiles/MA.dir/EKF.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/ekf/ekf.hpp \
 >>>>>>> b4fbe88 (Add deep learning demo)
+=======
+ /home/dan/train/train/MA_training/MA_training/summuer_training_1/EKF.cpp \
+ /usr/include/stdc-predef.h \
+ /home/dan/train/train/MA_training/MA_training/summuer_training_1/modules/ekf/ekf.hpp \
+>>>>>>> 21002ca (Add some openvino demo)
  /usr/local/include/ceres/jet.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

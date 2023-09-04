@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/dan/train/train/MA_training/MA_training/rm_vision-OpenVINO/test/build",
+  "command": "/usr/bin/c++  -I/usr/include/eigen3 -isystem /usr/include/opencv4   -Wall -Werror -o CMakeFiles/OPENVINO_DEMO.dir/main.cpp.o -c /home/dan/train/train/MA_training/MA_training/rm_vision-OpenVINO/test/main.cpp",
+  "file": "/home/dan/train/train/MA_training/MA_training/rm_vision-OpenVINO/test/main.cpp",
+  "output": "CMakeFiles/OPENVINO_DEMO.dir/main.cpp.o"
+}
+]

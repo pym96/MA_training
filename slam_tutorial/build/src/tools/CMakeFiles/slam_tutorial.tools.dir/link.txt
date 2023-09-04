@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/dan/train/train/MA_training/MA_training/slam_tutorial/lib/libslam_tutorial.tools.a CMakeFiles/slam_tutorial.tools.dir/ui/pangolin_window.cc.o CMakeFiles/slam_tutorial.tools.dir/ui/pangolin_window_impl.cc.o CMakeFiles/slam_tutorial.tools.dir/ui/ui_car.cc.o CMakeFiles/slam_tutorial.tools.dir/ui/ui_trajectory.cc.o CMakeFiles/slam_tutorial.tools.dir/ui/ui_cloud.cc.o
+/usr/bin/ranlib /home/dan/train/train/MA_training/MA_training/slam_tutorial/lib/libslam_tutorial.tools.a
