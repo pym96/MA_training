@@ -129,3 +129,54 @@ To resolve the issue, let's try installing Cartographer:
    After installing dependencies, run `catkin_make_isolated --install` again.
 
 One of these steps should help in resolving the missing `cartographer-config.cmake` issue. If you're still facing challenges, consider referring to the official installation guide of Cartographer to ensure that you haven't missed any steps.
+
+## 3.
+-- Could NOT find Lua (missing: LUA_LIBRARIES LUA_INCLUDE_DIR) 
+CMake Error at cmake/modules/FindLuaGoogle.cmake:217 (MESSAGE):
+  Did not find Lua >= 5.2.
+Call Stack (most recent call first):
+  CMakeLists.txt:41 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/dan/cart_ws/build_isolated/cartographer/install/CMakeFiles/CMakeOutput.log".
+See also "/home/dan/cart_ws/build_isolated/cartographer/install/CMakeFiles/CMakeError.log".
+<== Failed to process package 'cartographer': 
+  Command '['cmake', '/home/dan/cart_ws/src/cartographer', '-DCMAKE_INSTALL_PREFIX=/home/dan/cart_ws/install_isolated', '-G', 'Unix Makefiles']' returned non-zero exit status 1.
+
+Reproduce this error by running:
+==> cd /home/dan/cart_ws/build_isolated/cartographer && cmake /home/dan/cart_ws/src/cartographer -DCMAKE_INSTALL_PREFIX=/home/dan/cart_ws/install_isolated -G 'Unix Makefiles'
+
+Command failed, exiting.
+
+
+This error indicates that CMake can't find the Lua libraries (version >= 5.2) on your system. Cartographer requires Lua for its configuration files.
+
+To resolve this, you'll need to install the required Lua libraries:
+
+1. **Install Lua Libraries**:
+   ```bash
+   sudo apt-get install liblua5.2-dev
+   ```
+
+   If you've already installed a Lua version other than 5.2, there might be conflicts. Ensure that version 5.2 is the one being detected or manually point CMake to the appropriate paths.
+
+2. **Retry Building Cartographer**:
+   Navigate back to your Cartographer workspace and try building again:
+   ```bash
+   cd /home/dan/cart_ws
+   catkin_make_isolated --install
+   ```
+
+3. **Manually Indicate Lua Path** (if necessary):
+
+   If you have Lua 5.2 installed, but CMake still cannot find it, you can manually point to its path using the `LUA_INCLUDE_DIR` and `LUA_LIBRARIES` variables:
+
+   ```bash
+   cd /home/dan/cart_ws
+   catkin_make_isolated --install -DLUA_INCLUDE_DIR=/path/to/lua/include -DLUA_LIBRARIES=/path/to/lua/lib
+   ```
+
+   Replace `/path/to/lua/include` and `/path/to/lua/lib` with the correct paths where Lua headers and libraries are located.
+
+Proceed with these steps based on your current setup, and then try building Cartographer again. If the issue persists or if you encounter other errors, please provide additional information.
