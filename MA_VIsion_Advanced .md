@@ -1374,6 +1374,66 @@ https://zhuanlan.zhihu.com/p/384578650
 
 这些只是`rosbag`的一些基本用法示例。您可以通过运行`rosbag --help`命令来获取更多命令选项和使用说明。此外，ROS文档中也有关于`rosbag`的详细信息，您可以查阅官方文档以获取更多帮助。
 
+## ros cv bridge
+To publish an OpenCV `cv::Mat` image to a ROS topic, you can use the `cv_bridge` package which provides a bridge between OpenCV and ROS image messages. Here's a step-by-step guide:
+
+1. **Install Dependencies**:
+   Make sure you have `cv_bridge` and `image_transport` installed. You can install them using:
+   ```bash
+   sudo apt-get install ros-<your-ros-version>-cv-bridge
+   sudo apt-get install ros-<your-ros-version>-image-transport
+   ```
+
+2. **Include Necessary Headers**:
+   In your code, you'll need to include:
+   ```cpp
+   #include <ros/ros.h>
+   #include <image_transport/image_transport.h>
+   #include <cv_bridge/cv_bridge.h>
+   #include <sensor_msgs/Image.h>
+   ```
+
+3. **Initialize ROS and Image Transport**:
+   ```cpp
+   ros::init(argc, argv, "image_publisher");
+   ros::NodeHandle nh;
+   image_transport::ImageTransport it(nh);
+   image_transport::Publisher pub = it.advertise("/image_raw", 1);
+   ```
+
+4. **Convert and Publish**:
+   Here's a basic way to convert a `cv::Mat` image to a ROS message and publish it:
+   ```cpp
+   cv::Mat image = cv::imread("path_to_image.jpg", cv::IMREAD_COLOR); // Read an image from file
+
+   // Convert the image to a sensor_msgs/Image message
+   sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
+
+   pub.publish(msg);
+   ros::spinOnce();
+   ```
+
+5. **Update CMakeLists.txt**:
+   You'll also need to ensure that you've added the necessary dependencies to your `CMakeLists.txt`:
+   ```cmake
+   find_package(catkin REQUIRED COMPONENTS
+     roscpp
+     image_transport
+     cv_bridge
+     # other packages
+   )
+   ```
+
+   And also ensure you link against the necessary libraries:
+   ```cmake
+   target_link_libraries(your_target ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+   ```
+
+6. **Run**:
+   Make sure to source your ROS workspace and then run your node.
+
+Remember that this is a basic method to publish images. In a real-world scenario, you would likely be grabbing images in a loop, timestamping them, etc. Adjust the code accordingly to fit into your application's requirements.
+
 ## ROS1 bug
 ### roscore 
 	WARNING: Could not change permissions for folder [/home/ma/.ros/log/20713ec6-2522-11ee-acad-2bf8c6a50870], make sure that the parent folder has correct permissions.
