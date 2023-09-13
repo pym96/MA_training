@@ -228,3 +228,26 @@ Here are steps you can take to debug and resolve the issue:
    - If you're working with multiple machines, ensure they are properly networked, the `ROS_MASTER_URI` is set correctly on all of them, and the system clocks are synchronized (using tools like `chrony` or `ntp`).
 
 By systematically working through these suggestions, you should be able to identify the root cause and ensure that the necessary transformations are available for `gmapping` to operate correctly.
+
+## 5
+I know, the laserscan msg topic's frame is camera_init, but gmapping's fixed frame is map, so I think I need to alter /map into /camera_init, but how?
+
+If the frame of your laserscan messages is `camera_init` but `gmapping` expects data in the `map` frame, you will need to set up appropriate transformations using `tf` (the ROS transform library). The goal is to ensure there's a coherent transformation chain between `camera_init` and `odom`, as `gmapping` also uses odometry data in its SLAM process.
+
+However, if you simply want to change the fixed frame in `gmapping` from `map` to `camera_init`, you can do this by setting the appropriate parameter when launching the `gmapping` node. The parameter that determines the fixed frame in `gmapping` is `~map_frame`.
+
+Here's how you can set it:
+
+```bash
+rosrun gmapping slam_gmapping scan:=/scan _map_frame:=camera_init
+```
+
+This will instruct `gmapping` to use `camera_init` as its fixed frame. 
+
+That said, be cautious: simply changing this parameter without ensuring the correct transformations exist in your system could cause unexpected behavior. In a typical setup, the `map` frame is used as a fixed frame representing the map's global coordinate system, while the `odom` frame provides a local odometry-based reference for the robot. If you change the fixed frame to `camera_init`, make sure other components of your system (e.g., visualization tools, navigation components) are also aware of this change.
+
+If you're still having trouble after making this change, ensure that:
+1. A transformation exists from `camera_init` to your robot's base frame (e.g., `base_link`).
+2. A transformation exists from your robot's base frame to the `odom` frame (usually provided by your robot's odometry system).
+
+This ensures that `gmapping` can properly integrate both the laser scans and odometry information. If needed, static transforms can be set up using `static_transform_publisher` for any fixed relationships between frames.
