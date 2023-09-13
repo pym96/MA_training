@@ -251,3 +251,28 @@ If you're still having trouble after making this change, ensure that:
 2. A transformation exists from your robot's base frame to the `odom` frame (usually provided by your robot's odometry system).
 
 This ensures that `gmapping` can properly integrate both the laser scans and odometry information. If needed, static transforms can be set up using `static_transform_publisher` for any fixed relationships between frames.
+
+## 6
+   <node name="playbag" pkg="rosbag" type="play"
+        args="--clock $(arg bag_filename)" /> If I pulish topic by bag file, show I add --clock args? The error I've met before can be boiled down to I did't use the bag file itself's timestamp
+
+        Yes, when using ROS bag files for playback and simulations, especially when dealing with nodes that require accurate timing (like SLAM nodes), it's important to ensure the system uses the bag's timestamps rather than the current system time.
+
+The `--clock` argument you've added in the rosbag play command makes the bag act as the "time source" for ROS. This essentially means that ROS will use the timestamps within the bag as the current time. This is achieved by publishing simulated clock messages on the `/clock` topic.
+
+When you use the `--clock` option, it's also necessary to tell ROS to use this simulated clock. You do this by setting the `use_sim_time` parameter to `true`.
+
+Before running your nodes (or in the launch file before playing back the bag file):
+
+```xml
+<param name="/use_sim_time" value="true"/>
+```
+
+This ensures that any nodes you run will use the simulated time provided by the bag. If you don't set this parameter, nodes will use the system clock, which will likely lead to the timestamp issues you experienced earlier.
+
+To summarize:
+
+1. Play the bag with the `--clock` option to publish simulated time on the `/clock` topic.
+2. Set the `use_sim_time` parameter to `true` so ROS nodes will use the simulated time.
+
+Following these steps should help in resolving issues related to timestamps when working with bag files.
