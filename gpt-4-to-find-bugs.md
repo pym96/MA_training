@@ -276,8 +276,72 @@ To summarize:
 2. Set the `use_sim_time` parameter to `true` so ROS nodes will use the simulated time.
 
 ## 7
-User
+User [ WARN] [1694573592.625932696, 1694166602.118866841]: Failed to compute laser pose, aborting initialization ("base_link" passed to lookupTransform argument target_frame does not exist.
+
+Following these steps should help in resolving issues related to timestamps when working with bag files.
+
+## 8
+(base) dan@dan-RedmiBook-Pro-14S:~$ rosrun tf view_frames 
+Listening to /tf for 5.0 seconds
+Done Listening
+b'dot - graphviz version 2.43.0 (0)\n'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/tf/view_frames", line 119, in <module>
+    generate(dot_graph)
+  File "/opt/ros/noetic/lib/tf/view_frames", line 89, in generate
+    m = r.search(vstr)
+TypeError: cannot use a string pattern on a bytes-like object
 [ WARN] [1694573592.625932696, 1694166602.118866841]: Failed to compute laser pose, aborting initialization ("base_link" passed to lookupTransform argument target_frame does not exist. 
+
+
+
+The error you're seeing is related to the string encoding and how Python 3 (which ROS Noetic uses) handles strings and bytes. The output from `dot` is a bytes-like object, and Python 3 differentiates between strings (text) and bytes (binary data).
+
+To resolve this, you have a few options:
+
+1. **Quick Fix**:
+   
+   Edit the problematic script to handle the bytes output from `dot`.
+
+   Open the script with:
+   ```bash
+   sudo nano /opt/ros/noetic/lib/tf/view_frames
+   ```
+
+   And find the line:
+   ```python
+   m = r.search(vstr)
+   ```
+
+   Change it to:
+   ```python
+   m = r.search(vstr.decode('utf-8'))
+   ```
+
+   This decodes the bytes-like object to a string using UTF-8 encoding.
+
+   Save and exit (`Ctrl` + `O`, `Enter`, `Ctrl` + `X`).
+
+2. **Long-term Fix**:
+
+   The long-term solution would be to get an update from the maintainers of the `tf` package where this issue has been fixed. This can be done by checking if there's an update available for the ROS distribution you're using:
+   
+   ```bash
+   sudo apt-get update
+   sudo apt-get upgrade
+   ```
+
+3. **Alternative Visualization**:
+
+   In case you don't want to edit the script directly, you can use `tf_monitor` to get information about the transforms:
+   
+   ```bash
+   rosrun tf tf_monitor
+   ```
+
+   It doesn't provide a graphical view like `view_frames`, but it can give you information about which transforms are available, their rates, etc.
+
+Once you've applied one of these solutions, you should be able to see the TF tree without any issues.
 
 
 Following these steps should help in resolving issues related to timestamps when working with bag files.
