@@ -275,4 +275,9 @@ To summarize:
 1. Play the bag with the `--clock` option to publish simulated time on the `/clock` topic.
 2. Set the `use_sim_time` parameter to `true` so ROS nodes will use the simulated time.
 
+## 7
+User
+[ WARN] [1694573592.625932696, 1694166602.118866841]: Failed to compute laser pose, aborting initialization ("base_link" passed to lookupTransform argument target_frame does not exist. 
+
+
 Following these steps should help in resolving issues related to timestamps when working with bag files.
