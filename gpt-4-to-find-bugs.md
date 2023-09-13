@@ -339,6 +339,8 @@ To resolve this, you have a few options:
    rosrun tf tf_monitor
    ```
 
+
+
    It doesn't provide a graphical view like `view_frames`, but it can give you information about which transforms are available, their rates, etc.
 
 Once you've applied one of these solutions, you should be able to see the TF tree without any issues.
