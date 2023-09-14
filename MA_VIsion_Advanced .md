@@ -1285,6 +1285,49 @@ int main(int argc, char** argv)
 
 
 # ROS 1 知识
+## So, what's the difference in packge.xml and Cmake in ros1 project when config the env
+In a ROS1 project, both `CMakeLists.txt` and `package.xml` play crucial roles, but they serve different purposes, and they impact the build and deployment process in different ways. Let's break down the differences:
+
+### `package.xml`
+
+- **Purpose**: This is the package manifest file. It provides metadata about the package (like its name, version, description, maintainer, license) and its dependencies.
+  
+- **Dependencies**:
+  - `build_depend`: Dependencies required to compile the code in this package.
+  - `build_export_depend`: Dependencies required for downstream packages to build against this package.
+  - `exec_depend`: Dependencies required to run the code in this package.
+  - `test_depend`: Dependencies required to test the package.
+  - And there are a few more specialized dependency tags.
+  
+- **Use Cases**:
+  - It's used by ROS tools like `rosdep` to ensure that all required dependencies are installed.
+  - `bloom` uses it to generate Debian packages.
+  - It provides essential metadata when the package is released to the ROS build farm.
+
+### `CMakeLists.txt`
+
+- **Purpose**: This is essentially a script for CMake, a cross-platform build system. Here, you specify how your package should be built: which files to compile, which targets to link against, etc.
+  
+- **Key Commands**:
+  - `find_package`: Search for other CMake or Catkin packages. It ensures required libraries and headers are available.
+  - `add_executable`: Define a new build target that will be an executable.
+  - `add_library`: Define a new build target that will be a library.
+  - `target_link_libraries`: Specify which libraries an executable/library should link against.
+  - `catkin_package`: Define properties of this package that are required for other packages to build/run against it.
+  
+- **Use Cases**:
+  - This is where you specify how to build your ROS nodes, libraries, and tests.
+  - `catkin_make` or `catkin build` uses this file to build your ROS package.
+  
+### In Context
+
+While both files specify dependencies, they are used in different parts of the ROS build and deployment process:
+
+- When you're developing and building your package locally, the build system (`catkin`) mainly relies on `CMakeLists.txt` to know what to build and how to link things together.
+
+- When you're releasing your package, or when someone else is trying to build/run your package, the dependencies in `package.xml` become essential. They ensure that all the necessary dependencies are present. 
+
+In conclusion, while there's some redundancy between the two files, they're both essential for different parts of the ROS package lifecycle. Ensure you maintain consistency between them, especially regarding dependencies, to avoid any build or deployment issues.
 
 ## ROS1 实践知识我写到了 github ma_train_for_ros 里，包括Cmake怎么写，自定义可运行节点怎么写，launch怎么写等等，里边也有 .md文件介绍，感兴趣的可以自己去看
 
