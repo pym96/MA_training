@@ -765,6 +765,31 @@ int main(int argc, char** argv) {
 
 ## Sensor_msgs/msg
 
+### Check msg detail in ros1
+(base) dan@dan-RedmiBook-Pro-14S:~$ rosmsg show sensor_msgs/Imu
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Quaternion orientation
+  float64 x
+  float64 y
+  float64 z
+  float64 w
+float64[9] orientation_covariance
+geometry_msgs/Vector3 angular_velocity
+  float64 x
+  float64 y
+  float64 z
+float64[9] angular_velocity_covariance
+geometry_msgs/Vector3 linear_acceleration
+  float64 x
+  float64 y
+  float64 z
+float64[9] linear_acceleration_covariance
+
+
+
 ### Sensor_msgs/msg/camera_info.hpp
 
 ```c++
