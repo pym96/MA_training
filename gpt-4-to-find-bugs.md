@@ -347,3 +347,28 @@ Once you've applied one of these solutions, you should be able to see the TF tre
 
 
 Following these steps should help in resolving issues related to timestamps when working with bag files.
+
+## 8 User
+Adjust the build settings or CMakeLists.txt to add -fPIC to the compiler flags. you mean add_defination(-fPIC)?
+
+No, in CMake, `add_definitions` is used for adding preprocessor definitions, not compiler flags. To add the `-fPIC` flag to the compiler flags using CMake, you should use the `set` command.
+
+Here's how you can add `-fPIC` to the compiler flags in your `CMakeLists.txt`:
+
+```cmake
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+```
+
+Or, you can manually add it to the `CMAKE_CXX_FLAGS` if you prefer:
+
+```cmake
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+```
+
+Using `CMAKE_POSITION_INDEPENDENT_CODE ON` is more idiomatic in CMake when you want all targets to have position-independent code. If you only want it for a specific target, you can use `set_target_properties`:
+
+```cmake
+set_target_properties(your_target_name PROPERTIES POSITION_INDEPENDENT_CODE ON)
+```
+
+After adjusting the `CMakeLists.txt`, make sure to reconfigure (e.g., by deleting your build directory and creating it again, then running `cmake ..`) and then rebuild your project.
