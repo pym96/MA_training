@@ -216,6 +216,11 @@ docker exec -it container_name /bin/bash // 运行某个容器
 
 
 # ROS_CONTROL 文档
+
+## Basic tutorial 
+
+https://rm-control-docs.netlify.app/quick_start/rm-controls_101
+
 ![image](https://github.com/pym96/MA_training/assets/105438207/6a785eca-ad86-45f6-a913-f29453a69004)
 
 ![image](https://github.com/pym96/MA_training/assets/105438207/ab893ef5-3fce-4a8b-b908-2fc2311d33bf)
