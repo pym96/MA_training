@@ -263,6 +263,16 @@ $$
 "/cmd_key"->【移动机器人底座】 -> “/odom" 
 ```
 
+### Moveit package-config
+'''My ros1 version is noetic, choose your own ros version please'''
+sudo apt install ros-noetic-moveit-setup-assistant
+sudo apt install ros-noetic-moveit-simple-controller-manager
+sudo apt install ros-noetic-moveit-fake-controller-manager
+
+COMMAND LINE: roslaunch moveit_setup_assistant setup_assistant.launch
+
+
+
 ### 1."/cmd_key" 消息类型： geometry_msgs  / Twist
 
 ```
