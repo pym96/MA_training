@@ -46,11 +46,10 @@ ROS坐标系规则:https://www.ros.org/reps/rep-0103.html
 
 ![image](https://github.com/pym96/MA_training/assets/105438207/0fab7d85-574b-4d7a-ba16-7bf7c3e420a4)
 
-
+## ROS1 urdf demo
+https://blog.csdn.net/Netceor/article/details/118662111?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169572131816800188539074%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=169572131816800188539074&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-4-118662111-null-null.nonecase&utm_term=ros&spm=1018.2226.3001.4450
 
 
 
 # 想重开学电气（不是）
-=======
->>>>>>> b4fbe88 (Add deep learning demo)
->>>>>>> 21002ca (Add some openvino demo)
+
