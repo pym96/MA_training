@@ -1735,6 +1735,82 @@ def generate_launch_description():
 </transmission>
 ```
 
+## Urdf demo
+# link子标签
+visual（属性name） ---> 描述外观(对应的数据是可视的)
+    geometry 设置连杆的形状
+        标签1: box(盒状)
+        属性:size=长(x) 宽(y) 高(z)
+        标签2: cylinder(圆柱)
+        属性:radius=半径 length=高度
+        标签3: sphere(球体)
+        属性:radius=半径
+        标签4: mesh(为连杆添加皮肤)
+        属性: filename=资源路径(格式:package://<packagename>/<path>/文件)
+    origin 设置偏移量与倾斜弧度
+        属性1: xyz=x偏移 y便宜 z偏移
+        属性2: rpy=x翻滚 y俯仰 z偏航 (单位是弧度)
+    metrial 设置材料属性(颜色)
+        属性: name
+        标签: color
+        属性: rgba=红绿蓝权重值与透明度 (每个权重值以及透明度取值[0,1])
+    collision ---> 连杆的碰撞属性
+    Inertial ---> 连杆的惯性矩阵
+ 
+# 案例
+<link name="base_link">
+    <visual>
+        <!-- 形状 -->
+        <geometry>
+            <!-- 长方体的长宽高 -->
+            <!-- <box size="0.5 0.3 0.1" /> -->
+            <!-- 圆柱，半径和长度 -->
+            <!-- <cylinder radius="0.5" length="0.1" /> -->
+            <!-- 球体，半径-->
+            <!-- <sphere radius="0.3" /> -->
+        </geometry>
+        <!-- xyz坐标 rpy翻滚俯仰与偏航角度(3.14=180度 1.57=90度) -->
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <!-- 颜色: r=red g=green b=blue a=alpha -->
+        <material name="black">
+            <color rgba="0.7 0.5 0 0.5" />
+        </material>
+    </visual>
+</link>
+
+# 属性
+name ---> 为关节命名
+type ---> 关节运动形式
+    continuous: 旋转关节，可以绕单轴无限旋转
+    revolute: 旋转关节，类似于 continues,但是有旋转角度限制
+    prismatic: 滑动关节，沿某一轴线移动的关节，有位置极限
+    planer: 平面关节，允许在平面正交方向上平移或旋转
+    floating: 浮动关节，允许进行平移、旋转运动
+    fixed: 固定关节，不允许运动的特殊关节
+ 
+# 子标签
+parent(必需的)
+parent link的名字是一个强制的属性：
+    link:父级连杆的名字，是这个link在机器人结构树中的名字。
+child(必需的)【child link的名字是一个强制的属性】
+    link:子级连杆的名字，是这个link在机器人结构树中的名字。
+origin
+    属性: xyz=各轴线上的偏移量 rpy=各轴线上的偏移弧度。
+axis
+    属性: xyz用于设置围绕哪个关节轴运动。
+ 
+# 案例
+<!-- 摄像头到底盘的连接关节 -->
+<joint name="camera2baselink" type="continuous">
+    <!-- 底盘link名称 -->
+    <parent link="base_link"/>
+    <!-- 摄像头link名称 -->
+    <child link="camera" />
+    <!-- 需要计算两个 link 的物理中心之间的偏移量 -->
+    <origin xyz="0.2 0 0.075" rpy="0 0 0" />
+    <axis xyz="0 0 1" /> 
+</joint>
+
 # 深度学习 + 自瞄
 
 部署库：tensorrtx[NVIDIA GPU]、openvino[inter GPU、CPU]
