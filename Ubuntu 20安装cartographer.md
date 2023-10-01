@@ -187,3 +187,6 @@ nameserver 8.8.4.4
 注释起来。
 
 这样，浏览器又可以正常访问网页了。
+
+## 博客（如果还有错误）
+https://blog.csdn.net/weixin_47573148/article/details/114010178
