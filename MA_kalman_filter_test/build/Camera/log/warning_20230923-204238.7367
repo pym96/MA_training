@@ -1,0 +1,4 @@
+Log file created at: 2023/09/23 20:42:38
+Running on machine: fuziming-Dell-G15-5520
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0923 20:42:38.963555  7371 MVCameraBase.cpp:99] Device:(name:MV-SUA133GC#0 sn:041051620106)Lost

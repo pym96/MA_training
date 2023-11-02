@@ -1,0 +1,43 @@
+%YAML:1.0
+---
+# 备份
+# 1280 x 1080 
+cameraMatrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 2.058760410892007e+03, 0, 6.432074962770162e+02, 0,  2.058328682266262e+03, 4.867438779560122e+02, 0, 0, 1 ]
+distCoeffs: !!opencv-matrix
+   rows: 5
+   cols: 1
+   dt: d 
+   data: [ -0.0994743895494229, 0.787535502703229, 0, 0, 0 ]
+R_C2G: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 0., 0., 1., -1., 0., 0., 0., -1., 0. ]
+   # p_g = R_C2G * p_c
+armour:
+  small_half_x: 0.066 # 67.5
+  small_half_y: 0.027 # 27.5
+  big_half_x: 0.115 # 112.5
+  big_half_y: 0.029 # 27.5
+k: 0.01903
+
+# 静态角度偏差
+static_yaw: 0 # - left; + right 
+static_pitch: -2  # 
+
+# 1280 x 768
+# cameraMatrix: !!opencv-matrix
+#    rows: 3
+#    cols: 3
+#    dt: d
+#    data: [ 1558.58380562319, -1.33623427638244, 616.255672156376, 0., 1559.45321885837, 407.938357279562, 0., 0., 1. ]
+# distCoeffs: !!opencv-matrix
+#    rows: 5
+#    cols: 1
+#    dt: d 
+#    data: [ -0.108226086830113, 0.418843716887355,
+#        0.000534074785397144, 0.00340883577518609, 0. ]

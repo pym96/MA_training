@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/fuziming/MA/kalmen/MA-main（复件）/build",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -I/home/fuziming/MA/kalmen/MA-main（复件）/devices/camera -isystem /usr/include/opencv4  -o CMakeFiles/MA.dir/main.cpp.o -c /home/fuziming/MA/kalmen/MA-main（复件）/main.cpp",
+  "file": "/home/fuziming/MA/kalmen/MA-main（复件）/main.cpp"
+},
+{
+  "directory": "/home/fuziming/MA/kalmen/MA-main（复件）/build/devices",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -Ddevices_EXPORTS -I/home/fuziming/MA/kalmen/MA-main（复件）/devices/camera -isystem /usr/include/opencv4 -fPIC -o CMakeFiles/devices.dir/camera/mv_camera.cpp.o -c /home/fuziming/MA/kalmen/MA-main（复件）/devices/camera/mv_camera.cpp",
+  "file": "/home/fuziming/MA/kalmen/MA-main（复件）/devices/camera/mv_camera.cpp"
+}
+]

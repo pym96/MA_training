@@ -1,0 +1,6 @@
+/home/fuziming/MA/kalmen/MA-main（复件）/build/CMakeFiles/MA.dir
+/home/fuziming/MA/kalmen/MA-main（复件）/build/CMakeFiles/edit_cache.dir
+/home/fuziming/MA/kalmen/MA-main（复件）/build/CMakeFiles/rebuild_cache.dir
+/home/fuziming/MA/kalmen/MA-main（复件）/build/devices/CMakeFiles/devices.dir
+/home/fuziming/MA/kalmen/MA-main（复件）/build/devices/CMakeFiles/edit_cache.dir
+/home/fuziming/MA/kalmen/MA-main（复件）/build/devices/CMakeFiles/rebuild_cache.dir
