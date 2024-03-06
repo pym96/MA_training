@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0)
+project(MQTTExample)
+
+# Find the Mosquitto library
+find_package(PkgConfig REQUIRED)
+pkg_search_module(MOSQUITTO REQUIRED libmosquitto)
+
+# Add the executable
+add_executable(mqtt_example main.cpp)
+
+# Include directories for Mosquitto
+target_include_directories(mqtt_example PRIVATE ${MOSQUITTO_INCLUDE_DIRS})
+
+# Link the Mosquitto library
+target_link_libraries(mqtt_example ${MOSQUITTO_LIBRARIES})
+
+# Set the C++ standard to C++11
+set_target_properties(mqtt_example PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED YES
+    CXX_EXTENSIONS NO
+)
