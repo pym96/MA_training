@@ -1,0 +1,29 @@
+<root BTCPP_format="4" main_tree_to_execute = "MainTree">
+    <BehaviorTree ID="MainTree">
+        <Fallback name="root_Fallback">
+            <Sequence name="robot_function">
+                <Fallback name="find_ball_Fallback">
+                    <BallFound name="ball_found" />
+                    <FindBall name="find_ball" ball_location="{location}" />
+                </Fallback>
+                <Fallback name="approach_ball_Fallback">
+                    <BallClose name="ball_close" ball_location="{location}" />
+                    <ApproachBall name="approach_ball" ball_location="{location}" />
+                </Fallback>
+                <Fallback name="grasp_ball_Fallback">
+                    <BallGrasped name="grasp_ball_Fallback" />
+                    <GraspBall name="grasp_ball" />
+                </Fallback>
+                <Fallback name="approach_bin_Fallback">
+                    <BinClose name="bin_close" />
+                    <ApproachBin name="approach_bin" />
+                </Fallback>
+                <Fallback name="place_ball_Fallback">
+                    <BallPlaced name="ball_placed" />
+                    <PlaceBall name="place_ball" />
+                </Fallback>
+            </Sequence>
+            <AskForHelp name="ask_for_help" />
+        </Fallback>
+    </BehaviorTree>
+</root>
