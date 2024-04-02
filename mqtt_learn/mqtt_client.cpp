@@ -4,11 +4,22 @@
 #include <string.h>
 #include <unistd.h> // 为了使用 sleep()
 
+// 将浮点数转换为字节数组
+void floatToBytes(float value, unsigned char* bytes) {
+    union {
+        float a;
+        unsigned char bytes[4];
+    } thing;
+
+    thing.a = value;
+    memcpy(bytes, thing.bytes, sizeof(thing.bytes));
+}
+
 int main(int argc, char *argv[]) {
     struct mosquitto *mosq;
     int rc;
-    char msg[5]; // 数据帧大小为5字节
-    int sensorValue = 0; // 假设的传感器数值
+    unsigned char msg[7]; // 数据帧大小为7字节
+    float sensorValue = 0.0; // 使用浮点数作为传感器数值
 
     mosquitto_lib_init();
 
@@ -25,18 +36,23 @@ int main(int argc, char *argv[]) {
     }
 
     while (1) {
+        msg[0] = 0x5A; // 起始标识符
         // 温度数据帧
-        msg[0] = 0x5A; msg[1] = 0x51; msg[2] = (char)sensorValue; msg[3] = 0xA5;
+        msg[1] = 0x01; // 功能码为0x01
+        floatToBytes(sensorValue, &msg[2]);
+        msg[6] = 0xA5; // 结束标识符
         mosquitto_publish(mosq, NULL, "test/topic", sizeof(msg), msg, 0, false);
         sleep(1); // 等待1秒
 
         // 湿度数据帧
-        msg[1] = 0x52;
+        msg[1] = 0x02; // 功能码变为0x02
+        floatToBytes(sensorValue + 1.0, &msg[2]); // 假设的湿度值，这里只是示例
         mosquitto_publish(mosq, NULL, "test/topic", sizeof(msg), msg, 0, false);
         sleep(1); // 等待1秒
 
         // 光照强度数据帧
-        msg[1] = 0x53;
+        msg[1] = 0x03; // 功能码变为0x03
+        floatToBytes(sensorValue + 2.0, &msg[2]); // 假设的光照强度值，这里只是示例
         mosquitto_publish(mosq, NULL, "test/topic", sizeof(msg), msg, 0, false);
         sleep(1); // 等待1秒
     }
