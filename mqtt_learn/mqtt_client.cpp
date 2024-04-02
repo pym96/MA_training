@@ -4,6 +4,18 @@
 #include <string.h>
 #include <unistd.h> // 为了使用 sleep()
 
+void floatToBytesBig(float value, unsigned char* bytes) {
+    union {
+        float a;
+        unsigned int b;
+    } thing;
+
+    thing.a = value;
+    unsigned int bigEndian = htonl(thing.b); // 使用 htonl 函数转换为网络字节序（即大端序）
+    memcpy(bytes, &bigEndian, sizeof(bigEndian));
+}
+
+
 // 将浮点数转换为字节数组
 void floatToBytes(float value, unsigned char* bytes) {
     union {
